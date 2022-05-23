@@ -13,23 +13,20 @@ import android.view.Gravity
 import android.view.WindowManager
 import android.graphics.drawable.ColorDrawable
 import android.content.res.Configuration
+import android.util.Log
 import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.*
 import com.MaxEle.maximarius.nir_navigation.util.BillingClientSetup
+import com.MaxEle.maximarius.nir_navigation.util.LanguageChangeProcessor
 import com.MaxEle.maximarius.nir_navigation.util.SharedPreferencesProcessor
 import com.android.billingclient.api.*
 import com.google.android.gms.ads.AdRequest
 import java.util.*
 
 class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
-    private var instructionLayout: LinearLayout? = null
-    private var instructionLayoutText: RelativeLayout? = null
-    private var instructionText: TextView? = null
-    private var instructionImage: ImageView? = null
     private var obNo = -1
     private var isFirstEnterForInitialization = false
-    private var isFirstEnterForInstructions = true
     private var switchLang: SwitchCompat? = null
     private var switchTheme: SwitchCompat? = null
     private var flagMenuTaskOpen = false
@@ -39,11 +36,8 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
     private var buttonTasksMenu: Button? = null
     private var buttonEntryMenu: Button? = null
     private var isThemeLight = false
-    private var usersLevel = 0
-    private var purchasePremiumAccount = false
     private var purchaseAdsOff = false
     var billingClient: BillingClient? = null
-    private var myLocale: Locale? = null
     private var mAdView: AdView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -67,19 +61,20 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
             switchTheme?.setTextColor(getColor(R.color.textsimple1))
         }
 
-        isFirstEnterForInitialization = mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_FIRSTENTER, true)
-        purchaseAdsOff = mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_ADS_DISABLE, false)
-        isFirstEnterForInstructions = mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_FIRSTENTER3, true)
+        isFirstEnterForInitialization =
+            mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_FIRSTENTER, true)
+        purchaseAdsOff =
+            mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_ADS_DISABLE, false)
 
-        instructionLayout = findViewById(R.id.ObychLayout)
-        if (isFirstEnterForInstructions) {
+        if (mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_FIRSTENTER3, true)) {
             obNo = -1
             instructionsProcessor()
         }
 
         //поставить переключатель темы в нужное положение
         switchTheme?.isChecked = !isThemeLight
-        loadLocale()
+        val langChangeProc = LanguageChangeProcessor(this, this,  packageName)
+        langChangeProc.loadLocale()
         mAdView = findViewById(R.id.banner_ad)
 
         if (mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_ADS_DISABLE, false)) {
@@ -98,7 +93,7 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
                 lang = "ru"
                 mDataFiles.setBoolean(SharedPreferencesProcessor.DATA_FILE_LANGUAGE_RUS, true)
             }
-            changeLang(lang)
+            langChangeProc.changeLang(lang)
         }
 
         switchTheme?.setOnCheckedChangeListener { _: CompoundButton?, isChecked: Boolean ->
@@ -185,15 +180,24 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
             }
         }
 
-        val mapOfButtonToClassesKeys = mapOf("buttonCalc" to CalculActivity::class.java, "buttonConstruct" to ConstructActivity::class.java,
-            "buttonTest" to TestActivity::class.java, "buttonTraining" to TrainingActivity::class.java,
-            "buttonInstructions" to InstructActivity::class.java, "button_EH" to TestEntryActivity::class.java,
-            "button_EH_task" to TestEntryActivityTask::class.java, "buttonLZPTest" to TestLZPActivity::class.java,
-            "buttonWind" to WindActivity::class.java, "buttonTimeCalc" to TimeCalcActivity::class.java,
-            "buttonStat" to StatActivity::class.java, "buttonShop" to ShopActivity::class.java,
-            "buttonNL" to NLActivity::class.java)
+        val mapOfButtonToClassesKeys = mapOf(
+            "buttonCalc" to CalculActivity::class.java,
+            "buttonConstruct" to ConstructActivity::class.java,
+            "buttonTest" to TestActivity::class.java,
+            "buttonTraining" to TrainingActivity::class.java,
+            "buttonInstructions" to InstructActivity::class.java,
+            "button_EH" to TestEntryActivity::class.java,
+            "button_EH_task" to TestEntryActivityTask::class.java,
+            "buttonLZPTest" to TestLZPActivity::class.java,
+            "buttonWind" to WindActivity::class.java,
+            "buttonTimeCalc" to TimeCalcActivity::class.java,
+            "buttonStat" to StatActivity::class.java,
+            "buttonShop" to ShopActivity::class.java,
+            "buttonNL" to NLActivity::class.java
+        )
         for ((buttonId, classToGo) in mapOfButtonToClassesKeys) {
-            val buttonToListen = findViewById<Button>(resources.getIdentifier(buttonId, "id", packageName))
+            val buttonToListen =
+                findViewById<Button>(resources.getIdentifier(buttonId, "id", packageName))
             buttonToListen.setOnClickListener {
                 finish()
                 val intent = Intent(this@MainActivity, classToGo)
@@ -271,6 +275,7 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
             }
         }
 
+        val instructionLayout = findViewById<LinearLayout>(R.id.ObychLayout)
         val buttonSkip = findViewById<Button>(R.id.buttonskip)
         buttonSkip.setOnClickListener {
             obNo = 7
@@ -282,125 +287,94 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
         //-----------------------------------------------------------------------
     }
 
+    private fun nextInstruction(obNo: Int, rotationVal: Float = 0f) {
+        if (obNo > 0) {
+            if (obNo > 1) {
+                val instructionImage = findViewById<ImageView>(
+                    resources.getIdentifier(
+                        "imageView${obNo - 1}",
+                        "id",
+                        packageName
+                    )
+                )
+                instructionImage.visibility = View.INVISIBLE
+            }
+
+            if (obNo < 8) {
+                val instructionImage = findViewById<ImageView>(
+                    resources.getIdentifier(
+                        "imageView$obNo",
+                        "id",
+                        packageName
+                    )
+                )
+                instructionImage?.rotation = rotationVal
+                instructionImage?.visibility = View.VISIBLE
+            }
+        }
+
+        val instructionText: TextView = findViewById(R.id.ObychText)
+        instructionText.text = resources.getString(
+            resources.getIdentifier(
+                "@string/Ob$obNo",
+                "id",
+                packageName
+            )
+        )
+    }
     private fun instructionsProcessor() {
+        val instructionLayout = findViewById<LinearLayout>(R.id.ObychLayout)
         obNo++
         when (obNo) {
             0 -> {
-                instructionImage = findViewById(R.id.imageView1)
-                instructionLayout?.visibility = View.VISIBLE
-                instructionLayoutText = findViewById(R.id.ObychLayoutText)
+                instructionLayout.visibility = View.VISIBLE
+                val instructionLayoutText = findViewById<RelativeLayout>(R.id.ObychLayoutText)
                 instructionLayoutText?.background = ResourcesCompat.getDrawable(
                     resources,
                     R.drawable.obych,
                     null
                 )
-                instructionText = findViewById(R.id.ObychText)
-                instructionText?.text = resources.getString(R.string.Ob0)
+                nextInstruction(obNo)
             }
             1 -> {
-                instructionImage!!.visibility = View.VISIBLE
-
-                instructionText!!.text = resources.getString(
-                    resources.getIdentifier(
-                        "@string/Ob$obNo",
-                        "id",
-                        packageName
-                    )
-                )
+                nextInstruction(obNo)
             }
             2 -> {
-                instructionImage!!.visibility = View.INVISIBLE
-                instructionImage = findViewById(R.id.imageView2)
-                instructionImage?.rotation = 180f
-                instructionImage?.visibility = View.VISIBLE
-
-                instructionText!!.text = resources.getString(
-                    resources.getIdentifier(
-                        "@string/Ob$obNo",
-                        "id",
-                        packageName
-                    )
-                )
+                nextInstruction(obNo, 180f)
             }
             3 -> {
-                instructionImage!!.visibility = View.INVISIBLE
                 buttonTasksMenu?.performClick()
-                instructionImage = findViewById(R.id.imageView3)
-                instructionImage?.rotation = 180f
-                instructionImage?.visibility = View.VISIBLE
-
-                instructionText!!.text = resources.getString(
-                    resources.getIdentifier(
-                        "@string/Ob$obNo",
-                        "id",
-                        packageName
-                    )
-                )
+                nextInstruction(obNo, 180f)
             }
             4 -> {
-                instructionImage!!.visibility = View.INVISIBLE
-                instructionImage = findViewById(R.id.imageView4)
                 buttonEntryMenu?.performClick()
-                instructionImage?.rotation = 180f
-                instructionImage?.visibility = View.VISIBLE
-
-                instructionText!!.text = resources.getString(
-                    resources.getIdentifier(
-                        "@string/Ob$obNo",
-                        "id",
-                        packageName
-                    )
-                )
+                nextInstruction(obNo, 180f)
             }
             5 -> {
-                instructionImage!!.visibility = View.INVISIBLE
-                instructionImage = findViewById(R.id.imageView5)
                 buttonEntryMenu?.performClick()
-                instructionImage?.rotation = 180f
-                instructionImage?.visibility = View.VISIBLE
                 instructionLayout?.gravity = Gravity.CENTER or Gravity.TOP
-
-                instructionText!!.text = resources.getString(
-                    resources.getIdentifier(
-                        "@string/Ob$obNo",
-                        "id",
-                        packageName
-                    )
-                )
+                nextInstruction(obNo, 180f)
             }
             6 -> {
-                instructionImage!!.visibility = View.INVISIBLE
-                instructionImage = findViewById(R.id.imageView6)
-                instructionImage?.rotation = 180f
-                instructionImage?.visibility = View.VISIBLE
-
-                instructionText!!.text = resources.getString(
-                    resources.getIdentifier(
-                        "@string/Ob$obNo",
-                        "id",
-                        packageName
-                    )
-                )
+                nextInstruction(obNo, 180f)
             }
             7 -> {
-                instructionImage!!.visibility = View.INVISIBLE
-                instructionImage = findViewById(R.id.imageView7)
-                instructionImage?.rotation = 90f
-                instructionImage?.visibility = View.VISIBLE
-
-                instructionText!!.text = resources.getString(
-                    resources.getIdentifier(
-                        "@string/Ob$obNo",
-                        "id",
-                        packageName
-                    )
-                )
+                nextInstruction(obNo, 90f)
             }
             8 -> {
-                instructionImage!!.visibility = View.INVISIBLE
-                isFirstEnterForInstructions = false
                 val mDataFiles = SharedPreferencesProcessor(this)
                 mDataFiles.setBoolean(SharedPreferencesProcessor.DATA_FILE_FIRSTENTER3, false)
+
+                for (i in 1..7) {
+                    val instructionImage = findViewById<ImageView>(
+                        resources.getIdentifier(
+                            "imageView${i}",
+                            "id",
+                            packageName
+                        )
+                    )
+                    instructionImage.visibility = View.INVISIBLE
+                }
 
                 if (isFirstEnterForInitialization) {
                     mDataFiles.checkDataFiles()
@@ -409,9 +383,11 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
                 }
                 val buttonSkip = findViewById<Button>(R.id.buttonskip)
                 buttonSkip.visibility = View.INVISIBLE
+
+                nextInstruction(obNo)
             }
             else -> {
-                instructionLayout?.visibility = View.INVISIBLE
+                instructionLayout.visibility = View.INVISIBLE
             }
         }
     }
@@ -420,92 +396,131 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
         val window = this.window
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-        window.statusBarColor = getColor(resources.getIdentifier("colorPrimary$emptyForLightOneForDarkTheme", "color", packageName))
+        window.statusBarColor = getColor(
+            resources.getIdentifier(
+                "colorPrimary$emptyForLightOneForDarkTheme",
+                "color",
+                packageName
+            )
+        )
         val actionBar = supportActionBar
-        actionBar?.setBackgroundDrawable(ColorDrawable(getColor(resources.getIdentifier("colorPrimary$emptyForLightOneForDarkTheme", "color", packageName))))
+        actionBar?.setBackgroundDrawable(
+            ColorDrawable(
+                getColor(
+                    resources.getIdentifier(
+                        "colorPrimary$emptyForLightOneForDarkTheme",
+                        "color",
+                        packageName
+                    )
+                )
+            )
+        )
         val background = findViewById<RelativeLayout>(R.id.BackAll)
-        background.setBackgroundColor(getColor(resources.getIdentifier("background$emptyForLightOneForDarkTheme", "color", packageName)))
+        background.setBackgroundColor(
+            getColor(
+                resources.getIdentifier(
+                    "background$emptyForLightOneForDarkTheme",
+                    "color",
+                    packageName
+                )
+            )
+        )
         var backgroundSubMenu = findViewById<LinearLayout>(R.id.undermenu_EH)
-        backgroundSubMenu.setBackgroundColor(getColor(resources.getIdentifier("backgroundbuttonpressed$emptyForLightOneForDarkTheme", "color", packageName)))
+        backgroundSubMenu.setBackgroundColor(
+            getColor(
+                resources.getIdentifier(
+                    "backgroundbuttonpressed$emptyForLightOneForDarkTheme",
+                    "color",
+                    packageName
+                )
+            )
+        )
         backgroundSubMenu = findViewById(R.id.undermenu_task)
-        backgroundSubMenu.setBackgroundColor(getColor(resources.getIdentifier("backgroundbuttonpressed$emptyForLightOneForDarkTheme", "color", packageName)))
-        switchTheme!!.setTextColor(getColor(resources.getIdentifier("textsimple$emptyForLightOneForDarkTheme", "color", packageName)))
-        switchLang!!.setTextColor(getColor(resources.getIdentifier("textsimple$emptyForLightOneForDarkTheme", "color", packageName)))
+        backgroundSubMenu.setBackgroundColor(
+            getColor(
+                resources.getIdentifier(
+                    "backgroundbuttonpressed$emptyForLightOneForDarkTheme",
+                    "color",
+                    packageName
+                )
+            )
+        )
+        switchTheme!!.setTextColor(
+            getColor(
+                resources.getIdentifier(
+                    "textsimple$emptyForLightOneForDarkTheme",
+                    "color",
+                    packageName
+                )
+            )
+        )
+        switchLang!!.setTextColor(
+            getColor(
+                resources.getIdentifier(
+                    "textsimple$emptyForLightOneForDarkTheme",
+                    "color",
+                    packageName
+                )
+            )
+        )
 
 
         for ((buttonId) in mapButtonsToTextKeys) {
-            val buttonForThemeUpdate = findViewById<Button>(resources.getIdentifier(buttonId, "id", packageName))
+            val buttonForThemeUpdate =
+                findViewById<Button>(resources.getIdentifier(buttonId, "id", packageName))
             buttonForThemeUpdate.background.setColorFilter(
-                getColor(resources.getIdentifier("backgroundbutton$emptyForLightOneForDarkTheme", "color", packageName)),
+                getColor(
+                    resources.getIdentifier(
+                        "backgroundbutton$emptyForLightOneForDarkTheme",
+                        "color",
+                        packageName
+                    )
+                ),
                 PorterDuff.Mode.MULTIPLY
             )
-            buttonForThemeUpdate.setTextColor(getColor(resources.getIdentifier("textsimple$emptyForLightOneForDarkTheme", "color", packageName)))
+            buttonForThemeUpdate.setTextColor(
+                getColor(
+                    resources.getIdentifier(
+                        "textsimple$emptyForLightOneForDarkTheme",
+                        "color",
+                        packageName
+                    )
+                )
+            )
 
             if (buttonId == "buttonTasks" && flagMenuTaskOpen || buttonId == "buttonEntryTest" && flagMenuEntryHoldingOpen) {
                 buttonForThemeUpdate.background.setColorFilter(
-                    getColor(resources.getIdentifier("backgroundbuttonpressed$emptyForLightOneForDarkTheme", "color", packageName)),
+                    getColor(
+                        resources.getIdentifier(
+                            "backgroundbuttonpressed$emptyForLightOneForDarkTheme",
+                            "color",
+                            packageName
+                        )
+                    ),
                     PorterDuff.Mode.MULTIPLY
                 )
             }
         }
     }
 
-    private fun changeLang(lang: String) {
-        if (lang.equals("", ignoreCase = true)) return
-        myLocale = Locale(lang)
-        saveLocale(lang)
-        Locale.setDefault(myLocale)
-        val config = Configuration()
-        config.locale = myLocale
-        baseContext.resources.updateConfiguration(config, baseContext.resources.displayMetrics)
-        updateTexts()
-    }
-
-    private fun saveLocale(lang: String?) {
-        val langPref = "Language"
-        val prefs = getSharedPreferences("CommonPrefs", MODE_PRIVATE)
-        val editor = prefs.edit()
-        editor.putString(langPref, lang)
-        editor.apply()
-    }
-
-    private fun loadLocale() {
-        val langPref = "Language"
-        val prefs = getSharedPreferences("CommonPrefs", MODE_PRIVATE)
-        val language = prefs.getString(langPref, "")
-        val button1 = findViewById<Button>(R.id.buttonShop)
-        val mDataFiles = SharedPreferencesProcessor(this)
-        if (language != null) changeLang(language) else changeLang("ru")
-        if (button1.text == "Shop") {
-            switchLang!!.isChecked = true
-            mDataFiles.setBoolean(SharedPreferencesProcessor.DATA_FILE_LANGUAGE_RUS, false)
-        }
-        if (button1.text == "Магазин") {
-            switchLang!!.isChecked = false
-            mDataFiles.setBoolean(SharedPreferencesProcessor.DATA_FILE_LANGUAGE_RUS, true)
-        }
-    }
-
-    private val mapButtonsToTextKeys = mapOf("buttonShop" to "shop", "buttonCalc" to "calcul",
-        "buttonConstruct" to "constructor", "buttonTest" to "test", "buttonTraining" to "training",
-        "buttonStat" to "statistics", "buttonInstructions" to "instructions", "buttonLZPTest" to "testLZP",
-        "buttonEntryTest" to "EntryTest", "buttonNL" to "NL", "buttonExit" to "exit",
-        "buttonTasks" to "tasks", "buttonWind" to "wind", "button_EH" to "EH",
-        "buttonTimeCalc" to "TimeCalcMen", "button_EH_task" to "EH_task")
-    private fun updateTexts() {
-        var switcher = findViewById<SwitchCompat>(R.id.switchLang)
-        switcher.setText(R.string.switchLang)
-        switcher = findViewById(R.id.switchTheme)
-        if (switcher.isChecked) {
-            switcher.setText(R.string.switchThemeDark)
-        } else {
-            switcher.setText(R.string.switchThemeLight)
-        }
-        for ((buttonId, stringId) in mapButtonsToTextKeys) {
-            val buttonForUpdateText = findViewById<Button>(resources.getIdentifier(buttonId, "id", packageName))
-            buttonForUpdateText.setText(resources.getIdentifier(stringId, "string", packageName))
-        }
-    }
+    private val mapButtonsToTextKeys = mapOf(
+        "buttonShop" to "shop",
+        "buttonCalc" to "calcul",
+        "buttonConstruct" to "constructor",
+        "buttonTest" to "test",
+        "buttonTraining" to "training",
+        "buttonStat" to "statistics",
+        "buttonInstructions" to "instructions",
+        "buttonLZPTest" to "testLZP",
+        "buttonEntryTest" to "EntryTest",
+        "buttonNL" to "NL",
+        "buttonExit" to "exit",
+        "buttonTasks" to "tasks",
+        "buttonWind" to "wind",
+        "button_EH" to "EH",
+        "buttonTimeCalc" to "TimeCalcMen",
+        "button_EH_task" to "EH_task"
+    )
 
     public override fun onDestroy() {
         mAdView!!.destroy()
@@ -541,20 +556,24 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
             {
                 purchaseAdsOff = true
                 mAdView!!.visibility = View.INVISIBLE
-                mDataFiles.setBoolean(SharedPreferencesProcessor.DATA_FILE_ADS_DISABLE, purchaseAdsOff)
+                mDataFiles.setBoolean(
+                    SharedPreferencesProcessor.DATA_FILE_ADS_DISABLE,
+                    purchaseAdsOff
+                )
             }
             if (purchase.sku == "prem_pass") {
-                purchasePremiumAccount = true
                 mDataFiles.setBoolean(SharedPreferencesProcessor.DATA_FILE_PREMIUM, true)
             }
             if (purchase.sku == "perm_max_lvl") {
-                usersLevel = 7
-                mDataFiles.setInt(SharedPreferencesProcessor.DATA_FILE_LEVEL, usersLevel)
+                mDataFiles.setInt(SharedPreferencesProcessor.DATA_FILE_LEVEL, 7)
             }
             if (purchase.sku == "na_pecheni") {
                 purchaseAdsOff = true
                 mAdView!!.visibility = View.INVISIBLE
-                mDataFiles.setBoolean(SharedPreferencesProcessor.DATA_FILE_ADS_DISABLE, purchaseAdsOff)
+                mDataFiles.setBoolean(
+                    SharedPreferencesProcessor.DATA_FILE_ADS_DISABLE,
+                    purchaseAdsOff
+                )
             }
         }
     }
