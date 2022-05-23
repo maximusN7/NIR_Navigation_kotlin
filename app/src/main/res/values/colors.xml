@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#303F9F</color>
+    <color name="correctansw">#00FF00</color>
+    <color name="wrongansw">#FF0000</color>
+    <color name="textsimple">#000000</color>
+    <color name="standartansw">#f0ffff</color>
+    <color name="background">#f0f8ff</color>
+    <color name="backgroundview">#f0ffff</color>
+    <color name="backgroundbutton">#e2e3e7</color>
+    <color name="backgroundbuttonpressed">#A2A2A5</color>
+    <color name="edithint">#808080</color>
+
+    <color name="colorPrimary1">#2c2d2f</color>
+    <color name="colorPrimaryDark1">#191919</color>
+    <color name="colorAccent1">#5e2025</color>
+    <color name="correctansw1">#00FF00</color>
+    <color name="wrongansw1">#FF0000</color>
+    <color name="textsimple1">#e2e3e7</color>
+    <color name="standartansw1">#2c2d2f</color>
+    <color name="background1">#191919</color>
+    <color name="backgroundview1">#2c2d2f</color>
+    <color name="backgroundbutton1">#2c2d2f</color>
+    <color name="backgroundbuttonpressed1">#4F5255</color>
+    <color name="edithint1">#999999</color>
+</resources>

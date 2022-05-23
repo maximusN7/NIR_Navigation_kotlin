@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewMain"
+    android:layout_width="wrap_content"
+    android:layout_height="360dp"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="-25dp"
+            android:layout_marginTop="25dp"
+            android:rotation="90"
+            android:text="@string/back"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewSwitch"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-30dp"
+            android:layout_marginTop="75dp"
+            android:text="@string/TextswitchInstNLno"
+            android:textSize="14sp"
+            android:rotation="90"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchInstNL"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-53dp"
+            android:layout_marginTop="105dp"
+            android:text="@string/switchInstNLno"
+            android:rotation="90"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrolldia"
+        android:layout_width="360dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="-65dp"
+        android:padding="5dp"
+        android:rotation="90">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewDescr1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageViewIm1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewDescr2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageViewIm2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewDescr3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageViewIm3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewDescr4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageViewIm4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewDescr5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageViewIm5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewDescr6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageViewIm6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewDescr7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageViewIm7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewDescr8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageViewIm8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewDescr9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageViewIm9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewDescr10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageViewIm10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,903 @@
+<resources>
+    <string name="app_name">Air navigation tasks</string>
+    <string name="calcul">Calculator</string>
+    <string name="test">Test</string>
+    <string name="tasks">Tasks</string>
+    <string name="wind">Wind Calculation</string>
+    <string name="training">Training</string>
+    <string name="instructions">Instructions</string>
+    <string name="statistics">Statistics</string>
+    <string name="shop">Shop</string>
+    <string name="shoplist">Shopping list</string>
+    <string name="calculate">Calculate</string>
+    <string name="constructor">Constructor</string>
+    <string name="calculation">Calculated values: </string>
+    <string name="calculation2">Solving Instructions are in the Instructions section.</string>
+    <string name="type">Type in</string>
+    <string name="exit">Exit</string>
+    <string name="NL">NL-10</string>
+    <string name="Save">Save</string>
+    <string name="Delete">Delete</string>
+    <string name="Start">Start</string>
+    <string name="EH">Visualization</string>
+    <string name="EH_task">Tasks</string>
+    <string name="DeleteTaskToast1">Task </string>
+    <string name="DeleteTaskToast2"> is successfully deleted</string>
+    <string name="CreateTaskList">Create task</string>
+    <string name="EntryTest">Entering the Hold</string>
+    <string name="leftfortask">left</string>
+    <string name="rightfortask">right</string>
+    <string name="condtfortask1">MC of landing = </string>
+    <string name="condtfortask2">MC of flight = </string>
+    <string name="condtfortask3">Circle </string>
+    <string name="condtfortask4">__________________\nWhat type of entering?</string>
+    <string name="toastNLFixed">The screen is locked in portrait mode</string>
+    <string name="toastNLUnspeci">The screen is back in auto-rotate mode</string>
+    <string name="NLflip">Flip</string>
+    <string name="Visir">Visor</string>
+    <string name="Orientation">Screen orientation</string>
+    <string name="InstrNL"> ? </string>
+    <string name="Orientationeng">Screen orientation</string>
+    <string name="NLflipeng">Flip</string>
+    <string name="Visireng">Visor</string>
+    <string name="testLZP">Test ITL</string>
+    <string name="testLZPleft">◄</string>
+    <string name="testLZPright">►</string>
+    <string name="testLZPon">▼</string>
+    <string name="testLZPnext">Next</string>
+    <string name="testLZPstart">Start</string>
+    <string name="back">Back</string>
+    <string name="backeng">Back</string>
+    <string name="Lkrug">L</string>
+    <string name="Rkrug">R</string>
+    <string name="Instkrug">Instr.</string>
+    <string name="Testkrug">Test</string>
+    <string name="Roundkrug">Round</string>
+    <string name="Ans1krug">Direct</string>
+    <string name="Ans2krug">Teardrop</string>
+    <string name="Ans3krug">Parallel</string>
+    <string name="obnylbut">Reset Stats</string>
+    <string name="getmaxlvl">Open the maximum level</string>
+    <string name="throughoby">Skip</string>
+    <string name="obcaga">Repeat tutorial</string>
+    <string name="options">Console</string>
+    <string name="generate">Generate task</string>
+    <string name="condition">Condition of the task</string>
+    <string name="accept">Accept answer</string>
+    <string name="getPrem">Get the Calculator</string>
+    <string name="typeanswer">Type answer</string>
+    <string name="corranswer">-answer</string>
+    <string name="typeizm_kmch">km/h</string>
+    <string name="typeizm_mc">mps</string>
+    <string name="typeizm_fytmin">ft/min</string>
+    <string name="typeizm_km">km</string>
+    <string name="typeizm_m">m</string>
+    <string name="typeizm_mmile">n.miles</string>
+    <string name="typeizm_s">sec</string>
+    <string name="typeizm_min">min</string>
+    <string name="typeizm_grad">°</string>
+    <string name="typeizm_mmrtst">mmHg.</string>
+    <string name="typeizm_gpa">hPa</string>
+    <string name="typeizm_fyt">ft</string>
+    <string name="typeizm_yzl">kt</string>
+    <string name="corranswermessage"> -answer</string>
+    <string name="scorecorr">Correct answers:</string>
+    <string name="scorewrong">Wrong answers: </string>
+    <string name="scorelvl">Your level: </string>
+    <string name="scormenunow">Statistics for last session</string>
+    <string name="scormenuall">Statistics for all period</string>
+    <string name="scormenuallbig">Full statistics</string>
+    <string name="scormenuzad">Statistics for task</string>
+    <string name="scordopspos">Chance of DopSessia</string>
+    <string name="scorzadcor">Correct</string>
+    <string name="scorzadwro">Incorrect</string>
+    <string name="scorzad">Answer</string>
+    <string name="scorzad1">First step</string>
+    <string name="scorzad2">Second step</string>
+    <string name="scorzad3">Third step</string>
+    <string name="toastNotAvail">Your level is not enough for this</string>
+    <string name="toastNotAvailPrem">For access to all tasks, get premium status.</string>
+    <string name="toastWrongtypeing">Imputed data is incorrect</string>
+    <string name="toastPrem">Calculator is activated</string>
+    <string name="toastPremdenn">Wrong password</string>
+    <string name="toastPremempt">Nothing entered</string>
+    <string name="toastPrembuy">Thank you for purchasing access to the calculator</string>
+    <string name="toastMlvlbuy">Thank you for purchasing access to the maximum level</string>
+    <string name="toastPechebuy">Thank you for purchasing ads disabling</string>
+    <string name="toastDonation">Thank you for purchasing me on cookies. You are so sweet :*</string>
+    <string name="toastosmtgwentwrong">Something went wrong. Try again later</string>
+    <string name="toastconsumeOk">Purchase is successfully completed </string>
+    <string name="fornextlvl">For next level: </string>
+    <string name="toastbiglvl">You have already moved to the next level. The tasks of this level can be solved in training.</string>
+    <string name="toastlvlup">Congratulations! The level is raised. You have access to new assignments.</string>
+    <string name="EntPas">Console</string>
+    <string name="ok">OK</string>
+    <string name="About1">Your personal key: </string>
+    <string name="About2">\n\nFor all your questions, you can contact the developer at this address: maximarius78@gmail.com.\nSpecify your personal key in your message.</string>
+    <string name="zadopisdop">Fill in if you wish</string>
+    <string name="messFirstEntCalc">A trial version of the calculator is available to you (the first three types of tasks). To access all types of tasks, purchase a premium version.</string>
+    <string name="techwork">Technical work is carried out </string>
+    <string name="yourmaxlvl">Your lvl is 7 </string>
+    <string name="youarebest">You are the best, mate :3</string>
+    <string name="entdiap">Type range</string>
+    <string name="entname">Type task name</string>
+    <string name="toastnoname">You did not enter a task name</string>
+    <string name="toastnodiap">You did not enter a range</string>
+    <string name="toastnotask">You did not make a task</string>
+    <string name="toastyestask1">Congrats, the </string>
+    <string name="toastyestask2"> task is created</string>
+    <string name="toastNotAvailMyTask">You need a maximum level - 7, for training in your tasks</string>
+    <string name="switchLang">Lang: Eng</string>
+    <string name="switchThemeLight">Light</string>
+    <string name="switchThemeDark">Dark</string>
+    <string name="switchInstNLyes">Marked</string>
+    <string name="switchInstNLno">Standard</string>
+    <string name="switchInstNLyeseng">Marked</string>
+    <string name="switchInstNLnoeng">Standard</string>
+    <string name="TextswitchInstNLno">NL mode is: </string>
+    <string name="TextswitchInstNLnoeng">NL mode is: </string>
+    <string name="ZeroForStart">0</string>
+    <string name="FiveForStart">5</string>
+    <string name="TwelveForStart">12</string>
+    <string name="HandrForLim">100</string>
+    <string name="ObratForStart">180</string>
+    <string name="Divider">°/</string>
+    <string name="TimeCalcMen">Time Calculator</string>
+
+    <string name="TimeCalc0">0</string>
+    <string name="TimeCalc1">1</string>
+    <string name="TimeCalc2">2</string>
+    <string name="TimeCalc3">3</string>
+    <string name="TimeCalc4">4</string>
+    <string name="TimeCalc5">5</string>
+    <string name="TimeCalc6">6</string>
+    <string name="TimeCalc7">7</string>
+    <string name="TimeCalc8">8</string>
+    <string name="TimeCalc9">9</string>
+    <string name="TimeCalcplus">+</string>
+    <string name="TimeCalcminus">-</string>
+    <string name="TimeCalcequal">=</string>
+    <string name="TimeCalcclear">C</string>
+    <string name="TimeCalc00_00">00:00</string>
+
+    <string name="WindRunwayAct">Active Runway</string>
+    <string name="WindRunwayOpp">Opposite Runway</string>
+    <string name="WindTailwind">Tailwind</string>
+    <string name="WindHeadwind">Headwind</string>
+    <string name="WindXwind">X-Wind</string>
+    <string name="WindRight">X-Wind from Right</string>
+    <string name="WindLeft">X-Wind from Left</string>
+    <string name="WindSettings">Settings</string>
+    <string name="WindSetRunway">Save runway direction</string>
+    <string name="WindLimX">X-wind limitation</string>
+    <string name="WindLimT">Tailwind limitation</string>
+    <string name="WindLimH">Headwind limitation</string>
+
+
+    <string name="testLZP_ZMPY">SMTA=</string>
+    <string name="testLZP_MK">MC=</string>
+    <string name="testLZP_KYR">CAR=</string>
+    <string name="testLZP_corr">Correct</string>
+    <string name="testLZP_wron">Incorrect\n</string>
+    <string name="testLZP_answL">\nyour answer: left\n</string>
+    <string name="testLZP_answR">\nyour answer: right\n</string>
+    <string name="testLZP_answO">\nyour answer: on CL\n</string>
+    <string name="testLZP_sec"> seconds</string>
+    <string name="testLZP_zad">Task: </string>
+    <string name="testLZP_of20">/20</string>
+    <string name="testLZP_totalcorr">Correct answers: </string>
+    <string name="testLZP_perccorr">%\nTotal time: </string>
+
+    <string name="action_small">Small size</string>
+    <string name="action_big">Big size</string>
+
+    <string name="premium_titel">Shop</string>
+    <string name="premium_pass">Access to the calculator</string>
+    <string name="permanent_max_lvl">Maximum level at test</string>
+    <string name="na_pecheniki">Ads disabling</string>
+    <string name="donations">Cookies for the developer :3</string>
+    <string name="premium_cancel">Cancel</string>
+    <string name="premium_cont">Confirm</string>
+
+
+    <string name="statdoprasYS">Calculate DA</string>
+    <string name="statdoprasYV">Calculate WA</string>
+    <string name="statdoprasUekv">Calculate Uekv</string>
+    <string name="statdoprasBen">Calculate ßn</string>
+    <string name="statdoprasHbar">Calculate Hbar</string>
+    <string name="statdoprasdH">Calculate ▲H</string>
+    <string name="statdoprastpr">Calculate t</string>
+    <string name="statdoprasdH1">Calculate ▲H1</string>
+    <string name="statdoprasdH2">Calculate ▲H2</string>
+    <string name="statdoprasSnach">Calculate S</string>
+    <string name="statdoprasdHsht">Calculate ▲H`</string>
+    <string name="statdoprasSrasp">Calculate Shad</string>
+    <string name="statdoprasdVsh">Calculate ▲Vcompr</string>
+    <string name="statdoprasVprisp">Calculate Vinst.corr.</string>
+    <string name="statdoprasVprispKYS">Calculate Vinst.CSI.corr</string>
+    <string name="statdoprasDP">Calculate AA</string>
+    <string name="statdoprasLBY">Calculate LLD</string>
+    <string name="statdoprasBY">Calculate LD</string>
+
+    <string name="answdoprasYS">Enter DA</string>
+    <string name="answdoprasYV">Enter WA</string>
+    <string name="answdoprasUekv">Enter Uequi</string>
+    <string name="answdoprasBen">Enter ßn</string>
+    <string name="answdoprasHbar">Enter Hbar</string>
+    <string name="answdoprasdH">Enter ▲H</string>
+    <string name="answdoprastpr">Enter t</string>
+    <string name="answdoprasdH1">Enter ▲H1</string>
+    <string name="answdoprasdH2">Enter ▲H2</string>
+    <string name="answdoprasSnach">Enter S</string>
+    <string name="answdoprasdHsht">Enter ▲H`</string>
+    <string name="answdoprasSrasp">Enter Shad</string>
+    <string name="answdoprasdVsh">Enter ▲Vcompr</string>
+    <string name="answdoprasVprisp">Enter Vinst.corr</string>
+    <string name="answdoprasVprispKYS">Enter Vinst.CSI.corr</string>
+    <string name="answdoprasDP">Enter AA</string>
+    <string name="answdoprasLBY">Enter LLD</string>
+    <string name="answdoprasBY">Enter LD</string>
+    <string name="answdoprastp">Enter tpas</string>
+    <string name="answdoprasW">Enter W</string>
+    <string name="answdoprasMKvih">Enter MCexit</string>
+    <string name="answdoprasMKsl">Enter MKsl</string>
+
+    <string name="recomen0">Do not rush with the test, once again go to the instructions section, learn and practice in the training session.</string>
+    <string name="recomen1">An error occurred during the last calculation. Repeat the solution in the instructions section.</string>
+    <string name="recomen2">Most likely, the answer is incorrect because of an error during the solution, and not in the last calculation.</string>
+    <string name="recomenYS">Repeat the way of finding the DA in the instructions section. Maybe you forgot to take into mind that the DA sign must correspond to the WA sign (if the HC is greater than 180, then subtract 360).</string>
+    <string name="recomenYV">If you have a mistake at this point, then learn some arithmetic. You must subtract the SMTA from the ßn. Usually WA is calculated in the range [-180; 180]</string>
+    <string name="recomenUekv">Errors at this point can only be due to inattention. Simple arithmetic. It is necessary to remember that it you need to subtract V from W, and not vice versa.</string>
+    <string name="recomenYV2">Repeat in the instructions section to find the WA. Perhaps you simply forgot that the WA sign must correspond to the DA sign.</string>
+    <string name="recomenBen">It is important not to get confused and remember that when W is greater than V and W is less than V, calculations are performed differently.</string>
+    <string name="recomenBen1">Errors at this point can only be due to inattention. Simple arithmetic and understanding that ßm lies within [0.360) degrees.</string>
+    <string name="recomenHbar">Check whether you have calculated Hbar in the correct units. Do not forget to take into mind the sign.</string>
+    <string name="recomendH">Simple arithmetic. Make sure that all signs are taken into account and everything is in the same units of measure.</string>
+    <string name="recomentpr">Check the unit of measure. Refer to the instructions section.</string>
+    <string name="recomendH1">It must be remembered that only H1 from Hfl is subtracted here. Hbar accounting only goes into ▲ H2.</string>
+    <string name="recomendH2">It is important to remember that you do not need to subtract from Hfl, but from H1. Check if the Hbar is calculated correctly. Refer to the instructions section.</string>
+    <string name="recomenSnach">The calculation goes as in the previous tasks. Refer to the instructions.</string>
+    <string name="recomendHsht">It is important to remember that there are two options for calculating, with Hset is greater than Htran.lvl and when Hset is less than Htran.lvl If there are limitations at the aerodrome, then this calculation probably should not be done at all (with Hset greater than H1).</string>
+    <string name="recomenSrasp">It is necessary not to confuse and subtract correctly Sset from S.</string>
+    <string name="recomendVsh">According to the table in the instructions section you need to approximate this value. You can take an integer. It must be remembered that it is not selected by Vtr, but by Vinstr or Vinstr.corr. You also need to remember that ▲ Vcompr is always negative.</string>
+    <string name="recomenVprisp">Arithmetic. Do not forget about the accounting of signs of amendments.</string>
+    <string name="recomenVprisp2">Repeat the calculation method for the ruler in the instructions section.</string>
+    <string name="recomenVprispKYS">Arithmetic. Do not forget about the accounting of signs of amendments.</string>
+    <string name="recomenDP">Arithmetic. Do not forget that the AA lies in the interval [-180; 180].</string>
+    <string name="recomenLBY">Do not forget about the sign of the AA, it depends on the sign of CL.</string>
+    <string name="recomenBY">LD sign corresponds to the AA sign. Not to be confused about what to divide: you need divide S remaining to the S passed.</string>
+
+    <string name="Ob0">Greetings! Now I will make a short tour of the application so that you are not lost. Lets start from top. Touch the screen.</string>
+    <string name="Ob1">In the "store" you can purchase the full version of the application, disable ads and find out the developer’s contacts for communication.</string>
+    <string name="Ob2">In the "NL-10" you can use the virtual NL-10.</string>
+    <string name="Ob3">In the "tasks" section, you can use the calculator of aeronautical tasks, the task designer for training and the training and test of tasks. You can see instructions for solving each task using NL-10 in the instructions section.</string>
+    <string name="Ob4">In the "waiting area" section, you can see the visualization and tasks for entering the waiting area.</string>
+    <string name="Ob5">In the "LZP test" you can practice the ability to determine the position of the aircraft relative to the LZP. Read how to do this in the instructions section, the last paragraph.</string>
+    <string name="Ob6">In the "wind calculation" you can see the lateral and longitudinal components of the wind for your strip.</string>
+    <string name="Ob7">In the "statistics" menu, you record your successes and failures in solving problems in the "test" item.</string>
+    <string name="Ob8">Have fun learning! For all questions and suggestions, please contact here: maximarius78@gmail.com.</string>
+
+    <!--<string name="Ob0">Greetings! Now I will make a short tour of the application so that you are not lost. Lets start from top. Touch the screen.</string>
+    <string name="Ob1">In the “calculator” item you can choose the type of task, enter data and receive an intermediate and final answer to it.</string>
+    <string name="Ob2">So it looks from the inside.</string>
+    <string name="Ob3">Here you can switch between different types of tasks. Below enter the known data and press the button "calculate".</string>
+    <string name="Ob4">In the "test" item you can solve problems and increase your level for access to more complex tasks. Successes and failures in solving problems at this point go to statistics.</string>
+    <string name="Ob5">So it looks from the inside.</string>
+    <string name="Ob6">Here you can switch between different levels. To go to the next level you need to solve all the problems of the previous one.</string>
+    <string name="Ob7">Here you specify how many tasks of each type you need to solve to move to the next level. With the wrong decision, the bar is increased by 2 tasks.</string>
+    <string name="Ob8">In the "training" item, you can practice solving the tasks of the levels available to you without harming the statistics. </string>
+    <string name="Ob9">This is the workout menu.</string>
+    <string name="Ob10">Here you can select the type of task that you want to solve.</string>
+    <string name="Ob11">In the "instructions" section you can read how to solve all types of tasks. Before solving problems, I advise you to look here.</string>
+    <string name="Ob12">This is the menu of instructions.</string>
+    <string name="Ob13">Here you can select the type of the task whose decision instructions you want to see.</string>
+    <string name="Ob14">In the "statistics" menu, you record your successes and failures in solving problems in the "test" item.</string>
+    <string name="Ob15">The last item shows the ratio of incorrectly solved tasks to their total number.</string>
+    <string name="Ob16">In the item Test CLyou can practice in the ability to determine the position of the aircraft relative to the CL. How it is done read in the section of the instruction, the last paragraph.</string>
+    <string name="Ob17">Click the arrows to indicate the direction in which you think the CL is located. The down arrow means finding the aircraft on the CL.</string>
+    <string name="Ob18">Have fun learning! For all questions and suggestions, please contact here: maximarius78@gmail.com.</string>-->
+
+    <string name="CalSkorRad">V</string>
+    <string name="Calkren">x</string>
+    <string name="CalYR">TA</string>
+    <string name="CalVis">H</string>
+    <string name="CalPribSc">Vinstr</string>
+    <string name="CalIstinSc">Vtr</string>
+    <string name="CalPribScKYS">Vinst.CSI</string>
+    <string name="CalPoprav">▲V</string>
+    <string name="CalTnaEsh">t°true</string>
+    <string name="CalTnaTerm">t°inst</string>
+    <string name="CalZMPY">SMTA</string>
+    <string name="CalZIPY">SATA</string>
+    <string name="CalNapVetrMe">ßm</string>
+    <string name="CalSkorVetr">U</string>
+    <string name="CalMagSkl">▲M</string>
+    <string name="CalKomSkl">▲C</string>
+    <string name="CalAziSkl">▲A</string>
+    <string name="CalMysSkl">▲My</string>
+    <string name="CalVarSkl">▲</string>
+    <string name="CalPytSkor">W</string>
+    <string name="CalYS">DA</string>
+    <string name="CalMagKyr">MC</string>
+    <string name="CalIstKyr">IC</string>
+    <string name="CalKomKyr">CC</string>
+    <string name="CalOrtKyr">OC</string>
+    <string name="CalHesh">Hfl</string>
+    <string name="CalHkr">Hcir</string>
+    <string name="CalPaer">Paer</string>
+    <string name="CalVvert">Vv</string>
+    <string name="CalH1">H1</string>
+    <string name="CalVvert1">Vv1</string>
+    <string name="CalVvert2">Vv2</string>
+    <string name="CalW1">W1</string>
+    <string name="CalW2">W2</string>
+    <string name="CalHzad">Hset</string>
+    <string name="CalHper">Htran.lvl</string>
+    <string name="CalSzad">Sset</string>
+    <string name="CalSpr">Strav</string>
+    <string name="CalLBY">LLD</string>
+    <string name="CalKYR">CSI</string>
+    <string name="CalSobsh">Sall</string>
+    <string name="CalYVvih">EAexit</string>
+    <string name="Caltpr">tcompl</string>
+    <string name="CalW">W</string>
+    <string name="CalBY">LD</string>
+    <string name="CalDP">AA</string>
+
+    <string name="CondSkorRad">Air speed V</string>
+    <string name="Condkren">Roll x</string>
+    <string name="CondYR">TA</string>
+    <string name="CondRad">Turn radius R</string>
+    <string name="CondVis">Height H</string>
+    <string name="CondPribSc">Instrumental speed Vin</string>
+    <string name="CondIstinSc">True speed Vtr</string>
+    <string name="CondPribScKYS">Speed by CSI Vin.CSI</string>
+    <string name="CondPoprav">Amendment to the speed indicator ▲V</string>
+    <string name="CondPopravI">Instrumental amendment to the speed indicator ▲Vi</string>
+    <string name="CondPopravA">Aerodynamic amendment to the speed indicator ▲Va</string>
+    <string name="CondTnaEsh">Actual temperature t°ac</string>
+    <string name="CondTnaTerm">Instrumental temperature t°in</string>
+    <string name="CondZMPY">SMTA</string>
+    <string name="CondZIPY">SATA</string>
+    <string name="CondFMPY">TMTA</string>
+    <string name="CondFIPY">TATA</string>
+    <string name="CondNapVetrMe">Meteo. direction of the wind ßm</string>
+    <string name="CondNapVetrNa">Navig. direction of the wind ßn</string>
+    <string name="CondSkorVetr">Wind speed U</string>
+    <string name="CondMagSkl">Magnetic declension ▲M</string>
+    <string name="CondKomSkl">Compass declension ▲K</string>
+    <string name="CondAziSkl">Azimuthal declension ▲A</string>
+    <string name="CondMysSkl">Conditional magnetic declination ▲My</string>
+    <string name="CondVarSkl">Variation ▲</string>
+    <string name="CondPytSkor">Ground speed W</string>
+    <string name="CondYS">DA</string>
+    <string name="CondYV">WA</string>
+    <string name="CondMagKyr">MC</string>
+    <string name="CondIstKyr">TC</string>
+    <string name="CondKomKyr">CC</string>
+    <string name="CondOrtKyr">OC</string>
+    <string name="CondHesh">Flight Level Hfl</string>
+    <string name="CondHkr">Circle height Hch</string>
+    <string name="CondPaer">Aerodrome pressure Paer</string>
+    <string name="CondVvert">Vertical speed Vv</string>
+    <string name="CondH1">Height H1</string>
+    <string name="CondVvert1">Vertical speed Vv1</string>
+    <string name="CondVvert2">Vertical speed Vv2</string>
+    <string name="CondW1">Ground speed W1</string>
+    <string name="CondW2">Ground speed W2</string>
+    <string name="CondHzad">Setted height Hset</string>
+    <string name="CondHper">Transition Height Htrans</string>
+    <string name="CondSzad">Setted destination Sset</string>
+    <string name="CondSpr">Distance traveled Str</string>
+    <string name="CondLBY">LLD</string>
+    <string name="CondKYR">CAR</string>
+    <string name="CondSobsh">All distance Sall</string>
+    <string name="CondYVvih">EAexit</string>
+    <string name="Condtpr">tcompl</string>
+    <string name="CondBY">LD</string>
+    <string name="CondDP">AA</string>
+    <string name="CondNaRS">Flight to RS</string>
+    <string name="CondOtRS">Flight from RS</string>
+
+    <string name="CondTask1">\n__________________ \nFind: turn radius R [km]\nAnswer to specify up to 1 decimal place</string>
+    <string name="CondTask2">\n__________________ \nFind: time of turn t [sec]</string>
+    <string name="CondTask3">\n__________________ \nFind: linear turn anticipation LTA [km]\nAnswer to specify up to 1 decimal place</string>
+    <string name="CondTask4">\n__________________ \nFind: ground speed W [km/h]</string>
+    <string name="CondTask5">\n__________________ \nFind: wind speed U [km/h]</string>
+    <string name="CondTask6">\n__________________ \nFind: meteorological direction of the wind ßm [°]</string>
+    <string name="CondTask7_1">\n__________________ \nFind: magnetic correction ▲M [°]</string>
+    <string name="CondTask7_2i4">\n__________________ \nFind: true course TC [°]</string>
+    <string name="CondTask7_3i6">\n__________________ \nFind: orthodromy course OC [°]</string>
+    <string name="CondTask7_5">\n__________________ \nFind: magnetic course MC [°]</string>
+    <string name="CondTask7_7">\n__________________ \nFind: compass correction ▲C [°]</string>
+    <string name="CondTask7_8">\n__________________ \nFind: variation ▲ [°]</string>
+    <string name="CondTask7_9">\n__________________ \nFind: compass course CC [°]</string>
+    <string name="CondTask8_1i5i6">\n__________________ \nFind: true magnetic track angle TMTA [°]</string>
+    <string name="CondTask8_2i3i4">\n__________________ \nFind: true actual track angle TATA [°]</string>
+    <string name="CondTask9">\n__________________ \nFind: calculated magnetic course MCcal [°]</string>
+    <string name="CondTask10_1">\n__________________ \nFind: frontier of occupy adjusted height S [km]\nAnswer to specify up to 1 decimal place</string>
+    <string name="CondTask10_2">\n__________________ \nFind: frontier of occupy adjusted height S [n.miles]\nAnswer to specify up to 1 decimal place</string>
+    <string name="CondTask11_1">\n__________________ \nFind: frontier of occupy adjusted height S [km]\nAnswer to specify up to 1 decimal place</string>
+    <string name="CondTask11_2">\n__________________ \nFind: frontier of occupy adjusted height S [n.miles]\nAnswer to specify up to 1 decimal place</string>
+    <string name="CondTask12_1i2">\n__________________ \nFind: required vertical speed Vv [mps]</string>
+    <string name="CondTask12_3i4">\n__________________ \nFind: required vertical speed Vv [foot/min]</string>
+    <string name="CondTask13i15">__________________ \nFind: true air speed Vt [km/h]</string>
+    <string name="CondTask14">__________________ \nFind: instrumental air speed Vi [km/h]</string>
+    <string name="CondTask16i17_1">\n__________________ \nFind: MC IWP [°]</string>
+    <string name="CondTask16i17_2">\n__________________ \nFind: MC of output on the CL [°]</string>
+    <string name="CondTask16i17_3">\n__________________ \nFind: MC of flying on the CL [°]</string>
+    <string name="CondTask18">\n__________________ \nFind: course adjustment CA [°]</string>
+
+    <string name="CondMyTask1">\n__________________ \nFind: turn radius R [km]\nAnswer to specify up to 1 decimal place</string>
+    <string name="CondMyTask2">\n__________________ \nFind: time of turn t [sec]</string>
+    <string name="CondMyTask3">\n__________________ \nFind: linear turn anticipation LTA [km]\nAnswer to specify up to 1 decimal place</string>
+    <string name="CondMyTask4">\n__________________ \nFind: meteorological direction of the wind ßm [°]</string>
+    <string name="CondMyTask5">\n__________________ \nFind: navigational direction of the wind ßn [°]</string>
+    <string name="CondMyTask6">\n__________________ \nFind: navigational direction of the wind ßn [°]</string>
+    <string name="CondMyTask7">\n__________________ \nFind: wind angle WA [°]</string>
+    <string name="CondMyTask8">\n__________________ \nFind: drift angle DA [°]</string>
+    <string name="CondMyTask9">\n__________________ \nFind: ground speed W [km/h]</string>
+    <string name="CondMyTask10">\n__________________ \nFind: wind speed U [km/h]</string>
+
+    <string name="CalcAns1">\nAnswer: turn radius R = </string>
+    <string name="CalcAns2_1">" 1)Turn radius R = "</string>
+    <string name="CalcAns2_2">Answer: turn time t = </string>
+    <string name="CalcAns3_2">\nAnswer: linear turn anticipation LTA = </string>
+    <string name="CalcAns4_1">\n1)Navigational direction of the wind ßn=ßm±180°-▲M = </string>
+    <string name="CalcAns4_2">\n2)Wind Angle WA=ßn-SMTA = </string>
+    <string name="CalcAns4_3">\n3)Drift angle DA by NL = </string>
+    <string name="CalcAns4_4">\n4)Ground speed W by NL = </string>
+    <string name="CalcAns4_5">\n5)Flight time t=S/W = </string>
+    <string name="CalcAns4_6">\n6)MCcalc=SMTA-DA = </string>
+    <string name="CalcAns5_1">MC+DA+WAcon = </string>
+    <string name="CalcAns5_2">MC+DA±180°-WAcon = </string>
+    <string name="CalcAns5_3">\n1)Linear dodging LD by NL = </string>
+    <string name="CalcAns5_4">\n2)Drift angle calculated DAcalc=SMTA-MC = </string>
+    <string name="CalcAns5_5">\n3)Actual drift angle DAa=DAcalc+LD = </string>
+    <string name="CalcAns5_6">\n4)Ground speed W=Scoml*60/tcompl = </string>
+    <string name="CalcAns5_7">\n5)Equivalent wind Uequ=W-V = </string>
+    <string name="CalcAns5_8">\n6)Conditional wind angle by NL = </string>
+    <string name="CalcAns5_9">\n7)Wind speed U by NL = </string>
+    <string name="CalcAns5_10">\n8)Navigational direction of the wind ßn = </string>
+    <string name="CalcAns5_11">\nAnswer: meteorological direction of the wind ßm=ßn±180°+▲M = </string>
+    <string name="CalcAns5_3s">\n1)Equivalent wind Uequ=W-V = </string>
+    <string name="CalcAns5_4s">\n2)Conditional wind angle by NL = </string>
+    <string name="CalcAns5_5s">\n3)Wind speed U by NL = </string>
+    <string name="CalcAns5_6s">\n4)Navigational direction of the wind ßn = </string>
+    <string name="CalcAns6_1">\n1)Navigational direction of the wind ßn=ßm±180°-▲M = </string>
+    <string name="CalcAns6_2">\n2)Wind angle WA=ßn-SMTA = </string>
+    <string name="CalcAns6_3">\n3)Drift angle DA by NL = </string>
+    <string name="CalcAns6_4">\n4)Ground speed W by NL = </string>
+    <string name="CalcAns6_5">\n5)Equivalent wind Uequ=W-V = </string>
+    <string name="CalcAns8_1">\n1)Drift angle calculated DAcalc= </string>
+    <string name="CalcAns8_2">\n2)Drift angle DA = </string>
+    <string name="CalcAns9_1">\n1)Navigational direction of the wind ßn = </string>
+    <string name="CalcAns9_2">\n2)SMTA = </string>
+    <string name="CalcAns9_3">3)WA = </string>
+    <string name="CalcAns9_4">4)DA = </string>
+    <string name="CalcAns9_5">Answer: magnetic course calculated MCcalc = </string>
+    <string name="CalcAns10_1">\n1)Hbar = </string>
+    <string name="CalcAns10_2">2)▲H =  </string>
+    <string name="CalcAns10_3">3)Time to complete ▲H = </string>
+    <string name="CalcAns10_4">Answer: Border S = </string>
+    <string name="CalcAns11_1">\n1)Hbar = </string>
+    <string name="CalcAns11_2">2)▲H1 =  </string>
+    <string name="CalcAns11_3">3)Time to complete ▲H1 = </string>
+    <string name="CalcAns11_4">4)Border on the first plot S1 = </string>
+    <string name="CalcAns11_5">5)▲H2 = </string>
+    <string name="CalcAns11_6">6)Time to complete ▲H2 =  </string>
+    <string name="CalcAns11_7">7)Border on the second plot S2 = </string>
+    <string name="CalcAns11_8">Answer: Border S = </string>
+    <string name="CalcAns12_1">\n1)Hbar = </string>
+    <string name="CalcAns12_2">2)▲H =  </string>
+    <string name="CalcAns12_3">3)Time to complete ▲H = </string>
+    <string name="CalcAns12_4">4)Border S = </string>
+    <string name="CalcAns12_5">5)▲Hset = </string>
+    <string name="CalcAns12_6">6)S available =  </string>
+    <string name="CalcAns12_7">7)Time to complete Savai = </string>
+    <string name="CalcAns12_8">Answer: needed vertical speed Vv = </string>
+    <string name="CalcAns12_2_1">2)▲H1 =  </string>
+    <string name="CalcAns12_3_1">3)Time to complete ▲H1 = </string>
+    <string name="CalcAns12_4_1">4)Border S1 = </string>
+    <string name="CalcAns12_5_1">5)▲H2 = </string>
+    <string name="CalcAns12_6_1">6)Time to complete ▲H2 =  </string>
+    <string name="CalcAns12_7_1">7)Border S2 = </string>
+    <string name="CalcAns12_8_1">8)Border S = </string>
+    <string name="CalcAns12_9_1">9)▲Hset = </string>
+    <string name="CalcAns12_10_1">10)Time to complete ▲Hset = </string>
+    <string name="CalcAns12_11_1">11)S2 available =  </string>
+    <string name="CalcAns12_12_1">12)S available = </string>
+    <string name="CalcAns12_13_1">13)Time to complete Savai = </string>
+    <string name="CalcAns12_9_2">9)S available = </string>
+    <string name="CalcAns12_10_2">10)Time to complete Savai = </string>
+    <string name="CalcAns13_1">\n1)Compression coefficient = </string>
+    <string name="CalcAns13_2">2)Corrected instrumental speed =  </string>
+    <string name="CalcAns13_3">3)Approximate true speed = </string>
+    <string name="CalcAns13_4">4)Outdoor temperature at flight level = </string>
+    <string name="CalcAns13_5">Answer: true speed = </string>
+    <string name="CalcAns14_1">\n1)Outdoor temperature at flight level = </string>
+    <string name="CalcAns14_2">\n1)Corrected instrumental speed  =  </string>
+    <string name="CalcAns14_3">2)Corrected instrumental speed  = </string>
+    <string name="CalcAns14_4">3)Compression coefficient = </string>
+    <string name="CalcAns14_5">Answer: Instrumental speed = </string>
+    <string name="CalcAns15_1">\n1)Corrected instrumental speed by CSI= </string>
+    <string name="CalcAns15_2">2)Outdoor temperature at flight level =  </string>
+    <string name="CalcAns15_3">Answer: True speed = </string>
+    <string name="CalcAns16_1">\n1)MRB = </string>
+    <string name="CalcAns16_2">2)AA =  </string>
+    <string name="CalcAns16_3">Scompl = </string>
+    <string name="CalcAns16_4">3)Sleft = </string>
+    <string name="CalcAns16_5">4)LLD =  </string>
+    <string name="CalcAns16_6">5)LD = </string>
+    <string name="CalcAns16_7">6)AC = </string>
+    <string name="CalcAns16_8">7)DAfact =  </string>
+    <string name="CalcAns16_9">8)CARiwp = </string>
+    <string name="CalcAns16_10">9)MCexit = </string>
+    <string name="CalcAns16_11">10)CARexit =  </string>
+    <string name="CalcAns16_12">11)MCfollow = </string>
+    <string name="CalcAns16_13">12)CARfollow = </string>
+    <string name="CalcAns16_14">Answer: MC on IWP = </string>
+    <string name="CalcAns16_1_1">\n1)MPB = </string>
+    <string name="CalcAns16_2_1">2)LD =</string>
+    <string name="CalcAns16_6_1">5)AA =  </string>
+    <string name="CalcAns16_9_1">8)MCexit = </string>
+    <string name="CalcAns16_10_1">9)CARexit =  </string>
+    <string name="CalcAns16_11_1">10)MCfollow = </string>
+    <string name="CalcAns16_12_1">11)CARfollow = </string>
+    <string name="CalcAns18_1">\n1)Sleft = </string>
+    <string name="CalcAns18_2">2)AA =  </string>
+    <string name="CalcAns18_3">3)LD = </string>
+    <string name="CalcAns18_4">3)LLD = </string>
+    <string name="CalcAns18_5">2)LD =  </string>
+    <string name="CalcAns18_6">Answer: AC =  </string>
+
+    <string name="RNtask1_1"> On the radius: </string>
+        
+    <string name="RNtask1_2"> On the time: </string>
+        
+    <string name="RNtask1_3"> On the LTA: </string>
+        
+    <string name="RNtask2_1"> On the W: </string>
+        
+    <string name="RNtask2_2"> On the U: </string>
+        
+    <string name="RNtask2_3"> On the ß: </string>
+        
+    <string name="RNtask3_1"> For courses and corrections: </string>
+        
+    <string name="RNtask3_2"> To the path angle: </string>
+        
+    <string name="RNtask3_3"> On the calculation course: </string>
+        
+    <string name="RNtask4_1"> To the altitude of the flight: </string>
+        
+    <string name="RNtask4_2"> On the altitude of the flight with the speed limit: </string>
+        
+    <string name="RNtask4_3"> To the height of the flight with a change in the specified altitude: </string>
+        
+    <string name="RNtask5_1"> On the true speed of the aircraft: </string>
+        
+    <string name="RNtask5_2"> On the aircraft`s airspeed: </string>
+        
+    <string name="RNtask5_3"> On the true speed of the airplane on the CSI: </string>
+    <string name="RNtask6_1">On correct the path on RS: </string>
+    <string name="RNtask6_2">On correct the path from RS: </string>
+    <string name="RNtask6_3">On the LD/AA/AC: </string>
+
+    <string name="ConstructArrow">↓</string>
+    <string name="ConstructArrowAnsw">Answer</string>
+    <string name="ConstructActname1">R - turn radius (V-air speed, x-roll)</string>
+    <string name="ConstructActname2">t - Turn time (V-speed, R - turn radius, TA)</string>
+    <string name="ConstructActname3">LTA (R - turn radius, TA)</string>
+    <string name="ConstructActname4">ßn - navigational direction of the wind (ßm, ▲M)</string>
+    <string name="ConstructActname5">ßn - navigational direction of the wind (V-air speed, W-ground speed, ßm, ▲M, MC)</string>
+    <string name="ConstructActname6">ßm - meteorological direction of the wind (Bn, ▲M)</string>
+    <string name="ConstructActname7">WA (ßn, SMTA)</string>
+    <string name="ConstructActname8">DA (V-air speed, U-wind speed, WA)</string>
+    <string name="ConstructActname9">W - ground speed(V-air speed, WA, DA)</string>
+    <string name="ConstructActname10">U - wind speed(V-air speed, W-ground speed, DA)</string>
+
+    <string-array name="wind_speed_measure">
+        <item>kt</item>
+        <item>mps</item>
+        <item>km/h</item>
+    </string-array>
+
+    <string-array name="action_number">
+        <item>R - turn radius (V-air speed, x-roll)</item>
+        <item>t - Turn time (V-speed, R - turn radius, TA)</item>
+        <item>LTA (R - turn radius, TA)</item>
+        <item>ßn - navigational direction of the wind (ßm, ▲M)</item>
+        <item>ßn - navigational direction of the wind (V-air speed, W-ground speed, ßm, ▲M, MC)</item>
+        <item>ßm - meteorological direction of the wind (Bn, ▲M)</item>
+        <item>WA (ßn, SMTA)</item>
+        <item>DA (V-air speed, U-wind speed, WA)</item>
+        <item>W - ground speed(V-air speed, WA, DA)</item>
+        <item>U - wind speed(V-air speed, W-ground speed, DA)</item>
+    </string-array>
+
+    <string-array name="taskstypes">
+        <item>Calculation of the turning radius</item>
+        <item>Calculation of the turn time</item>
+        <item>LTA calculation</item>
+        <item>Calculation of ground speed</item>
+        <item>Calculation of wind speed</item>
+        <item>Wind direction calculation</item>
+        <item>Calculation of courses and amendments</item>
+        <item>Calculation of the travel angle</item>
+        <item>Calculation of the calculated rate</item>
+        <item>Calculation of the milestone of a given flight level</item>
+        <item>Calculation of the boundary of a given flight level with a speed limit</item>
+        <item>Calculation of the milestone of a given flight level with a change in the assigned echelon</item>
+        <item>Calculation of TAS</item>
+        <item>Calculation of IAS</item>
+        <item>Calculation of TAS CSI</item>
+        <item>Correction of the path when flying on the RS</item>
+        <item>Correction of the path when flying from the RS</item>
+        <item>Calculation of the LD/AA/AC</item>
+    </string-array>
+
+    <string-array name="taskstypescalc">
+        <item>Calculation of the turning radius</item>
+        <item>Calculation of the turn time</item>
+        <item>LTA calculation</item>
+        <item>Calculation of nav. flight items</item>
+        <item>Calculation of wind param.</item>
+        <item>Calculation of equivalent wind</item>
+        <item>Calculation of courses and amendments</item>
+        <item>Calculation of the travel angle</item>
+        <item>Calculation of the calculated rate</item>
+        <item>Calculation of the milestone of a given flight level</item>
+        <item>Calculation of the boundary of a given flight level with a speed limit</item>
+        <item>Calculation of the milestone of a given flight level with a change in the assigned echelon</item>
+        <item>Calculation of TAS</item>
+        <item>Calculation of IAS</item>
+        <item>Calculation of TAS CSI</item>
+        <item>Correction of the path when flying on the RS</item>
+        <item>Correction of the path when flying from the RS</item>
+        <item>Calculation of the LD/AA/AC</item>
+    </string-array>
+
+    <string-array name="taskstypesinstr">
+        <item>Abbreviations and additional information</item>
+        <item>Calculation of the turning radius</item>
+        <item>Calculation of the turn time</item>
+        <item>LTA calculation</item>
+        <item>Calculation of ground speed</item>
+        <item>Calculation of wind speed</item>
+        <item>Wind direction calculation</item>
+        <item>Calculation of courses and amendments</item>
+        <item>Calculation of the travel angle</item>
+        <item>Calculation of the calculated rate</item>
+        <item>Calculation of the milestone of a given flight level</item>
+        <item>Calculation of the boundary of a given flight level with a speed limit</item>
+        <item>Calculation of the milestone of a given flight level with a change in the assigned echelon</item>
+        <item>Calculation of TAS</item>
+        <item>Calculation of IAS</item>
+        <item>Calculation of TAS CSI</item>
+        <item>Correction of the path when flying on the RS</item>
+        <item>Correction of the path when flying from the RS</item>
+        <item>Calculation of the BY/DP/PK</item>
+        <item>Determination of the position of the plane in relation to LSP</item>
+        <item>Determination of the Holding Entry</item>
+    </string-array>
+
+    <string-array name="leveltypes">
+        <item>1`st level</item>
+        <item>2`nd level</item>
+        <item>3`rd level</item>
+        <item>4`th level</item>
+        <item>5`th level</item>
+        <item>6`th level</item>
+        <item>7`th level</item>
+    </string-array>
+
+    <string-array name="valuestypes">
+        <item>RUS</item>
+        <item>US</item>
+    </string-array>
+
+    <string-array name="hardtypes">
+        <item>type 1</item>
+        <item>type 2</item>
+    </string-array>
+
+
+    <string name="descrconstr_1">Here you can create your task from the presented actions. You need to specify the accuracy with which you can then give an answer. It is also necessary to give the task a name by which you can then find it in the list in other sections. And, actually, create the task itself. \n All available actions are listed on the right. First, it says what will be the result of this action and what is needed in brackets to calculate the value. When clicking on the action on the right, it will be added to the task. When pressed again, it will be removed from the task. A task can consist of 8 or less actions. To save the task, click on the Save button at the bottom of the screen. To delete a previously created task, select it from the list above and click the delete button at the bottom of the screen.</string>
+    <string name="descrconstr_2">Для создания своих действий и использования их в создании задач, создайте файл формата .txt, запишите в него желаемое действие согласно инструкциям ниже и поместите в папку:Android/data/com.MaxEle.maximarius.nir_navigation/files/. Если все инструкции по заполнению были соблюдены, то ваше новое действие появится в списке справа.</string>
+
+    <string name="descrtask0_1">Basic abbreviations:</string>
+    <string name="descrtask0_2">
+        AC - AirCraft;\nCL - Course Line;\nIWP - Intermediate WayPoint\nMC - Magnetic Course;\nSMTA - Specified Magnetic Track Angle;\nTMTA - True Magnetic Track Angle;\nCSI - Combined Speed Indicator;\nCAR - Course Angle of Radio station;\nMPB - Magnetic Plane Bearing;\nMRB - Magnetic Radiostation Bearing;\nTA - Turn Angle;\nLTA - Linear Turn Anticipation;\nDA - Drift Angle;\nWA - Wind Angle;\nRS - Radio Station;\nAA - Additional Amendment;\nLD - Lateral Dodging;\nLLD - Linear Lateral Dodging;\nAC - Amendment of Course;
+    </string>
+
+    <string name="descrtask1_1"> In this task, it is necessary to calculate the turn radius R in km, with the known aircraft speed V and bank angle x. To do this, a roll angle x is set on the NL-10 on the 4th scale opposite the speed V in km / h divided by 100 on the 6th scale. Then, opposite the R icon in the circle on the 4th scale, on the 5th scale is the value of R in km. </string>
+
+    <string name="descrtask2_1"> In this task, you need to calculate the turn time t in seconds, with the known aircraft speed V, roll angle x, and the U-turn angle. To do this, we first find R. At NL-10, on the 4th scale, the roll angle x is set in front of the speed V in km / h divided by 100 on the 6th scale. Then, opposite the R icon in the circle on the 4th scale, on the 5th scale is the value of R in km. </string>
+        
+    <string name="descrtask2_2"> Now, on the 1st scale, set the value of the speed V divided by 10, and opposite it on the scale 5, the radius of the turn R multiplied by 10. Then we find on the scale 1a the known SD. Opposite it, on the 2nd scale is the required time of the turn in seconds. </string>
+        
+
+    <string name="descrtask3_1"> In this task, it is necessary to calculate the linear anticipation of the LTA turn in km, with the known aircraft speed V, the roll angle x and the U-turn angle. To do this, we first find R. At NL-10, on the 4th scale, the roll angle x is set in front of the speed V in km / h divided by 100 on the 6th scale. Then, opposite the R icon in the circle on the 4th scale, on the 5th scale is the value of R in km. </string>
+        
+    <string name="descrtask3_2"> Now, opposite the black triangle on the scale 4, set the value of R on the scale 5. Then, opposite the value of UR / 2 on a scale of 4, on scale 5 is the LTA in km. </string>
+        
+    <string name="descrtask4_1"> In this task, it is necessary to calculate the track speed W in km / h, with the known specified magnetic track angle SMTA, the meteorological direction of the wind ßm, the airspeed of the aircraft V, the wind speed U and the magnetic slope. To do this, you first need to calculate the value of the direction of the navigational wind ßn, excerpt from ßm the value of ▲ M and add or subtract 180 °, taking into account the fact that the angle ßn lies in the side-hole [0; 360]. </string>
+       
+    <string name="descrtask4_2"> Then we calculate the value of the angle of the wind of the hydrocarbon, subtracting the value of SMTA from ß. We take into account the fact that the hydrocarbon should lie in the range [-180, 180], and so you need to add or subtract 360 ° if the HC does not fall into this range. </string>
+        
+    <string name="descrtask4_3"> Now we find the angle of the US drift. To do this, on NL-10 on a scale of 3, set the value of the UV opposite the value of V on a scale of 5. Then opposite the value of U on a scale of 5, on the scale of 3 is the value of the US. It should be taken with the same sign as the hydrocarbon. </string>
+        
+    <string name="descrtask4_4"> Finally, to find W, you need not to change the position of the ruler from the previous point, to find the value of the heading angle of the wind CWA on the scale 3, where CWA = WA + DA. Then, opposite the CCW on a scale of 3, on the scale 5 will be the value of the ground speed W in km / h. </string>
+        
+    <string name="descrtask5_1"> In this task, it is necessary to calculate the wind speed U in km / h, with the known airspeed of aircraft V, the ground speed of the aircraft W, and the angle of drift of the US. For this, it is necessary to calculate the value of the equivalent wind Ueq of an equal difference in the path and air speed of the aircraft. </string>
+        
+    <string name="descrtask5_2"> Now we need to find the UV. To do this, on the NL-10 opposite the value of the US on the scale 3, the value Ueq is set. on the scale 5. Then, opposite the value of V on the scale 5, will be the value of the UV on the scale 4. It must be remembered that the sign of the shock wave must correspond to the sign of the US </string>
+        
+    <string name="descrtask5_3"> Finally, in order to find U, you need to compare the V value on the scale 5 to the NL-10, put the value of the UV on the scale 3. Then, opposite the value of the US on the scale 3, will be the value U on the scale of 5 in km / h. </string>
+        
+    <string name="descrtask6_1"> In this task it is necessary to calculate the meteorological direction of the wind ßm in °, with the known airspeed of aircraft V, the ground speed of the aircraft W, the magnetic course of the MK, the magnetic declination of M and the angle of drift of the US. For this, it is necessary to calculate the value of the equivalent wind Ueq of an equal difference in the path and air speed of the aircraft. </string>
+        
+    <string name="descrtask6_2"> Now you need to find the UV. To do this, on the NL-10 opposite the value of the US on the scale 3, the value Ueq is set. on the scale 5. Then, opposite the value of V on the scale 5, will be the value of the UV on the scale 4. It must be remembered that the sign of the shock wave must correspond to the sign of the US </string>
+        
+    <string name="descrtask6_3"> Then find the value of the navigation direction of the wind ß. Here it is necessary to compare the values ​​of W and V. If W is greater than or equal to V, then ßn is equal to the sum of MK, US and BC. If W is less than V, then ßn is calculated as the sum of the MK and KS, the hydrocarbon is subtracted and added or read 180 °. </string>
+    <string name="descrtask6_4"> Finally, the value of the meteorological direction of the wind ßm is calculated as ßn + ▲ M and added or subtracted 180 °. It is important to remember that the value of ßm must be in the range [0; 360), so you need to add or subtract 360 ° if ß does not fall into this range. </string>
+        
+
+    <string name="descrtask7_1"> There is nothing complicated in this type of task - pure arithmetic. It is important to remember the image from the bottom. It shows the mnemonic circuit to the rule of accounting for corrections: When changing from instrument values ​​to true, all corrections are added up, and when changing from true values ​​to instrumental ones, all corrections will be subtracted. The following notation is used in the image: CC-compass course; MK-magnetic course; IR-true course; OK-Orthodromic course; ▲ K-compass correction; ▲ M-magnetic declination; ▲ A-azimuth correction; ▲ M + ▲ A = ▲ M-conditional magnetic declination; ▲ K + ▲ M = ▲ -variation. </string>
+        
+    <string name="descrtask7_2"> For example, if the magnetic course of the MK is known and the magnetic declination is ▲ M, then the value of the true IR rate will be: IR = MK + ▲ M. </string>
+        
+    <string name="descrtask8_1"> In this task, it is necessary to calculate the actual true / magnetic path angle of the FPU / FPGA in °, with the known magnetic / true IR / MK course, magnetic declination ▲ M and drift angle US. Snchala should pay attention to what course you know and which FPU you need to find. Depending on this, according to the correction rule, find the rate corresponding to the desired FPA. For example, if it were necessary to find FIPU, then it would be necessary to find the IR header. </string>
+        
+    <string name="descrtask8_2"> Finally, the FPU is the addition of the corresponding K course and the drift angle of the CSS. </string>
+        
+    <string name="descrtask8_3"> If in the condition of the task the specified path angle of the ZPU, the linear lateral deviation of the LCU and the traversed path Spr are indicated instead of the UC, then to find the FPU it was necessary to find the US. To do this, first, on NL-10, we find the lateral deviation of the BU. Opposite the black triangle on the scale 3, the value Spr in km on the scale 4 is set. Then, opposite to the value of the LBU on the scale 4, will be the value of the BU on the scale 3. </string>
+        
+    <string name="descrtask8_4"> Finally, knowing the BU, you can find the value of the US, first calculated (USp), and then the actual (UF). And then find the FPU by a known formula. </string>
+        
+    <string name="descrtask9_1"> In this task it is necessary to calculate the magnetic course of the calculated MCP in °, with the known true path angle of the SATA, the meteorological direction of the wind ßm, the airspeed of the aircraft V, the wind speed U, and the magnetic declination of the ▲ M. To do this, you first need to calculate the value of the direction of the navigational wind ßn, excerpt from ßm the value of ▲ M and add or subtract 180 °, taking into account the fact that the angle ßn lies in the side-hole [0; 360]. </string>
+        
+    <string name="descrtask9_2"> Then, calculate the ZPPU by having the magnetic declination from the SATA. </string>
+        
+    <string name="descrtask9_3"> Now, calculate the angle of the wind by subtracting the ZMP value from the value of the navigation direction of the wind. </string>
+        
+    <string name="descrtask9_4"> Then, find the value of the CSS. To do this, on NL-10 on a scale of 3, set the value of the UV opposite the value of V on a scale of 5. Then opposite the value of U on a scale of 5, on the scale of 3 is the value of the US. It should be taken with the same sign as the hydrocarbon. </string>
+        
+    <string name="descrtask9_5"> Finally, the MKP value in ° is calculated by subtracting the CSS value from the SMTA value. </string>
+        
+    <string name="descrtask10_1"> In this task, it is necessary to calculate the boundary of the occupation of a given echelon S in km or miles, at a known altitude of this echelon Nash, the altitude of the flight in a circle Hcr, the pressure at the aerodrome P, the average vertical velocity Vb and the ground speed W. To begin with, you need to calculate ▲ H, which is the subtraction from Nash Nkr and Nbar, where Hbar is the height of the aerodrome above the normal pressure level. So you need to find the unknown Hbar. It is calculated according to the formulas below, depending on what sorting systems you will be more convenient to read and in what number system P was given. </string>
+        
+    <string name="descrtask10_2"> Now, we can calculate ▲ H. As it was said, for this purpose from Hfl it is necessary to subtract Hcr and Hbar. </string>
+    <string name="descrtask10_3"> Then find the time for which this height will be pre-radiated by the airplane ▲ H, for a known speed vb. For this, one can either divide ▲ H by Vv, without forgetting to translate all into one values ​​or set NL-10 to Vb in m / s on the scale 1 opposite to 10 in the rectangle on the scale 2, then opposite to the value of H divided by 10 in m on the scale 1, will be the value of t in minutes or seconds. </string>
+        
+    <string name="descrtask10_4">Finally, you can find S in two ways: either by multiplying W by t, not howling to translate t into hours, or by putting on the NL-10 the value of W in km / h on the scale 1 opposite the red triangle on the scale 2, then the opposite of the value of t in minutes on the scale 2 is the value of S in km on the scale 1. </string>
+        
+    <string name="descrtask11_1"> In this task, it is necessary to calculate the line of occupation of a given echelon S in km or miles if it has a region below the flight level H1 with a flight speed limit. The calculation should be carried out at a known height of this echelon Nash, the altitude of the flight around the circle Hcr, the pressure at the aerodrome P, the average vertical velocity Vv1 above the train H1, the ground speed W1 above the train H1, the height of the level of the restriction H1, the average vertical velocity Vv2 below the train H1 and the track the speed of W2 is below the level of H1. First, calculate the H1 height of the section above H1, which is the subtraction from the Hfl H1. </string>
+        
+    <string name="descrtask11_2"> Then we find the time t1, for which this height will be preempted by the aircraft ▲ H1, with the known speed VB1. To do this, you can either divide ▲ H1 by Vv1, do not forget to translate all into one values ​​or set NL-10 to Vv1 in m / s on scale 1 versus 10 in the rectangle on scale 2, then opposite to the value of ▲ H divided by 10 in m on the scale 1, will be the value of t1 in minutes or seconds. </string>
+        
+    <string name="descrtask11_3"> Now, you can find S1 in two ways: either multiplying W1 by t1, not howling to translate t1 into hours, or to place W1 in km / h on scale 1 on the NL-10 opposite the red triangle on the scale 2, then the value of t1 in minutes on the scale 2 is opposite to the value of t1 in km on scale 1. </string>
+        
+    <string name="descrtask11_4"> Next, you need to calculate the value of H2 H2 of the height below H1, which is the subtraction from H1 of the values ​​of Hcr and Hbar, where Hbar is the height of the aerodrome above the normal pressure level. So you need to find the unknown Hbar. It is calculated according to the formulas below, depending on what sorting systems you will be more convenient to read and in what number system was given P. </string>
+    <string name="descrtask11_5"> Now, we can calculate ▲ H2. As it was said, for this purpose it is necessary to subtract Hcr and Hbar from H1. </string>
+        
+    <string name="descrtask11_6"> Then we find the time t2, for which this height ▲ H2 will be pre-radiated by the airplane, given the known speed vv2. For this, one can either divide ▲ H2 into Vv2, without forgetting to translate all into one quantities or to put NL-10 in V / 2 in m / s on the scale 1 opposite to 10 in the rectangle on the scale 2, then opposite to the value of ▲ H2 divided by 10 V m on the scale 1, will be the value of t2 in minutes or seconds. </string>
+        
+    <string name="descrtask11_7">Now, you can find S2 in two ways: either multiplying W2 by t2, not howling to translate t2 into hours, or to place the W2 value in km / h on scale 1 on the NL-10 opposite the red triangle on the scale 2, then the opposite of t2 in minutes on scale 2 is S2 in km on scale 1. </string>
+        
+    <string name="descrtask11_8"> Finally, to find the total value of S, you need to add the found S1 and S2. </string>
+        
+    <string name="descrtask12_1"> In this task, you need to calculate the required vertical flight speed of the aircraft Vv.need. in m / s or ft / min, at which the aircraft should occupy a given train with a specified boundary. Depending on the complexity, the airport can be with a speed limit below the level of H1 or not. Depending on this, the relevant data will be known, and the specified Szap limit, the specified Haz echelon and the Hfl.per transition level will be added to them. First, in both cases (complex simple) the problem is solved as described in the 2 previous paragraphs. Let`s take first the variant without restriction below H1. To start, you need to calculate a new ▲ H`, paying attention to that, more Hz than Hfl.per or less. </string>
+        
+    <string name="descrtask12_2"> Then, you need to calculate the line Scrp, equal to the difference between the found S and Sset. </string>
+        
+    <string name="descrtask12_3"> Now, we will calculate the time of the flight, which can be calculated by dividing the Scrip by the known W. </string>
+     
+    <string name="descrtask12_4"> Finally, to calculate Vv.need, you need to divide ▲ H into tprp, without forgetting. </string>
+    <string name="descrtask12_5"> If there is a speed limit below H1, then first of all we have to compare H1 and Hset. if Hset is greater than or equal to H1, then the next 3 points do not need to be done and S`2 is set to 0. If Hz is less than H1, then we need to calculate the new ▲ H`, paying attention to whether H is more than Hfl.per or less. </string>
+     
+    <string name="descrtask12_6"> Then, you need to calculate the span time t`2 of the section ▲ H` with the known vertical speed Vv2, dividing ▲ H` by Vv2. </string>
+        
+    <string name="descrtask12_7"> Now we can calculate the value of S`2 by multiplying W2 by t`2, not forgetting that t`2 should be in hours. </string>
+    <string name="descrtask12_8"> Next, calculate the value of Sspn by extracting the values ​​Sset and S`2 from the previously calculated S. </string>
+    <string name="descrtask12_9"> Then, we find the value of tpp, dividing Sspp by W1. </string>    
+    <string name="descrtask12_10"> Finally, to find Vv.need, you need to divide the value of the calculated at the beginning of ▲ H by the value of tasp. </string>
+        
+    <string name="descrtask13_1"> In this task, it is necessary to calculate the true speed of the aircraft Vi in km / h, with the known altitude of the flight Nash, the instrument speed of the aircraft Vinstr, the correction to the speed indicator ▲ V or the instrumental and aerodynamic corrections ▲ Vi and ▲ Va respectively, and the temperature at the flight level tn or the temperature by the thermometer tpr. First you need to calculate the value of the instrumented corrected flight speed Vinstr.corr For this, we need to determine the value of the compression correction, V Vs, which is determined approximately from the table, depending on the instrument flight speed and the train. ▲ Vc is always taken with a negative sign. </string>
+    <string name="descrtask13_2"> Now, you can calculate the value of the Vinstr.corr It is found by adding V and V corrections to the Vinstr value. Vc. If in the condition were indicated ▲ Vi and ▲ Va, then both are simply added, tk. ▲ V = ▲ Vi + ▲ Va. </string>
+        
+    <string name="descrtask13_3"> Finally, if in the condition was given tn, then on NL-10 on the scale 12, set the value of Nash, and on the contrary, on the scale 11, set the value tn. Then, opposite the value of Vinstr. on the scale 15, there will be a value of V and on the scale of 14. </string>
+    <string name="descrtask13_4"> If, in the condition, tpr was given, you first need to find an approximate value of V`and, for determining ▲t°, with which you can find tn. To do this, we perform the same actions as in the previous paragraph, only instead of tn we use tpr. </string>
+        
+    <string name="descrtask13_5"> Now, on NL-10 on the scale 16, set the value of V`y and against it we see the value of ▲t°. </string>
+        
+    <string name="descrtask13_6"> Then, knowing ▲t°, we can find the value of tn, subtracting from the value tpr the value of ▲t°. </string>
+    <string name="descrtask13_7"> Finally, after calculating the value of tn, we can find the desired value of V, as in the previous case. </string>
+        
+    <string name="descrtask14_1"> In this task, you need to calculate the value of the instrument speed of the aircraft Vinstr in km / h, with the known altitude of the flight Nash, the true speed of the aircraft V, the correction to the speed indicator ▲ V or the instrumental and aerodynamic corrections ▲ Vi and ▲ Va respectively, and the temperature at the flight level tn or the temperature by the thermometer tpr. First you need to calculate the value of the instrumented corrected flight speed Vinstr.corr If tn is given in the condition, then on NL-10 there is a value of tn on the scale 11, the value Nash is set on the scale 12, then Vp on the scale 14 is Vinstr. on the 15 scale. </string>
+        
+    <string name="descrtask14_2"> If, in the condition, tpr was given, then you need to find the string, with which you can find tn. To do this, on NL-10 on the scale 16, set the value of Vu and against it we see the value of ▲t°. </string>
+        
+    <string name="descrtask14_3"> Then, knowing ▲t° we can find the value of tn, the value from the value tpr is the value of t t. </string>
+        
+    <string name="descrtask14_4"> Finally, after calculating the value of tn, we can find the desired value of V, as in the previous case. </string>
+        
+    <string name="descrtask14_5"> Now, in order to calculate Vinstr, we need to determine the compression correction value ▲Vcompr, which is determined approximately from the table, depending on the instrument flight speed and the train. We use to find it Vinstr.corr and Hfl. ▲ Vc is always taken with a negative sign. </string>
+        
+    <string name="descrtask14_6"> Finally, Vinstr, you can calculate by subtract from Vinstr.corr the values ​of ▲Vcompr and ▲. If in the condition were indicated ▲Vi and ▲Va, then both are simply subtracted, since ▲V = ▲Vi + ▲Va </string>
+        
+    <string name="descrtask15_1"> In this task, it is necessary to calculate the true speed of the aircraft Vi in km/h, with the known altitude of the flight Nash, the instrument speed of the airplane according to VCC Vinstr.CSI, corrections to the speed indicator ▲ V or instrumental and aerodynamic corrections ▲ Vi and ▲ Va, respectively, and the temperature at the flight level t° or the temperature by the thermometer tpr. First, you need to calculate the value of the instrumental corrected flight speed by the CSI Vinstr.CSI.corr It is found by adding to the Vpp value the correction value of ▲ V. If in the condition were indicated ▲ Vi and ▲ Va, then both are simply added, tk. ▲ V = ▲ Vi + ▲ Va. </string>
+        
+    <string name="descrtask15_2"> Now, if in the condition was given tn, then on NL-10 on the scale 13 we set the value of Nash, and on the contrary, on the scale 11, we set the value tn. Then, opposite the Vinstr.CSI.corr value on the scale 15, is the value of V and on the scale 14. </string>
+        
+    <string name="descrtask15_3"> If, in the condition, we have given tpr, we first need to find ▲t°, with which we can find tn. To do this, on the NL-10 on the scale 16, set the value Vinstr.CSI and against it we see the value of ▲t°. </string>
+    <string name="descrtask15_4"> Then, knowing ▲t° we can find the value of tn, the value from the value tpr is the value of t t. </string>
+    <string name="descrtask15_5"> Finally, after calculating the value of tn, we can find the desired value of V, as in the previous case. </string>
+
+    <string name="descrtask16_1">This task considers the situation when the AC deviated from the ITL and now we need to return it back to the true path. Here we can see the situation when the deviation occurred during the flight on the RS. Given parameters are SMTA, MC, CAR, Ssum, tpas, W and exit angle, which we will talk about later.</string>
+    <string name="descrtask16_2">First you need to determine the side of evasion (left/right) and its value, which is expressed as the AA. How to determine the direction of evasion read in the last paragraph of the instructions, and the AA is in this way (AA lies in the interval [-180; 180]):</string>
+    <string name="descrtask16_3">Knowing the angular deviation value, we find the linear, i.e. LLD, having previously calculated Srem with the help of W, tpr and Ssum:</string>
+      
+    <string name="descrtask16_4">Now, knowing LLD, we can understand how far we have deviated from ITL. Usually, on both sides of the ITL there is a permissible distance - a corridor. And if the deviation turned out to be within the corridor, then the aircraft is simply sent to the point and fly further, but if the aircraft flew out of the corridor, then it is necessary to carry out calculations to bring the aircraft back to ITL, for further route. We first analyze the first option (LLD is less than the corridor). Then we need to find the LD:</string>
+     
+    <string name="descrtask16_5">Now we can find the AC:</string> 
+    <string name="descrtask16_6">And finally, the MC exit to IWP (MC IWP): (This will be the course with which we will have to fly in order to end up over our IWP)</string>
+     
+    <string name="descrtask16_7">If LLD is more than a corridor, then you first need to specify the exit angle (EA), this is the angle at which we want to return to ITL, the bigger it is, the shorter the path to ITL will be. It is important to remember that the sign of EA corresponds to the sign of the AA and LD. Now we find the MC of exit to the ITL and MC following the ITL:</string>
+
+    <string name="descrtask17_1">This task considers the situation when the AC deviated from the ITL and now we need to return it back to the true path. Here we can see the situation when the deviation occurred during the flight from the RS. Given parameters are SMTA, MC, CAR, Ssum, tpas, W and exit angle, which we will talk about later.</string>
+    <string name="descrtask17_2">First you need to determine the side of evasion (left/right) and its value, which is expressed as the LD. How to determine the direction of evasion read in the last paragraph of the instructions, and the LD is in this way (LD lies in the interval [-180; 180]):</string>
+    <string name="descrtask17_3">Knowing the angular deviation value, we find the linear, i.e. LLD, having previously calculated Srem with the help of W, tpr and Ssum:</string>
+    <string name="descrtask17_4">Now, knowing LLD, we can understand how far we have deviated from ITL. Usually, on both sides of the ITL there is a permissible distance - a corridor. And if the deviation turned out to be within the corridor, then the aircraft is simply sent to the point and fly further, but if the aircraft flew out of the corridor, then it is necessary to carry out calculations to bring the aircraft back to ITL, for further route. We first analyze the first option (LLD is less than the corridor). Then we need to find the AA:</string>
+    <string name="descrtask17_5">Now we can find the AC:</string>
+    <string name="descrtask17_6">And finally, the MC exit to IWP (MC IWP): (This will be the course with which we will have to fly in order to end up over our IWP)</string>
+    <string name="descrtask17_7">If LLD is more than a corridor, then you first need to specify the exit angle (EA), this is the angle at which we want to return to ITL, the bigger it is, the shorter the path to ITL will be. It is important to remember that the sign of EA corresponds to the sign of the AA and LD. Now we find the MC of exit to the ITL and MC following the ITL:</string>
+
+    <string name="descrtask18_1">In this task, you need to calculate the amendment of course of the flight path of the ITL, with known Ssum, tpas, flight speed W and one of the other parameters (AA, LD or LLD). First you need to find Ssum and Spas. Spas can be found as a multiplication of W for tpas, not forgetting to translate time into hours, and Srem is found by subtracting Spas from Ssum.</string>
+    <string name="descrtask18_2">Now, depending on what was given to us in the condition, we are taking different steps, but the bottom line is that we need to find the AA and LD. To begin with we will sort option with known AA or LD. Then the unknown parameter is calculated as follows:</string>
+    <string name="descrtask18_3">If the LLD was known, we can either find the AA and the LD by NL-1, putting a triangle on the scale 4, Spas or Srem on the scale 5 and then LLD on the scale 5, we get AA or LD, respectively, on a scale of 4. Or using the formulas:</string>
+    <string name="descrtask18_4">It remains only to fold the AA and the LD and we will get a AC.</string>
+
+    <string name="descrtask19_1">This task is located in a separate menu item. Here you need to determine as soon as possible where the aircraft is located relative to the ITL, having data of the SMTA, MC and CAR. First you need to determine the aircraft is flying on or off to RS. To do this, look at the value of the CAR. If the CAR is from 270° to 360° or from 0° to 90°, then this is a flight on the RS, if the CAR is more than 90°, but less than 270°, then this is a flight from the RS.</string>
+    <string name="descrtask19_2">Now, in order to determine the position of the AC relative to the LZP, we compare the SMTA and the sum of MC+CAR. Below you can see where the aircraft will be depending on the comparison results for the flight on the RS.</string>
+    <string name="descrtask19_3">And for a flight from the RS.</string>
+
+    <string name="descrtask20_1">To begin with, lets understand the controls:\n1-indication of the heading of the aircraft, when entering values ​​through the keyboard, the course will be automatically set according to the entered data;\n2-indication of the course of landing, it is the course of the approach line, when entering values ​​through the keyboard, the course will be automatically set according to the entered data; \n3,4-buttons for switching the circle to the left and right; \n5-button for entering the test mode, where you are asked to solve tasks of determining the type of entry into the HP; \n6-button for instructions that you clicked to get here; \n7-circular indication of the course of landing and sectors of entry into the HP; \ n8-circular indication of the course of the aircraft.</string>
+    <string name="descrtask20_2">So, guidance is provided when flying with inbound course using navigation tools that are located at the Holding Fix (red triangle). The turn is performed with a roll, providing an angular speed of turning 3 °/sec with a roll not exceeding 25°. Flight time with the outbound course at altitudes up to FL140 is 1 minute, and 1.5 minutes above. Entry to the holding pattern is possible from any direction involving 3 sectors. The line passing through the HF and dividing the airspace into sectors passes at an angle of 70 ° to the inbound course.\n__________________________________\nENTRANCE FROM SECTOR I (parallel)\n1) After the passage of HF, the flight is parallel to inbound course during the set time\n2) U-turn is performed into the protected area with the obligatory intersection of the inbound course\n3) A turn is made with an exit to the inbound course and after the repeated flight through HF, the flight is performed according to the pattern.</string>
+    <string name="descrtask20_3">ENTRANCE FROM SECTOR II (teardrop) \n1) After the flight through a HF, a flight is performed inside the protected area at an angle of 30° to the inbound course during a specified time \n2) A reversal is performed with an exit to the inbound course \n3) After a repeated flight through the HF, the flight is performed according to the pattern.</string>
+    <string name="descrtask20_4">ENTRANCE FROM SECTOR III (direct entrance) 1) After the flight through a HF, a flight is performed according to the pattern.</string>
+
+    <string name="title_activity_nl">NLActivity</string>
+    <string name="title_activity_entry_test">EntryTestActivity</string>
+    <string name="recomenYV3">Repeat in the instructions section how to find the WA. Perhaps you simply forgot that the WA sign must correspond to the DA sign. Or maybe you have forgotten that in order to search for a magnetic course, it is necessary to calculate the WA through the SMTA, and not the SATA.</string>
+
+    <string name="NL_dialog1">The NL-10 has 17 scales. You can enable the digital markers of each scale with the switch below. Further, all instructions will operate with this numbering.</string>
+    <string name="NL_dialog2">Multiplication of two numbers (a∙b=c):</string>
+    <string name="NL_dialog3">Division of two numbers (a:b=c):</string>
+    <string name="NL_dialog4">Square of a number or its square root (x):</string>
+    <string name="NL_dialog5">Sin of angle (sin(a)):</string>
+    <string name="NL_dialog6">Cos of angle (cos(a)):</string>
+    <string name="NL_dialog7">Tg of angle (tg(a)):</string>
+    <string name="NL_dialog8">Multiplication of number and sin of angle (b*sin(a)=c):</string>
+    <string name="NL_dialog9">Transfer mps to kmph and back:</string>
+    <string name="NL_dialog10">Determination of flight elements by the other two (S,t,W):</string>
+
+    <string name="NL_dialog1eng">The NL-10 has 17 scales. You can enable the digital markers of each scale with the switch below. Further, all instructions will operate with this numbering.</string>
+    <string name="NL_dialog2eng">Multiplication of two numbers (a∙b=c):</string>
+    <string name="NL_dialog3eng">Division of two numbers (a:b=c):</string>
+    <string name="NL_dialog4eng">Square of a number or its square root (x):</string>
+    <string name="NL_dialog5eng">Sin of angle (sin(a)):</string>
+    <string name="NL_dialog6eng">Cos of angle (cos(a)):</string>
+    <string name="NL_dialog7eng">Tg of angle (tg(a)):</string>
+    <string name="NL_dialog8eng">Multiplication of number and sin of angle (b*sin(a)=c):</string>
+    <string name="NL_dialog9eng">Transfer mps to kmph and back:</string>
+    <string name="NL_dialog10eng">Determination of flight elements by the other two (S,t,W):</string>
+
+    <string name="ContDescr_ads">Advertisement banner</string>
+    <string name="ContDescr_WindSlider">Wind speed slider</string>
+    <string name="ContDescr_TasksMenu">Tasks menu</string>
+    <string name="ContDescr_Minus">Minus</string>
+    <string name="ContDescr_Plus">Plus</string>
+    <string name="ContDescr_HoldDirection">Holding pattern direction</string>
+</resources>

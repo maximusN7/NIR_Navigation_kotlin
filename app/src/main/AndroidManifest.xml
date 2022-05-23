@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.MaxEle.maximarius.nir_navigation">
+
+    <uses-permission android:name="com.android.vending.BILLING"/>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeDark">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="unspecified"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TimeCalcActivity"
+            android:screenOrientation="unspecified"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".TestEntryActivityTask"
+            android:screenOrientation="unspecified"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".WindActivity"
+            android:screenOrientation="unspecified"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".TestActivity"
+            android:screenOrientation="unspecified"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".TrainingActivity"
+            android:screenOrientation="unspecified"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".InstructActivity"
+            android:screenOrientation="unspecified"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".StatActivity"
+            android:screenOrientation="unspecified"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".ShopActivity"
+            android:screenOrientation="unspecified"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".OptionsActivity"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name=".CalculActivity"
+            android:screenOrientation="unspecified"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".ConstructActivity"
+            android:screenOrientation="unspecified"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".TestLZPActivity"
+            android:screenOrientation="unspecified"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".NLActivity"
+            android:screenOrientation="unspecified"/>
+        <activity
+            android:name=".TestEntryActivity"
+            android:screenOrientation="unspecified"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id" />
+    </application>
+
+</manifest>

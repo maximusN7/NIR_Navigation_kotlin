@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelayLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.MaxEle.maximarius.nir_navigation.NLActivity">
+
+    <Button
+        android:id="@+id/buttonNLclose"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center|top"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="35dp"
+        android:rotation="90"
+        android:text="@string/back"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonNLflip"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/buttonNLclose"
+        android:layout_gravity="center|top"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="50dp"
+        android:rotation="90"
+        android:text="@string/NLflip"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonVIS"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/buttonNLflip"
+        android:layout_gravity="center|top"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="50dp"
+        android:rotation="90"
+        android:text="@string/Visir"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonOrient"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center|top"
+        android:layout_marginStart="-130dp"
+        android:layout_marginTop="110dp"
+        android:layout_toEndOf="@id/buttonNLclose"
+        android:rotation="90"
+        android:text="@string/Orientation"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonInstructon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/buttonOrient"
+        android:layout_gravity="center|top"
+        android:layout_marginStart="-30dp"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@id/buttonNLclose"
+        android:rotation="90"
+        android:text="@string/InstrNL"
+        android:textSize="24sp" />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/banner_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonVIS"
+        android:layout_marginStart="-120dp"
+        android:layout_marginTop="160dp"
+        android:rotation="90"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_id">
+    </com.google.android.gms.ads.AdView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:id="@+id/ButtLinear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/NLlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|end"
+            android:layout_marginStart="40dp"
+            android:layout_weight="7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imageViewNL3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nl1_3_d"
+                    tools:ignore="ContentDescription" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/scrollCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    tools:ignore="ContentDescription">
+
+                    <ImageView
+                        android:id="@+id/imageViewNL2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/nl1_21_d"
+                        android:src="@drawable/nl1_2_d"
+                        tools:ignore="ContentDescription" />
+
+                </androidx.core.widget.NestedScrollView>
+
+
+                <ImageView
+                    android:id="@+id/imageViewNL1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nl1_1"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <com.MaxEle.maximarius.nir_navigation.util.CustomImageViewForVisir
+        android:id="@+id/imageViewVisir"
+        android:layout_width="255dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/imgvisir"
+        android:elevation="2dp"
+        tools:ignore="ContentDescription" />
+</RelativeLayout>

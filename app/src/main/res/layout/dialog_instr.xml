@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewMain"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrolldia"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="0dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/textViewDescr1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/WindLimX"
+                android:textSize="19sp"
+                android:gravity="center"
+                android:layout_weight="5"/>
+
+            <EditText
+                android:id="@+id/textDescr1"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="true"
+                android:textSize="19sp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="5dp"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:hint = "@string/FiveForStart"
+                android:autofillHints="@string/FiveForStart"
+                tools:ignore="ContentDescription"
+                android:contentDescription="@null"
+                />
+            <TextView
+                android:id="@+id/textDescrIzm1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/typeizm_yzl"
+                android:textSize="19sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="7dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/textViewDescr2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/WindLimH"
+                    android:textSize="19sp"
+                    android:gravity="center"
+                    android:layout_weight="5"/>
+
+                <EditText
+                    android:id="@+id/textDescr2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:textSize="19sp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="5dp"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:hint = "@string/TwelveForStart"
+                    android:autofillHints="@string/TwelveForStart"
+                    tools:ignore="ContentDescription"
+                    android:contentDescription="@null"
+                    />
+                <TextView
+                    android:id="@+id/textDescrIzm2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/typeizm_yzl"
+                    android:textSize="19sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/textViewDescr3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/WindLimT"
+                    android:textSize="19sp"
+                    android:gravity="center"
+                    android:layout_weight="5"/>
+
+                <EditText
+                    android:id="@+id/textDescr3"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:textSize="19sp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="5dp"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:hint = "@string/TwelveForStart"
+                    android:autofillHints="@string/TwelveForStart"
+                    tools:ignore="ContentDescription"
+                    android:contentDescription="@null"
+                    />
+                <TextView
+                    android:id="@+id/textDescrIzm3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/typeizm_yzl"
+                    android:textSize="19sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_weight="2"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onClickBackDial"
+            android:text="@string/Save"
+            android:textSize="24sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            />
+</LinearLayout>

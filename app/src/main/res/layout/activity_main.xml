@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/BackAll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.MaxEle.maximarius.nir_navigation.MainActivity">
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchLang"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:textSize="15sp"
+        android:text="@string/switchLang" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchTheme"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switchLang"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:textSize="15sp"
+        android:text="@string/switchThemeLight" />
+
+    <Button
+        android:id="@+id/buttonShop"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/shop" />
+
+    <TextView
+        android:id="@+id/flagdop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonNL" />
+
+    <LinearLayout
+        android:id="@+id/undermenu_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flagdop"
+        android:layout_toEndOf="@+id/buttonTasks"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/buttonCalc"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:text="@string/calcul" />
+
+        <Button
+            android:id="@+id/buttonConstruct"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="-4pt"
+            android:layout_marginEnd="2dp"
+            android:text="@string/constructor" />
+
+        <Button
+            android:id="@+id/buttonTest"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="-4pt"
+            android:layout_marginEnd="2dp"
+            android:text="@string/test" />
+
+        <Button
+            android:id="@+id/buttonTraining"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="-4pt"
+            android:layout_marginEnd="2dp"
+            android:text="@string/training" />
+
+        <Button
+            android:id="@+id/buttonInstructions"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="-4pt"
+            android:layout_marginEnd="2dp"
+            android:text="@string/instructions" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/undermenu_EH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonNL"
+        android:layout_toEndOf="@+id/buttonTasks"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/button_EH"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:text="@string/EH" />
+
+        <Button
+            android:id="@+id/button_EH_task"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="-4pt"
+            android:layout_marginEnd="2dp"
+            android:text="@string/EH_task" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonStat"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/statistics" />
+
+    <Button
+        android:id="@+id/buttonTasks"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonEntryTest"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-4pt"
+        android:layout_marginEnd="4dp"
+        android:text="@string/tasks"
+        android:textSize="25sp"
+        android:contentDescription="@string/ContDescr_TasksMenu"/>
+
+    <Button
+        android:id="@+id/buttonLZPTest"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-4pt"
+        android:layout_marginEnd="4dp"
+        android:text="@string/testLZP"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonEntryTest"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLZPTest"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-4pt"
+        android:layout_marginEnd="4dp"
+        android:text="@string/EntryTest"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonNL"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonTasks"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-4pt"
+        android:layout_marginEnd="4dp"
+        android:text="@string/NL"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonWind"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLZPTest"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-4pt"
+        android:layout_marginEnd="4dp"
+        android:text="@string/wind"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonTimeCalc"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonWind"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-4pt"
+        android:layout_marginEnd="4dp"
+        android:text="@string/TimeCalcMen"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/exit" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/buttonShop"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/obuch_arrow"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/buttonTasks"
+        android:layout_toEndOf="@+id/buttonNL"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/obuch_arrow"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/buttonEntryTest"
+        android:layout_toEndOf="@+id/buttonTasks"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/obuch_arrow"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/buttonLZPTest"
+        android:layout_toEndOf="@+id/buttonEntryTest"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/obuch_arrow"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/buttonWind"
+        android:layout_toEndOf="@+id/buttonLZPTest"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/obuch_arrow"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/buttonLZPTest"
+        android:layout_toEndOf="@+id/buttonWind"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/obuch_arrow"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/buttonStat"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/obuch_arrow"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/banner_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonExit"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        android:contentDescription="@string/ContDescr_ads"
+        ads:adUnitId="@string/banner_id">
+    </com.google.android.gms.ads.AdView>
+
+    <LinearLayout
+        android:id="@+id/ObychLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:elevation="2dp"
+        android:focusable="true"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:id="@+id/ObychLayoutText"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp">
+
+            <TextView
+                android:id="@+id/ObychText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:textColor="#ededed"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/buttonskip"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:text="@string/throughoby"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

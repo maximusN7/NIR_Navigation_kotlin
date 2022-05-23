@@ -1,0 +1,822 @@
+<resources>
+    <string name="app_name">Задачи по аэронавигации</string>
+    <string name="calcul">Калькулятор</string>
+    <string name="test">Тест</string>
+    <string name="tasks">Задачи</string>
+    <string name="wind">Расчет ветра</string>
+    <string name="training">Тренировка</string>
+    <string name="instructions">Инструкции</string>
+    <string name="statistics">Статистика</string>
+    <string name="shop">Магазин</string>
+    <string name="shoplist">Список покупок</string>
+    <string name="calculate">Вычислить</string>
+    <string name="constructor">Конструктор</string>
+    <string name="calculation">Вычисленные значения: </string>
+    <string name="calculation2">Инструкция по решению находится в разделе инструкции.</string>
+    <string name="type">Введите</string>
+    <string name="exit">Выход</string>
+    <string name="NL">НЛ-10</string>
+    <string name="Save">Сохр.</string>
+    <string name="Delete">Удалить</string>
+    <string name="Start">Начать</string>
+    <string name="EH">Визуализация</string>
+    <string name="EH_task">Задачи</string>
+    <string name="CreateTaskList">Создать задачу</string>
+    <string name="DeleteTaskToast1">Задача </string>
+    <string name="DeleteTaskToast2"> успешно удалена</string>
+    <string name="EntryTest">Зона ожидания</string>
+    <string name="leftfortask">левый</string>
+    <string name="rightfortask">правый</string>
+    <string name="condtfortask1">МК посадки = </string>
+    <string name="condtfortask2">МК полета = </string>
+    <string name="condtfortask3">Круг </string>
+    <string name="condtfortask4">__________________\nКакой будет тип входа?</string>
+    <string name="toastNLFixed">Экран закреплён в портретном режиме</string>
+    <string name="toastNLUnspeci">Экран снова в режиме авто-поворота</string>
+    <string name="NLflip">Перев.</string>
+    <string name="Visir">Визирка</string>
+    <string name="Orientation">Ориентация экрана</string>
+    <string name="InstrNL"> ? </string>
+    <string name="Orientationeng">Screen orientation</string>
+    <string name="NLflipeng">Flip</string>
+    <string name="Visireng">Visor</string>
+    <string name="testLZP">Тест ЛЗП</string>
+    <string name="testLZPleft">◄</string>
+    <string name="testLZPright">►</string>
+    <string name="testLZPon">▼</string>
+    <string name="testLZPnext">Дальше</string>
+    <string name="testLZPstart">Начать</string>
+    <string name="back">Назад</string>
+    <string name="backeng">Back</string>
+    <string name="Lkrug">Л</string>
+    <string name="Rkrug">П</string>
+    <string name="Instkrug">Инстр.</string>
+    <string name="Testkrug">Тест</string>
+    <string name="Roundkrug">Круг</string>
+    <string name="Ans1krug">Прямой</string>
+    <string name="Ans2krug">Капля</string>
+    <string name="Ans3krug">Параллельный</string>
+    <string name="obnylbut">Обнулить статистику</string>
+    <string name="getmaxlvl">Открыть максимальный уровень</string>
+    <string name="throughoby">Пропустить</string>
+    <string name="obcaga">Повторить обучение</string>
+    <string name="options">Консоль</string>
+    <string name="generate">Создать задачу</string>
+    <string name="condition">Условие задачи</string>
+    <string name="accept">Подтвердить ответ</string>
+    <string name="getPrem">Приобрести калькулятор</string>
+    <string name="typeanswer">Введите ответ</string>
+    <string name="corranswer">-ответ</string>
+    <string name="typeizm_kmch">км/ч</string>
+    <string name="typeizm_mc">м/с</string>
+    <string name="typeizm_fytmin">фут/мин</string>
+    <string name="typeizm_km">км</string>
+    <string name="typeizm_m">м</string>
+    <string name="typeizm_mmile">м.мили</string>
+    <string name="typeizm_s">с</string>
+    <string name="typeizm_min">мин</string>
+    <string name="typeizm_grad">°</string>
+    <string name="typeizm_mmrtst">мм.рт.ст.</string>
+    <string name="typeizm_gpa">гПа</string>
+    <string name="typeizm_fyt">фут</string>
+    <string name="typeizm_yzl">узл.</string>
+    <string name="corranswermessage"> -ответ</string>
+    <string name="scorecorr">Правильные ответы: </string>
+    <string name="scorewrong">Неправильные ответы: </string>
+    <string name="scorelvl">Ваш уровень: </string>
+    <string name="scormenunow">Статистика за последний сеанс</string>
+    <string name="scormenuall">Статистика за весь период</string>
+    <string name="scormenuallbig">Общая статистика</string>
+    <string name="scormenuzad">Статистика по задаче</string>
+    <string name="scordopspos">Шанс попасть на допсу: </string>
+    <string name="scorzadcor">Правильно</string>
+    <string name="scorzadwro">Неправильно</string>
+    <string name="scorzad">Ответ</string>
+    <string name="scorzad1">Первый шаг</string>
+    <string name="scorzad2">Второй шаг</string>
+    <string name="scorzad3">Третий шаг</string>
+    <string name="toastNotAvail">Вашего уровня недостаточно для этого</string>
+    <string name="toastNotAvailPrem">Для доступа ко всем задачам приобретите премиум статус.</string>
+    <string name="toastWrongtypeing">Введенные данные не корректны</string>
+    <string name="toastPrem">Калькулятор активирован</string>
+    <string name="toastPremdenn">Неверный пароль</string>
+    <string name="toastPremempt">Ничего не введено</string>
+    <string name="toastPrembuy">Спасибо, что приобрели доступ к калькулятору</string>
+    <string name="toastMlvlbuy">Спасибо, что приобрели доступ к максимальному уровню</string>
+    <string name="toastPechebuy">Спасибо, что приобрели отключение рекламы</string>
+    <string name="toastDonation">Спасибо, что задонатили мне на печеньки, вы очень мимими :*</string>
+    <string name="toastosmtgwentwrong">Что-то пошло не так. Попробуйте позже</string>
+    <string name="toastconsumeOk">Покупка успешно завершена</string>
+    <string name="fornextlvl">Для перехода на следующий уровень: </string>
+    <string name="toastbiglvl">Вы уже перешли на следующий уровень. Задачи этого уровня можете решать в тренировке.</string>
+    <string name="toastlvlup">Поздравляем! Уровень повышен. Вам стали доступны новые задания.</string>
+    <string name="EntPas">Консоль</string>
+    <string name="ok">Ок</string>
+    <string name="About1">Ваш персональный ключ: </string>
+    <string name="About2">\n\nПо всем интересующим вас вопросам вы можете связаться с разработчиком по этому адрессу: maximarius78@gmail.com. Указывайте ваш персональный ключ в вашем письме.</string>
+    <string name="zadopisdop">Заполните по желанию</string>
+    <string name="messFirstEntCalc">Вам доступна пробная версия калькулятора (3 первых типа задач). Для доступа ко всем типам задач приобретите премиум версию.</string>
+    <string name="techwork">Проводятся технические работы</string>
+    <string name="yourmaxlvl">Ваш уровень - 7 </string>
+    <string name="youarebest">Дружище, ты супер :3</string>
+    <string name="entdiap">Введи допуск</string>
+    <string name="entname">Введи название задачи</string>
+    <string name="toastnoname">Вы не ввели название задачи</string>
+    <string name="toastnodiap">Вы не ввели диапазон</string>
+    <string name="toastnotask">Вы не создали задачу</string>
+    <string name="toastyestask1">Поздравляем, задача </string>
+    <string name="toastyestask2"> создана</string>
+    <string name="toastNotAvailMyTask">Вам нужен максимальный уровень - 7, для тренировки в своих задачах</string>
+    <string name="switchLang">Язык: Рус</string>
+    <string name="switchThemeLight">Светлая</string>
+    <string name="switchThemeDark">Тёмная</string>
+    <string name="switchInstNLyes">Подписанная</string>
+    <string name="switchInstNLno">Стандартная</string>
+    <string name="switchInstNLyeseng">Marked</string>
+    <string name="switchInstNLnoeng">Standard</string>
+    <string name="TextswitchInstNLno">НЛ в режиме: </string>
+    <string name="TextswitchInstNLnoeng">NL mode is: </string>
+    <string name="ZeroForStart">0</string>
+    <string name="FiveForStart">5</string>
+    <string name="TwelveForStart">12</string>
+    <string name="HandrForLim">100</string>
+    <string name="Divider">°/</string>
+    <string name="ObratForStart">180</string>
+    <string name="TimeCalcMen">Калькулятор времени</string>
+
+    <string name="TimeCalc0">0</string>
+    <string name="TimeCalc1">1</string>
+    <string name="TimeCalc2">2</string>
+    <string name="TimeCalc3">3</string>
+    <string name="TimeCalc4">4</string>
+    <string name="TimeCalc5">5</string>
+    <string name="TimeCalc6">6</string>
+    <string name="TimeCalc7">7</string>
+    <string name="TimeCalc8">8</string>
+    <string name="TimeCalc9">9</string>
+    <string name="TimeCalcplus">+</string>
+    <string name="TimeCalcminus">-</string>
+    <string name="TimeCalcequal">=</string>
+    <string name="TimeCalcclear">C</string>
+    <string name="TimeCalc00_00">00:00</string>
+
+    <string name="WindRunwayAct">Рабочая ВПП</string>
+    <string name="WindRunwayOpp">Обратная ВПП</string>
+    <string name="WindTailwind">Попутный</string>
+    <string name="WindHeadwind">Встречный</string>
+    <string name="WindXwind">Боковой</string>
+    <string name="WindRight">Боковой справа</string>
+    <string name="WindLeft">Боковой слева</string>
+    <string name="WindSettings">Настройки</string>
+    <string name="WindSetRunway">Сохранить полосу</string>
+    <string name="WindLimX">Ограничение по боковому</string>
+    <string name="WindLimT">Ограничение по попутному</string>
+    <string name="WindLimH">Ограничение по встречному</string>
+
+    <string name="testLZP_ZMPY">ЗМПУ=</string>
+    <string name="testLZP_MK">МК=</string>
+    <string name="testLZP_KYR">КУР=</string>
+    <string name="testLZP_corr">Верно</string>
+    <string name="testLZP_wron">Неверно</string>
+    <string name="testLZP_answL">\nваш ответ: слева\n</string>
+    <string name="testLZP_answR">\nваш ответ: справа\n</string>
+    <string name="testLZP_answO">\nваш ответ: на ЛЗП\n</string>
+    <string name="testLZP_sec"> секунд</string>
+    <string name="testLZP_zad">Задча: </string>
+    <string name="testLZP_of20">/20</string>
+    <string name="testLZP_totalcorr">Верные ответы: </string>
+    <string name="testLZP_perccorr">%\nОбщее время: </string>
+
+    <string name="action_small">Маленькая НЛ</string>
+    <string name="action_big">Большая НЛ</string>
+
+    <string name="premium_titel">Магазин</string>
+    <string name="premium_pass">Доступ к калькулятору</string>
+    <string name="permanent_max_lvl">Максимальный уровень в тесте</string>
+    <string name="na_pecheniki">Отключения рекламы</string>
+    <string name="donations">На печеньки разработчику :3</string>
+    <string name="premium_cancel">Отменить</string>
+    <string name="premium_cont">Выбрать</string>
+
+
+    <string name="statdoprasYS">Расчет УС</string>
+    <string name="statdoprasYV">Расчет УВ</string>
+    <string name="statdoprasUekv">Расчет Uэкв</string>
+    <string name="statdoprasBen">Расчет ßн</string>
+    <string name="statdoprasHbar">Расчет Hбар</string>
+    <string name="statdoprasdH">Расчет ▲H</string>
+    <string name="statdoprastpr">Расчет t</string>
+    <string name="statdoprasdH1">Расчет ▲H1</string>
+    <string name="statdoprasdH2">Расчет ▲H2</string>
+    <string name="statdoprasSnach">Расчет S</string>
+    <string name="statdoprasdHsht">Расчет ▲H`</string>
+    <string name="statdoprasSrasp">Расчет Sрасп</string>
+    <string name="statdoprasdVsh">Расчет ▲Vсж</string>
+    <string name="statdoprasVprisp">Расчет Vпр.испр</string>
+    <string name="statdoprasVprispKYS">Расчет Vпр.КУС.испр</string>
+    <string name="statdoprasDP">Расчет ДП</string>
+    <string name="statdoprasLBY">Расчет ЛБУ</string>
+    <string name="statdoprasBY">Расчет БУ</string>
+
+    <string name="answdoprasYS">Введите УС</string>
+    <string name="answdoprasYV">Введите УВ</string>
+    <string name="answdoprasUekv">Введите Uэкв</string>
+    <string name="answdoprasBen">Введите ßн</string>
+    <string name="answdoprasHbar">Введите Hбар</string>
+    <string name="answdoprasdH">Введите ▲H</string>
+    <string name="answdoprastpr">Введите t</string>
+    <string name="answdoprasdH1">Введите ▲H1</string>
+    <string name="answdoprasdH2">Введите ▲H2</string>
+    <string name="answdoprasSnach">Введите S</string>
+    <string name="answdoprasdHsht">Введите ▲H`</string>
+    <string name="answdoprasSrasp">Введите Sрасп</string>
+    <string name="answdoprasdVsh">Введите ▲Vсж</string>
+    <string name="answdoprasVprisp">Введите Vпр.испр</string>
+    <string name="answdoprasVprispKYS">Введите Vпр.КУС.испр</string>
+    <string name="answdoprasDP">Введите ДП</string>
+    <string name="answdoprasLBY">Введите ЛБУ</string>
+    <string name="answdoprasBY">Введите БУ</string>
+    <string name="answdoprastp">Введите tпр</string>
+    <string name="answdoprasW">Введите W</string>
+    <string name="answdoprasMKvih">Введите MKвых</string>
+    <string name="answdoprasMKsl">Введите MKсл</string>
+
+    <string name="recomen0">Не спешите с тестом, еще раз зайдите в раздел инструкций, изучите и потренируйтесь в разеделе тренировка.</string>
+    <string name="recomen1">Ошибка при последнем вычислении. Повторите способ решения в разделе инструкций.</string>
+    <string name="recomen2">Скорее всего, ответ получается неверным из-за ошибки во время решения, а не в последнем вычислении.</string>
+    <string name="recomenYS">Повторите способ нахождения УС в разделе инструкций. Может быть вы забыли учесть, что знак УС должен соответствовать знаку УВ (если УВ больше 180, то вычтите 360).</string>
+    <string name="recomenUekv">Ошибки в этом пункте могут быть только из-за невнимательности. Простая арифметика. Нужно помнить, что вычитать нужно V из W, а не наоборот.</string>
+    <string name="recomenYV2">Повторите в разделе инструкций как найти УВ. Быть может, вы просто забыли, что знак УВ должен соответствовать знаку УС.</string>
+    <string name="recomenBen">Важно не запутаться и помнить, что при W больше V и W меньше V вычисления производятся по-разному.</string>
+    <string name="recomenBen1">Ошибки в этом пункте могут быть только из-за невнимательности. Простая арифметика и понимание, что ßм лежит в пределах [0,360) градусов.</string>
+    <string name="recomenYV3">Повторите в разделе инструкций как найти УВ. Быть может, вы просто забыли, что знак УВ должен соответствовать знаку УС. А может вы забыли, что для поиска магнитного курса нужно расчитывать УВ через ЗМПУ, а не ЗИПУ.</string>
+    <string name="recomenHbar">Проверьте, в правильных ли единицах измерения вы посчитали Hбар. Не забыли ли учесть знак.</string>
+    <string name="recomendH">Простая арифметика. Убедитесь, что все знаки учтены и все находится в одних единицах измерения.</string>
+    <string name="recomentpr">Проверьте соответствие единиц измерения. Обратитесь к разделу инструкции.</string>
+    <string name="recomendH1">Нужно помнить, что здесь вычитается только H1 из Hэш. Учёт Hбар идет только в ▲H2.</string>
+    <string name="recomendH2">Важно помнить, что вычитать нужно не из Hэш, а из H1. Проверьте, правильно ли посчитана Hбар. Обратитесь в раздел инструкции.</string>
+    <string name="recomenSnach">Расчет идет как в предыдущих задачах. Обратитесь к инструкции.</string>
+    <string name="recomendHsht">Важно помнить, что здесь два варианта расчета, при Hзад больше Hэш.пер и при Hзад меньше Hэш.пер. Если на аэродроме есть ограничения, то это вычисление, вероятно, вообще не надо делать (при Hзад больше H1).</string>
+    <string name="recomenSrasp">Нужно не перепутать и вычесть правильно Sзад из S.</string>
+    <string name="recomendVsh">По таблице в разделе инструкций нужно примерно апроксимировать это значение. Можно брать целое число. Нужно помнить, что оно выбирается не по Vист, а по Vпр или Vпр.испр. Также нужно помнить, что ▲Vсж всегда отрицательная.</string>
+    <string name="recomenVprisp">Арифметика. Не забывать про учет знаков поправок.</string>
+    <string name="recomenVprisp2">Повторите способ вычисления по линейке в разделе инструкции.</string>
+    <string name="recomenVprispKYS">Арифметика. Не забывать про учет знаков поправок.</string>
+    <string name="recomenDP">Арифметика. Не забывать, что ДП лежит в интервале [-180;180].</string>
+    <string name="recomenLBY">Не забывать про знак ДП, от этого зависит знак ЛБУ.</string>
+    <string name="recomenBY">Знак БУ соответствует знаку ДП. Не путать, что на что делить: нужно S оставшееся делить на S пройденное.</string>
+
+    <string name="Ob0">Приветствую! Сейчас я проведу небольшую экскурсию по приложению, чтобы вы не потерялись. Начнем сверху вниз. Коснитесь экрана.</string>
+    <string name="Ob1">В пункте "магазин" вы можете приобрести полную версию приложения, отключить рекламу и узнать контакты разработчика для связи.</string>
+    <string name="Ob2">В пункте "НЛ-10" вы можете использовать виртуальную НЛ-10.</string>
+    <string name="Ob3">В разделе "задачи" вы можете использвать калькулятор аэронавигационных задач, конструктор задач для тренировки и тренировку и тест решения задач. Инструкции по решению каждой задачи с использованием НЛ-10 вы моете увидеть в разделе инструкций.</string>
+    <string name="Ob4">В разделе "зона ожидания" вы можете увидеть визуализацию и задачи по входу в зону ожидания.</string>
+    <string name="Ob5">В пункте "тест ЛЗП" вы можете потренироваться в умении определять положение самолета относительно ЛЗП. То, как это делается прочитайте в разделе инструкции, последний пункт.</string>
+    <string name="Ob6">В пункте "расчет ветра" вы можете увидеть боковую и продольную составляющую ветра для вашей полосы.</string>
+    <string name="Ob7">В пункте "cтатистика" ведется учет ваших успехов и неудач в решении задач в пункте "тест".</string>
+    <string name="Ob8">Удачи в обучении! По всем вопросам и предложениям обращатсья сюда: maximarius78@gmail.com.</string>
+    <!-- <string name="Ob1">В пункте "калькулятор" вы можете выбирать тип задачи, вводить данные и получать промежуточный и конечный ответ к ней.</string>
+    <string name="Ob2">Так он выглядит изнутри.</string>
+    <string name="Ob3">Здесь вы можете переключаться между различными типами задач. Ниже вводите известные данные и нажимаете кнопку "вычислить".</string>
+    <string name="Ob4">В пункте "тест" вы можете решать задачи и повышать свой уровень для доступа к более сложным задачам. Успехи и неудачи при решении задач в этом пункте идут в статистику.</string>
+    <string name="Ob5">Так он выглядит изнутри.</string>
+    <string name="Ob6">Здесь вы можете переключаться между различными уровнями. Чтобы перейти на следующий уровень нужно решить все задачи предыдущего.</string>
+    <string name="Ob7">Здесь указано, сколько задач каждого типа нужно решить для перехода на следующий уровень. При неправильном решении, планка увеличивается на 2 задачи.</string>
+    <string name="Ob8">В пункте "тренировка" вы можете потренироваться решать задачи доступных вам уровней без вреда для статистики.</string>
+    <string name="Ob9">Это меню тренировки.</string>
+    <string name="Ob10">Здесь можно выбрать тип задачи, которую вы хотите решать.</string>
+    <string name="Ob11">В пункте "инструкции" вы можете прочитать, как решать все типы задач. Перед тем, как решать задачи, советую заглянуть сюда.</string>
+    <string name="Ob12">Это меню инструкций.</string>
+    <string name="Ob13">Здесь можно выбрать тип задачи, инструкции по решению которых вы хотите увидеть.</string>
+    <string name="Ob14">В меню "статистика" ведется учет ваших успехов и неудач в решении задач в пункте "тест".</string>
+    <string name="Ob15">Последний пункт показывает отношение неправильно решенных задач к их общему количеству.</string>
+    <string name="Ob16">В пункте "тест лзп" вы можете потренироваться в умении определять положение самолета относительно ЛЗП. То, как это делается прочитайте в разделе инструкции, последний пункт.</string>
+    <string name="Ob17">Нажимайте стрелки, указывающие то направление, на котором по вашему мнению находится лзп. Стрелка вниз означает нахождение ВС на ЛЗП.</string>
+    <string name="Ob18">Удачи в обучении! По всем вопросам и предложениям обращатсья сюда: maximarius78@gmail.com.</string>-->
+
+    <string name="CalSkorRad">V</string>
+    <string name="Calkren">x</string>
+    <string name="CalYR">УР</string>
+    <string name="CalVis">H</string>
+    <string name="CalPribSc">Vпр</string>
+    <string name="CalIstinSc">Vи</string>
+    <string name="CalPribScKYS">Vпр.КУС</string>
+    <string name="CalPoprav">▲V</string>
+    <string name="CalTnaEsh">t°н</string>
+    <string name="CalTnaTerm">t°пр</string>
+    <string name="CalZMPY">ЗМПУ</string>
+    <string name="CalZIPY">ЗИПУ</string>
+    <string name="CalNapVetrMe">ßм</string>
+    <string name="CalSkorVetr">U</string>
+    <string name="CalMagSkl">▲М</string>
+    <string name="CalKomSkl">▲К</string>
+    <string name="CalAziSkl">▲А</string>
+    <string name="CalMysSkl">▲Му</string>
+    <string name="CalVarSkl">▲</string>
+    <string name="CalPytSkor">W</string>
+    <string name="CalYS">УС</string>
+    <string name="CalMagKyr">МК</string>
+    <string name="CalIstKyr">ИК</string>
+    <string name="CalKomKyr">КК</string>
+    <string name="CalOrtKyr">ОК</string>
+    <string name="CalHesh">Hэш</string>
+    <string name="CalHkr">Hкр</string>
+    <string name="CalPaer">Pаэр</string>
+    <string name="CalVvert">Vв</string>
+    <string name="CalH1">H1</string>
+    <string name="CalVvert1">Vв1</string>
+    <string name="CalVvert2">Vв2</string>
+    <string name="CalW1">W1</string>
+    <string name="CalW2">W2</string>
+    <string name="CalHzad">Hзад</string>
+    <string name="CalHper">Hэщ.пер</string>
+    <string name="CalSzad">Sзад</string>
+    <string name="CalSpr">Sпр</string>
+    <string name="CalLBY">ЛБУ</string>
+    <string name="CalKYR">КУР</string>
+    <string name="CalSobsh">Sобщ</string>
+    <string name="CalYVvih">УВвых</string>
+    <string name="Caltpr">tпр</string>
+    <string name="CalW">W</string>
+    <string name="CalBY">БУ</string>
+    <string name="CalDP">ДП</string>
+
+    <string name="CondSkorRad">Воздушная скорость V</string>
+    <string name="Condkren">Угол крена x</string>
+    <string name="CondYR">УР</string>
+    <string name="CondRad">Радиус разворота R</string>
+    <string name="CondVis">Высота H</string>
+    <string name="CondPribSc">Скорость приборная Vпр</string>
+    <string name="CondIstinSc">Скорость истинная Vи</string>
+    <string name="CondPribScKYS">Скорость приборная по КУС Vпр.КУС</string>
+    <string name="CondPoprav">Поправка к указателю скорости ▲V</string>
+    <string name="CondPopravI">Инструментальная поправка к указателю скорости ▲Vи</string>
+    <string name="CondPopravA">Аэродинамическая поправка к указателю скорости ▲Vа</string>
+    <string name="CondTnaEsh">Температура воздуха на эшелоне t°н</string>
+    <string name="CondTnaTerm">Температура по термометру наружного воздуха на эшелоне t°пр</string>
+    <string name="CondZMPY">ЗМПУ</string>
+    <string name="CondZIPY">ЗИПУ</string>
+    <string name="CondFMPY">ФМПУ</string>
+    <string name="CondFIPY">ФИПУ</string>
+    <string name="CondNapVetrMe">Направление ветра метео. ßм</string>
+    <string name="CondNapVetrNa">Направление ветра навиг. ßн</string>
+    <string name="CondSkorVetr">Скорость ветра U</string>
+    <string name="CondMagSkl">Магнитное склонение ▲М</string>
+    <string name="CondKomSkl">Компасная поправка ▲К</string>
+    <string name="CondAziSkl">Азимутальная поправка ▲А</string>
+    <string name="CondMysSkl">Условное магнитное склонение ▲Му</string>
+    <string name="CondVarSkl">Вариация ▲</string>
+    <string name="CondPytSkor">Путевая скорость W</string>
+    <string name="CondYS">УС</string>
+    <string name="CondYV">УВ</string>
+    <string name="CondMagKyr">МК</string>
+    <string name="CondIstKyr">ИК</string>
+    <string name="CondKomKyr">КК</string>
+    <string name="CondOrtKyr">ОК</string>
+    <string name="CondHesh">Высота эшелона Hэш</string>
+    <string name="CondHkr">Высота круга Hкр</string>
+    <string name="CondPaer">Давление аэродрома Pаэр</string>
+    <string name="CondVvert">Вертикальная скорость Vв</string>
+    <string name="CondH1">Высота H1</string>
+    <string name="CondVvert1">Вертикальная скорость Vв1</string>
+    <string name="CondVvert2">Вертикальная скорость Vв2</string>
+    <string name="CondW1">Путевая скорость W1</string>
+    <string name="CondW2">Путевая скорость W2</string>
+    <string name="CondHzad">Заданная высота Hзад</string>
+    <string name="CondHper">Высота эшелона перехода Hэш.пер</string>
+    <string name="CondSzad">Заданный рубеж Sзад</string>
+    <string name="CondSpr">Пройденный путь Sпр</string>
+    <string name="CondLBY">ЛБУ</string>
+    <string name="CondKYR">КУР</string>
+    <string name="CondSobsh">Общий путь Sобщ</string>
+    <string name="CondYVvih">УВвых</string>
+    <string name="Condtpr">tпр</string>
+    <string name="CondBY">БУ</string>
+    <string name="CondDP">ДП</string>
+    <string name="CondNaRS">Полёт на РС</string>
+    <string name="CondOtRS">Полёт от РС</string>
+
+    <string name="CondTask1">\n__________________ \nНайти: радиус разворота R [км]\nОтвет указать с точностью до 1 знака после запятой</string>
+    <string name="CondTask2">\n__________________ \nНайти: время разворота tp [c]</string>
+    <string name="CondTask3">\n__________________ \nНайти: линейное упреждение разворота ЛУР [км]\nОтвет указывать с точностью до 1 знака после запятой</string>
+    <string name="CondTask4">\n__________________ \nНайти: путевую скорость W [км/ч]</string>
+    <string name="CondTask5">\n__________________ \nНайти: скорость ветра U [км/ч]</string>
+    <string name="CondTask6">\n__________________ \nНайти: метеорологическое направление ветра ßм [°]</string>
+    <string name="CondTask7_1">\n__________________ \nНайти: магнитную поправку ▲М [°]</string>
+    <string name="CondTask7_2i4">\n__________________ \nНайти: истинный курс ИК [°]</string>
+    <string name="CondTask7_3i6">\n__________________ \nНайти: ортодромический курс ОК [°]</string>
+    <string name="CondTask7_5">\n__________________ \nНайти: магнитный курс МК [°]</string>
+    <string name="CondTask7_7">\n__________________ \nНайти: компасную поправку ▲К [°]</string>
+    <string name="CondTask7_8">\n__________________ \nНайти: вариацию ▲ [°]</string>
+    <string name="CondTask7_9">\n__________________ \nНайти: компасный курс КК [°]</string>
+    <string name="CondTask8_1i5i6">\n__________________ \nНайти: фактический магнитный путевой угол ФМПУ [°]</string>
+    <string name="CondTask8_2i3i4">\n__________________ \nНайти: фактический истинный путевой угол ФИПУ [°]</string>
+    <string name="CondTask9">\n__________________ \nНайти: Магнитный курс расчетный МКр [°]</string>
+    <string name="CondTask10_1">\n__________________ \nНайти: рубеж занятия заданной высоты S [км]\nОтвет указывать с точностью до 1 знака после запятой</string>
+    <string name="CondTask10_2">\n__________________ \nНайти: рубеж занятия заданной высоты S [м.мили]\nОтвет указывать с точностью до 1 знака после запятой</string>
+    <string name="CondTask11_1">\n__________________ \nНайти: рубеж занятия заданной высоты S [км]\nОтвет указывать с точностью до 1 знака после запятой</string>
+    <string name="CondTask11_2">\n__________________ \nНайти: Рубеж занятия заданной высоты S [м.мили]\nОтвет указывать с точностью до 1 знака после запятой</string>
+    <string name="CondTask12_1i2">\n__________________ \nНайти: потребную вертикальную скорость Vв [м/с]</string>
+    <string name="CondTask12_3i4">\n__________________ \nНайти: потребную вертикальную скорость Vв [фут/мин]</string>
+    <string name="CondTask13i15">__________________ \nНайти: истинную скорость Vи [км/ч]</string>
+    <string name="CondTask14">__________________ \nНайти: приборную скорость Vпр [км/ч]</string>
+    <string name="CondTask16i17_1">\n__________________ \nНайти: МК ППМ[°]</string>
+    <string name="CondTask16i17_2">\n__________________ \nНайти: МК выхода на ЛЗП[°]</string>
+    <string name="CondTask16i17_3">\n__________________ \nНайти: МК следования по ЛЗП[°]</string>
+    <string name="CondTask18">\n__________________ \nНайти: поправку курса ПК[°]</string>
+
+    <string name="CondMyTask1">\n__________________ \nНайти: радиус разворота R [км]\nОтвет указать с точностью до 1 знака после запятой</string>
+    <string name="CondMyTask2">\n__________________ \nНайти: время разворота tp [c]</string>
+    <string name="CondMyTask3">\n__________________ \nНайти: линейное упреждение разворота ЛУР [км]\nОтвет указывать с точностью до 1 знака после запятой</string>
+    <string name="CondMyTask4">\n__________________ \nНайти: метеорологическое направление ветра ßм [°]</string>
+    <string name="CondMyTask5">\n__________________ \nНайти: навигационное направление ветра ßн [°]</string>
+    <string name="CondMyTask6">\n__________________ \nНайти: навигационное направление ветра ßн [°]</string>
+    <string name="CondMyTask7">\n__________________ \nНайти: угол ветра УВ [°]</string>
+    <string name="CondMyTask8">\n__________________ \nНайти: угол сноса УС [°]</string>
+    <string name="CondMyTask9">\n__________________ \nНайти: путевую скорость W [км/ч]</string>
+    <string name="CondMyTask10">\n__________________ \nНайти: скорость ветра U [км/ч]</string>
+
+    <string name="CalcAns1">\nОтвет: радиус разворота R = </string>
+    <string name="CalcAns2_1">" 1)Радиус разворота R = "</string>
+    <string name="CalcAns2_2">\nОтвет: время разворота tp = </string>
+    <string name="CalcAns3_2">\nОтвет: линейное упреждение разворота ЛУР = </string>
+    <string name="CalcAns4_1">\n1)Навиг. направление ветра ßн=ßm±180°-▲M = </string>
+    <string name="CalcAns4_2">\n2)Угол ветра УВ=ßн-ЗМПУ = </string>
+    <string name="CalcAns4_3">\n3)Угол сноса УС по линейке = </string>
+    <string name="CalcAns4_4">\n4)Путевая скорость W по линейке = </string>
+    <string name="CalcAns4_5">\n5)Время полета tп=S/W = </string>
+    <string name="CalcAns4_6">\n6)МКр=ЗМПУ-УС = </string>
+    <string name="CalcAns5_1">МК+УС+УВус = </string>
+    <string name="CalcAns5_2">МК+УС±180°-УВус = </string>
+    <string name="CalcAns5_3">\n1)Боковое уклонение БУ по линейке = </string>
+    <string name="CalcAns5_4">\n2)Угол сноса расчетный УСр=ЗМПУ-МК = </string>
+    <string name="CalcAns5_5">\n3)Угол сноса фактический УСф=УСр+БУ = </string>
+    <string name="CalcAns5_6">\n4)Путевая скорость W=Sпр*60/tпр = </string>
+    <string name="CalcAns5_7">\n5)Эквивалентный ветер Uэкв=W-V = </string>
+    <string name="CalcAns5_8">\n6)Условный угол ветра по линейке = </string>
+    <string name="CalcAns5_9">\n7)Скорость ветра U по линейке = </string>
+    <string name="CalcAns5_10">\n8)Навиг. направление ветра ßн = </string>
+    <string name="CalcAns5_11">\nОтвет: Метеорологическое направление ветра ß=ßн±180°+▲M = </string>
+    <string name="CalcAns5_3s">\n1)Эквивалентный ветер Uэкв=W-V = </string>
+    <string name="CalcAns5_4s">\n2)Условный угол ветра по линейке = </string>
+    <string name="CalcAns5_5s">\n3)Скорость ветра U по линейке = </string>
+    <string name="CalcAns5_6s">\n4)Навиг. направление ветра ßн = </string>
+    <string name="CalcAns6_1">\n1)Навиг. направление ветра ßн=ßm±180°-▲M = </string>
+    <string name="CalcAns6_2">\n2)Угол ветра УВ=ßн-ЗМПУ = </string>
+    <string name="CalcAns6_3">\n3)Угол сноса УС по линейке = </string>
+    <string name="CalcAns6_4">\n4)Путевая скорость W по линейке = </string>
+    <string name="CalcAns6_5">\n5)Эквивалентный ветер Uэкв=W-V = </string>
+    <string name="CalcAns8_1">\n1)Угол сноса расчетный УСр = </string>
+    <string name="CalcAns8_2">\n2)Угол сноса УС = </string>
+    <string name="CalcAns9_1">\n1)Навигационное направление ветра ßн = </string>
+    <string name="CalcAns9_2">\n2)ЗМПУ = </string>
+    <string name="CalcAns9_3">3)УВ = </string>
+    <string name="CalcAns9_4">4)УС = </string>
+    <string name="CalcAns9_5">Ответ: Магнитный курс расчетный МКр = </string>
+    <string name="CalcAns10_1">\n1)Hбар = </string>
+    <string name="CalcAns10_2">2)▲H =  </string>
+    <string name="CalcAns10_3">3)Время преодоления ▲H = </string>
+    <string name="CalcAns10_4">Ответ: рубеж S = </string>
+    <string name="CalcAns11_1">\n1)Hбар = </string>
+    <string name="CalcAns11_2">2)▲H1 =  </string>
+    <string name="CalcAns11_3">3)Время преодоления ▲H1 = </string>
+    <string name="CalcAns11_4">4)Рубеж на первом участке S1 = </string>
+    <string name="CalcAns11_5">5)▲H2 = </string>
+    <string name="CalcAns11_6">6)Время преодоления ▲H2 =  </string>
+    <string name="CalcAns11_7">7)Рубеж на втором участке S2 = </string>
+    <string name="CalcAns11_8">Ответ: рубеж S = </string>
+    <string name="CalcAns12_1">\n1)Hбар = </string>
+    <string name="CalcAns12_2">2)▲H =  </string>
+    <string name="CalcAns12_3">3)Время преодоления ▲H = </string>
+    <string name="CalcAns12_4">4)рубеж S = </string>
+    <string name="CalcAns12_5">5)▲Hзад = </string>
+    <string name="CalcAns12_6">6)S расположенная =  </string>
+    <string name="CalcAns12_7">7)Время для прохождения Sрасп = </string>
+    <string name="CalcAns12_8">Ответ: потребная вертикальная скорость Vв = </string>
+    <string name="CalcAns12_2_1">2)▲H1 =  </string>
+    <string name="CalcAns12_3_1">3)Время преодоления ▲H1 = </string>
+    <string name="CalcAns12_4_1">4)рубеж S1 = </string>
+    <string name="CalcAns12_5_1">5)▲H2 = </string>
+    <string name="CalcAns12_6_1">6)Время преодоления ▲H2 =  </string>
+    <string name="CalcAns12_7_1">7)рубеж S2 = </string>
+    <string name="CalcAns12_8_1">8)рубеж S = </string>
+    <string name="CalcAns12_9_1">9)▲Hзад = </string>
+    <string name="CalcAns12_10_1">10)Время преодоления ▲Hзад = </string>
+    <string name="CalcAns12_11_1">11)S2 расположенный =  </string>
+    <string name="CalcAns12_12_1">12)S расположенный = </string>
+    <string name="CalcAns12_13_1">13)Время преодоления Sрасп = </string>
+    <string name="CalcAns12_9_2">9)S расположенный = </string>
+    <string name="CalcAns12_10_2">10)Время преодоления Sрасп = </string>
+    <string name="CalcAns13_1">\n1)Коэф. сжатия = </string>
+    <string name="CalcAns13_2">2)Приборная исправленная скорость =  </string>
+    <string name="CalcAns13_3">3)Примерная истинная скорость = </string>
+    <string name="CalcAns13_4">4)Температура наружного воздуха на эшелоне = </string>
+    <string name="CalcAns13_5">Ответ: Истинная скорость = </string>
+    <string name="CalcAns14_1">\n1)Температура наружного воздуха на эшелоне = </string>
+    <string name="CalcAns14_2">\n1)Приборная исправленная скорость =  </string>
+    <string name="CalcAns14_3">2)Приборная исправленная скорость = </string>
+    <string name="CalcAns14_4">3)Коэф. сжатия = </string>
+    <string name="CalcAns14_5">Ответ: Приборная скорость = </string>
+    <string name="CalcAns15_1">\n1)Приборная исправленная по КУС скорость = </string>
+    <string name="CalcAns15_2">2)Температура наружного воздуха на эшелоне =  </string>
+    <string name="CalcAns15_3">Ответ: Истиннуая скорость = </string>
+    <string name="CalcAns16_1">\n1)МПР = </string>
+    <string name="CalcAns16_2">2)ДП =  </string>
+    <string name="CalcAns16_3">Sпр = </string>
+    <string name="CalcAns16_4">3)Sост = </string>
+    <string name="CalcAns16_5">4)ЛБУ =  </string>
+    <string name="CalcAns16_6">5)БУ = </string>
+    <string name="CalcAns16_7">6)ПК = </string>
+    <string name="CalcAns16_8">7)УСф =  </string>
+    <string name="CalcAns16_9">8)КУРппм = </string>
+    <string name="CalcAns16_10">9)МКвых = </string>
+    <string name="CalcAns16_11">10)КУРвых =  </string>
+    <string name="CalcAns16_12">11)МКсл = </string>
+    <string name="CalcAns16_13">12)КУРсл = </string>
+    <string name="CalcAns16_14">Ответ: МК на ППМ = </string>
+    <string name="CalcAns16_1_1">\n1)МПС = </string>
+    <string name="CalcAns16_2_1">2)БУ =</string>
+    <string name="CalcAns16_6_1">5)ДП =  </string>
+    <string name="CalcAns16_9_1">8)МКвых = </string>
+    <string name="CalcAns16_10_1">9)КУРвых =  </string>
+    <string name="CalcAns16_11_1">10)МКсл = </string>
+    <string name="CalcAns16_12_1">11)КУРсл = </string>
+    <string name="CalcAns18_1">\n1)Sост = </string>
+    <string name="CalcAns18_2">2)ДП =  </string>
+    <string name="CalcAns18_3">3)БУ = </string>
+    <string name="CalcAns18_4">3)ЛБУ = </string>
+    <string name="CalcAns18_5">2)БУ =  </string>
+    <string name="CalcAns18_6">Ответ: ПК =  </string>
+
+    <string name="RNtask1_1">На радиус разворота: </string>
+    <string name="RNtask1_2">На время разворота: </string>
+    <string name="RNtask1_3">На ЛУР: </string>
+    <string name="RNtask2_1">На путевую скорость: </string>
+    <string name="RNtask2_2">На скорость ветра: </string>
+    <string name="RNtask2_3">На направление ветра: </string>
+    <string name="RNtask3_1">На курсы и поправки: </string>
+    <string name="RNtask3_2">На путевой угол: </string>
+    <string name="RNtask3_3">На расчетный курс: </string>
+    <string name="RNtask4_1">На высоту полета: </string>
+    <string name="RNtask4_2">На высоту полета с ограничением скорости: </string>
+    <string name="RNtask4_3">На высоту полета с изменением заданной высоты: </string>
+    <string name="RNtask5_1">На истинную скорости самолета: </string>
+    <string name="RNtask5_2">На приборную скорости самолета: </string>
+    <string name="RNtask5_3">На истинную скорости самолета по КУС: </string>
+    <string name="RNtask6_1">На исправление пути на РС: </string>
+    <string name="RNtask6_2">На исправление пути от РС: </string>
+    <string name="RNtask6_3">На БУ/ДП/ПК: </string>
+
+    <string name="ConstructArrow">↓</string>
+    <string name="ConstructArrowAnsw">Ответ</string>
+    <string name="ConstructActname1">R разворота(V-скорость,x-крен)</string>
+    <string name="ConstructActname2">tр Время разворота(V-скорость,R разворота,Угол разворота)</string>
+    <string name="ConstructActname3">ЛУР(R разворота,Угол разворота)</string>
+    <string name="ConstructActname4">Ben Направление ветра нав.(Bem направлние ветра метео.,▲М магнитная поправка)</string>
+    <string name="ConstructActname5">Ben Направление ветра нав.(V-скорость,W-путевая скорость,Bem направлние ветра метео.,▲М магнитная поправка,МК - магнитный курс)</string>
+    <string name="ConstructActname6">Bem направлние ветра метео.(Ben Направление ветра нав.,▲М магнитная поправка)</string>
+    <string name="ConstructActname7">УВ Угол ветра(Ben Направление ветра нав.,ЗМПУ)</string>
+    <string name="ConstructActname8">УС Угол сноса(V-скорость,U-скорость ветра,УВ-Угол ветра)</string>
+    <string name="ConstructActname9">W-путевая скорость(V-скорость,УВ-Угол ветра,УС-угол сноса)</string>
+    <string name="ConstructActname10">U-скорость ветра(V-скорость,W-путевая скорость,УС-угол сноса)</string>
+
+
+    <string-array name="wind_speed_measure">
+        <item>узл.</item>
+        <item>м/с</item>
+        <item>км/ч</item>
+    </string-array>
+
+    <string-array name="action_number">
+        <item>R разворота(V-скорость,x-крен)</item>
+        <item>Время разворота(V-скорость,R разворота,Угол разворота)</item>
+        <item>ЛУР(R разворота,Угол разворота)</item>
+        <item>Ben Направление ветра нав.(Bem направлние ветра метео.,▲М магнитная поправка)</item>
+        <item>Ben Направление ветра нав.(V-скорость,W-путевая скорость,Bem направлние ветра метео.,▲М магнитная поправка,МК - магнитный курс)</item>
+        <item>Bem направлние ветра метео.(Ben Направление ветра нав.,▲М магнитная поправка)</item>
+        <item>УВ Угол ветра(Ben Направление ветра нав.,ЗМПУ)</item>
+        <item>УС Угол сноса(V-скорость,U-скорость ветра,УВ-Угол ветра)</item>
+        <item>W-путевая скорость(V-скорость,УВ-Угол ветра,УС-угол сноса)</item>
+        <item>U-скорость ветра(V-скорость,W-путевая скорость,УС-угол сноса)</item>
+    </string-array>
+
+    <string-array name="taskstypes">
+        <item>Расчет радиуса разворота</item>
+        <item>Расчет времени разворота</item>
+        <item>Расчет ЛУР</item>
+        <item>Расчет путевой скорости</item>
+        <item>Расчет скорости ветра</item>
+        <item>Расчет направления ветра</item>
+        <item>Расчет курсов и поправок</item>
+        <item>Расчет путевого угла</item>
+        <item>Расчет расчетного курса</item>
+        <item>Расчет рубежа заданного эшелона</item>
+        <item>Расчет рубежа заданного эшелона с ограничением скорости</item>
+        <item>Расчет рубежа заданного эшелона с изменением заданного эшелона</item>
+        <item>Расчет истинной скорости самолета</item>
+        <item>Расчет приборной скорости самолета</item>
+        <item>Расчет истинной скорости самолета по КУС</item>
+        <item>Исправление пути при полете на РС</item>
+        <item>Исправление пути при полете от РС</item>
+        <item>Расчет ДП/БУ/ПК</item>
+    </string-array>
+
+    <string-array name="taskstypescalc">
+        <item>Расчет радиуса разворота</item>
+        <item>Расчет времени разворота</item>
+        <item>Расчет ЛУР</item>
+        <item>Расчет навиг. эл-ов полета</item>
+        <item>Расчет параметров ветра</item>
+        <item>Расчет эквивалентного ветра</item>
+        <item>Расчет курсов и поправок</item>
+        <item>Расчет путевого угла</item>
+        <item>Расчет расчетного курса</item>
+        <item>Расчет рубежа заданного эшелона</item>
+        <item>Расчет рубежа заданного эшелона с ограничением скорости</item>
+        <item>Расчет рубежа заданного эшелона с изменением заданного эшелона</item>
+        <item>Расчет истинной скорости самолета</item>
+        <item>Расчет приборной скорости самолета</item>
+        <item>Расчет истинной скорости самолета по КУС</item>
+        <item>Исправление пути при полете на РС</item>
+        <item>Исправление пути при полете от РС</item>
+        <item>Расчет ДП/БУ/ПК</item>
+    </string-array>
+
+    <string-array name="taskstypesinstr">
+        <item>Аббревиатуры и дополнительная информация</item>
+        <item>Расчет радиуса разворота</item>
+        <item>Расчет времени разворота</item>
+        <item>Расчет ЛУР</item>
+        <item>Расчет путевой скорости</item>
+        <item>Расчет скорости ветра</item>
+        <item>Расчет направления ветра</item>
+        <item>Расчет курсов и поправок</item>
+        <item>Расчет путевого угла</item>
+        <item>Расчет расчетного курса</item>
+        <item>Расчет рубежа заданного эшелона</item>
+        <item>Расчет рубежа заданного эшелона с ограничением скорости</item>
+        <item>Расчет рубежа заданного эшелона с изменением заданного эшелона</item>
+        <item>Расчет истинной скорости самолета</item>
+        <item>Расчет приборной скорости самолета</item>
+        <item>Расчет истинной скорости самолета по КУС</item>
+        <item>Исправление пути при полете на РС</item>
+        <item>Исправление пути при полете от РС</item>
+        <item>Расчет ДП/БУ/ПК</item>
+        <item>Определение положения ВС относительно ЛЗП</item>
+        <item>Определение входа в Зону Ожидания</item>
+    </string-array>
+
+    <string-array name="leveltypes">
+        <item>1ый уровень</item>
+        <item>2ой уровень</item>
+        <item>3ий уровень</item>
+        <item>4ый уровень</item>
+        <item>5ый уровень</item>
+        <item>6ой уровень</item>
+        <item>7ой уровень</item>
+    </string-array>
+
+    <string-array name="valuestypes">
+        <item>RUS</item>
+        <item>US</item>
+    </string-array>
+
+    <string-array name="hardtypes">
+        <item>тип 1</item>
+        <item>тип 2</item>
+    </string-array>
+
+
+    <string name="descrconstr_1">Здесь вы можете создать свою задачу из представленных действий. Вам нужно указать точность, с которым затем вы сможете давать ответ. Еще необходимо дать задаче название, по которому потом сможете найти её в списке в других разделах. И, собственно, составить саму задачу.\nВсе доступные действия указаны в правой части. Сначала написано то, что будет результатом этого дейсвтия и в скобках то, что нужно, чтобы посчитать значение. При нажатии на действие справа, оно добавится в задачу. При повторном нажатии - удалится из задачи. Задача может состоять из 8ми или менее действий. Для сохранения задачи нужно нажать на кнопку Сохранить внизу экрана. Для удаления созданной ранее задачи нужно выбрать ее из списка сверху и нажать на кнопку удалить внизу экрана.</string>
+    <string name="descrconstr_2">Для создания своих действий и использования их в создании задач, создайте файл формата .txt, запишите в него желаемое действие согласно инструкциям ниже и поместите в папку:Android/data/com.MaxEle.maximarius.nir_navigation/files/. Если все инструкции по заполнению были соблюдены, то ваше новое действие появится в списке справа.</string>
+
+    <string name="descrtask0_1">Основные аббревиатуры:</string>
+    <string name="descrtask0_2">
+        ВС - Воздушное Судно;\nЛЗП - Линия Заданного Пути;\nППМ - Промежуточный Пункт Маршрута\nМК - Магнитный Курс;\nЗМПУ - Заданный Магнитный Путевой Угол;\nЗИПУ - Заданный Истинный Путевой Угол;\nКУС - Комбинированный Указатель Скорости;\nКУР - Курсовой Угол Радиостанции;\nМПС - Магнитный Пеленг Самолета;\nМПР - Магнитный Пеленг Радиостанции;\nУР - Угол Разворота;\nЛУР - Линейное Упреждение Разворота;\nУС - Угол Сноса;\nУВ - Угол Ветра;\nРС - РадиоСтанция;\nДП - Дополнительная Поправка;\nБУ - Боковое Уклонение;\nЛБУ - Линейное Боковое Уклонение;\nПК - Поправка Курса;
+    </string>
+    <string name="descrtask1_1">В этой задаче необходимо расчитать радиус разворота R в км, при известных скорости самолета V и угле крена x. Для этого на НЛ-10 на 4-ой шкале выставляется угол крена x напротив скорости V в км/ч деленное на 100 на 6ой шкале. Тогда, напротив значка R в кружке на 4-ой шкале, на 5-ой шкале будет значение R в км.</string>
+    <string name="descrtask2_1">В этой задаче необходимо расчитать время разворота t в секундах, при известных скорости самолета V,угле крена x и угле разворота УР. Для этого, сначала находим R. На НЛ-10 на 4-ой шкале выставляется угол крена x напротив скорости V в км/ч деленное на 100 на 6ой шкале. Тогда, напротив значка R в кружке на 4-ой шкале, на 5-ой шкале будет значение R в км.</string>
+    <string name="descrtask2_2">Теперь, выставляем на 1-ой шкале значение скорости V, деленное на 10, а напротив него на шкаоле 5, значение радиуса разворота R, умноженное на 10. Затем находим на шкале 1а известный УР. Напротив него, на 2-ой шкале будет искомое значение времени разворота в секундах.</string>
+    <string name="descrtask3_1">В этой задаче необходимо расчитать линейное упреждение разворота ЛУР в км, при известных скорости самолета V,угле крена x и угле разворота УР. Для этого, сначала находим R. На НЛ-10 на 4-ой шкале выставляется угол крена x напротив скорости V в км/ч деленное на 100 на 6ой шкале. Тогда, напротив значка R в кружке на 4-ой шкале, на 5-ой шкале будет значение R в км.</string>
+    <string name="descrtask3_2">Теперь, напротив черного треугольника на шкале 4 выставляем значение R на шкале 5. Тогда напротив значения УР/2 по шкале 4, на шкале 5 будет значение ЛУР в км.</string>
+    <string name="descrtask4_1">В этой задаче необходимо расчитать путевую скорость W в км/ч, при известных заданном магнитном путевом угле ЗМПУ, метеорологическом направлении ветра ßм, воздушной скорости самолета V, скорости ветра U и магнитному склонению ▲М. Для этого, сначала нужно расчитать значение направления навигационного ветра ßн, вычев из ßм значение ▲М и прибавить или вычесть 180°, беря в расчет то, что угол ßн лежит в приделе [0;360).</string>
+    <string name="descrtask4_2">Затем расчитываем значение угла ветра УВ, вычтя из ßн значение ЗМПУ. Берем в расчет то, что УВ должен лежать в диапазоне [-180;180], а значит нужно прибавить или вычесть 360°, если УВ не попадает в этот диапазон.</string>
+    <string name="descrtask4_3">Теперь находим угол сноса УС. Для этого на НЛ-10 по шкале 3 выставляем значение УВ напротив значения V по шкале 5. Тогда напротив значения U по шкале 5, на шкале 3 будет значение УС. Его следует брать с тем же знаком, что и УВ.</string>
+    <string name="descrtask4_4">Наконец, чтобы найти W, нужно не меняя положение линейки с предыдущего пункта, найти на шкале 3 значение курсового угла ветра КУВ, где КУВ=УВ+УС. Тогда напротив КУВ по шкале 3, на шкале 5 будет значение путевой скорости W в км/ч.</string>
+    <string name="descrtask5_1">В этой задаче необходимо расчитать скорость ветра U в км/ч, при известных воздушной скорости самолета V, путевой скорости самолета W и угле сноса УС. Для этого, снчала нужно расчитать значение эквивалентного ветра Uэкв равного разности путевой и воздушной скорости самолета.</string>
+    <string name="descrtask5_2">Теперь нужно найти УВ. Для этого, на НЛ-10 напротив значения УС на шкале 3, выставляется значение Uэкв. на шкале 5. Тогда, напротив значения V на шкале 5, будет значение УВ на шкале 4. Необходимо помнить, что знак УВ должен соответствовать знаку УС.</string>
+    <string name="descrtask5_3">Наконец, чтобы найти U, нужно на НЛ-10 напротив значения V по шкале 5, поставить значение УВ на шкале 3. Тогда напротив значения УС на шкале 3, будет значение U на шкале 5 в км/ч.</string>
+    <string name="descrtask6_1">В этой задаче необходимо расчитать метеорологическое направление ветра ßм в °, при известных воздушной скорости самолета V, путевой скоротси самолета W, магнитном курсе МК, магнитном склонении ▲М и угле сноса УС. Для этого, снчала нужно расчитать значение эквивалентного ветра Uэкв равного разности путевой и воздушной скорости самолета.</string>
+    <string name="descrtask6_2">Теперь нужно найти УВ. Для этого, на НЛ-10 напротив значения УС на шкале 3, выставляется значение Uэкв. на шкале 5. Тогда, напротив значения V на шкале 5, будет значение УВ на шкале 4. Необходимо помнить, что знак УВ должен соответствовать знаку УС.</string>
+    <string name="descrtask6_3">Затем находим значение навигационного направления ветра ßн. Здесь нужно сравнить значения W и V. Если W больше или равно V, то ßн равно сумме МК, УС и УВ. Если W меньше V то ßн вычисляется как сумма МК и УС, вычитается УВ и прибавляется или вчитается 180°.</string>
+    <string name="descrtask6_4">Наконец, значение метеорологического направления ветра ßм вычисляется как ßн + ▲М и прибавляется или вычитается 180°. Важно помнить, что значение ßм должно находиться в диапазоне [0;360), а значит нужно прибавить или вычесть 360°, если ßм не попадает в этот диапазон.</string>
+    <string name="descrtask7_1">В этом типе задач ничего сложного нет - чистая арифметика. Важно запомнить изображение снизу. На нем показана мнемоническая схема к правилу учета поправок: При переходе от приборных значений к истинным, все поправки складываются, а при переходе от истинных значений к приборным, все поправки будут вычитаться. На изображении используются обозначения: КК-компасный курс; МК-магнитный курс; ИК-истинный курс; ОК-ортодромический курс; ▲К-компасная поправка; ▲М-магнитное склонение; ▲А-азимутальная поправка; ▲М+▲А=▲Му-условное магнитное склонение; ▲К+▲М=▲-вариация.</string>
+    <string name="descrtask7_2">Например, если известен магнитный курс МК и магнитное склонение ▲М, то значение истинного курса ИК будет равно: ИК=МК+▲М.</string>
+    <string name="descrtask8_1">В этой задаче необходимо расчитать фактический истинный/магнитный путевой угол ФИПУ/ФМПУ в °, при известных магнитном/истинном курсе ИК/МК, магнитному склонению ▲М и угле сноса УС. Снчала следует обратить внимание какой курс вам известен и какой ФПУ вам нужно найти. В зависимости от этого по правилу учета поправок найти курс, соответствующий нужному ФПУ. Напрмер, если бы нужно было найти ФИПУ, то нужно было бы найти снчала ИК.</string>
+    <string name="descrtask8_2">Наконец, ФПУ находится сложением соответствующего курса К и угла сноса УС.</string>
+    <string name="descrtask8_3">Если в условии задачи вместо УС указаны заданный путевой угол ЗПУ, линейное боковое уклонение ЛБУ и пройденный путь Sпр, то для поиска ФПУ нужно снчала найти УС. Для этого, сначала, по НЛ-10 находим боковое уклонение БУ. Напротив черного треугольника на шкале 3 выставляется значение Sпр в км на шкале 4. Тогда напротив значения ЛБУ на шкале 4, будет значение БУ на шкале 3.</string>
+    <string name="descrtask8_4">Наконец, зная БУ, можно найти значение УС, сначала расчетного (УСр), а затем фактического (УСф). А затем найти ФПУ по изветсной формуле.</string>
+    <string name="descrtask9_1">В этой задаче необходимо расчитать магнитный курс расчетный МКр в °, при известных заданном истинном путевом угле ЗИПУ, метеорологическом направлении ветра ßм, воздушной скорости самолета V, скорости ветра U и магнитном склонении ▲М. Для этого, сначала нужно расчитать значение направления навигационного ветра ßн, вычев из ßм значение ▲М и прибавить или вычесть 180°, беря в расчет то, что угол ßн лежит в приделе [0;360).</string>
+    <string name="descrtask9_2">Затем, вычислим ЗМПУ, вычив магнитное склонение из ЗИПУ.</string>
+    <string name="descrtask9_3">Теперь, расчитаем угол ветра, вычив из значения навигационного направления ветра ßн значение ЗМПУ.</string>
+    <string name="descrtask9_4">Затем, находим значение УС. Для этого на НЛ-10 по шкале 3 выставляем значение УВ напротив значения V по шкале 5. Тогда напротив значения U по шкале 5, на шкале 3 будет значение УС. Его следует брать с тем же знаком, что и УВ.</string>
+    <string name="descrtask9_5">Наконец, значение МКр в ° вычисляется вычитаением из значения ЗМПУ значения УС.</string>
+    <string name="descrtask10_1">В этой задаче необходимо расчитать рубеж занятия заданного эшелона S в км или м. милях, при известных высоте этого эшелона Hэш, высоте полета по кругу Hкр, давлении на аэродроме P, средней вертикальной скорости Vв и путевой скорости W. Для начала нужно расчитать ▲H, которая находится вычитаением из Hэш Нкр и Нбар, где Hбар это высота аэродорома над уровнем нормального давления. А значит нужно найти неизвестную Hбар. Она вычисляется по формулам ниже, в зависимости от того, в каких системах счисления вам будет дальше удобнее считать и в какой системе счисления было дано P.</string>
+    <string name="descrtask10_2">Теперь, можем вычислить ▲H. Как было сказано, для этого из Hэш нужно вычесть Hкр и Hбар.</string>
+    <string name="descrtask10_3">Затем находим время, за которое будет преодалена самолетом эта высота ▲H, при известной скорсти Vв. Для этого можно или разделить ▲H на Vв, не забыв перевести все в одни величины или на НЛ-10 поставить значение Vв в м/с на шкале 1 напротив 10 в прямоугольнике на шкале 2, тогда напротив значения ▲H, деленного на 10 в м на шкале 1, будет значение t в минутах или секундах.</string>
+    <string name="descrtask10_4">Наконец, найти S можно также двумя способами: или умножив W на t, не завыв перевести t в часы, или подстваить на НЛ-10 значение W в км/ч на шкале 1 напротив красного треугольника на шкале 2, тогда напротив значения t в минутах на шкале 2 будет значение S в км на шкале 1.</string>
+    <string name="descrtask11_1">В этой задаче необходимо расчитать рубеж занятия заданного эшелона S в км или м. милях, если имееть область ниже эшелона H1 с ограничением по скорости полета. Расчет нужно произвести при известных высоте этого эшелона Hэш, высоте полета по кругу Hкр, давлении на аэродроме P, средней вертикальной скорости Vв1 выше эшелона H1, путевой скорости W1 выше эшелона H1, высота эшелона ограничения H1, средней вертикальной скорости Vв2 ниже эшелона H1 и путевой скорости W2 ниже эшелона H1. Для начала нужно расчитать ▲H1 высота участка выше H1, которая находится вычитаением из Hэш H1.</string>
+    <string name="descrtask11_2">Затем находим время t1, за которое будет преодалена самолетом эта высота ▲H1, при известной скорсти Vв1. Для этого можно или разделить ▲H1 на Vв1, не забыв перевести все в одни величины или на НЛ-10 поставить значение Vв1 в м/с на шкале 1 напротив 10 в прямоугольнике на шкале 2, тогда напротив значения ▲H, деленного на 10 в м на шкале 1, будет значение t1 в минутах или секундах.</string>
+    <string name="descrtask11_3">Теперь, найти S1 можно также двумя способами: или умножив W1 на t1, не завыв перевести t1 в часы, или подстваить на НЛ-10 значение W1 в км/ч на шкале 1 напротив красного треугольника на шкале 2, тогда напротив значения t1 в минутах на шкале 2 будет значение S1 в км на шкале 1.</string>
+    <string name="descrtask11_4">Далее, нужно расчитать значение ▲H2 высоты ниже H1, которая находится вычитаением из H1 значений Hкр и Hбар, где Hбар это высота аэродорома над уровнем нормального давления. А значит нужно найти неизвестную Hбар. Она вычисляется по формулам ниже, в зависимости от того, в каких системах счисления вам будет дальше удобнее считать и в какой системе счисления было дано P. </string>
+    <string name="descrtask11_5">Теперь, можем вычислить ▲H2. Как было сказано, для этого из H1 нужно вычесть Hкр и Hбар.</string>
+    <string name="descrtask11_6">Затем находим время t2, за которое будет преодалена самолетом эта высота ▲H2, при известной скорсти Vв2. Для этого можно или разделить ▲H2 на Vв2, не забыв перевести все в одни величины или на НЛ-10 поставить значение Vв2 в м/с на шкале 1 напротив 10 в прямоугольнике на шкале 2, тогда напротив значения ▲H2, деленного на 10 в м на шкале 1, будет значение t2 в минутах или секундах.</string>
+    <string name="descrtask11_7">Теперь, найти S2 можно также двумя способами: или умножив W2 на t2, не завыв перевести t2 в часы, или подстваить на НЛ-10 значение W2 в км/ч на шкале 1 напротив красного треугольника на шкале 2, тогда напротив значения t2 в минутах на шкале 2 будет значение S2 в км на шкале 1.</string>
+    <string name="descrtask11_8">Наконец, чтобы найти итоговое значение S, нужно сложить найденные S1 и S2.</string>
+    <string name="descrtask12_1">В этой задаче необходимо расчитать потребную вертикальную скорость полета самолета Vв.потр. в м/с или фут/мин, при которой самолет должен занять заданный эшелон с заданным рубежом. В зависимости от сложности, аэропорт может быть с ограничением скорости ниже эшелона H1 или нет. В зависимоти от этого будут соответствующие данные известны и еще к ним добавится заданный рубеж Sзад, заданный эшелон Hзад и эшелон перехода Hэш.пер.. Сначала в обоих случаях (сложный простой) задача решается как было рассказано в 2 предыдущих пунктах. Возьмем сначала вариант без ограничения ниже H1. Для начала нужно высчитать новый ▲H`, обратив внимание на то, больше Hзад чем Hэш.пер или меньше.</string>
+    <string name="descrtask12_2">Затем, нужно рассчитать расположенный рубеж Sрасп, равный разности между найденной S и Sзад.</string>
+    <string name="descrtask12_3">Теперь, расчитаем расположенное время полета tрасп, которое можно посчитать, поделив Sрасп на известную W.</string>
+    <string name="descrtask12_4">Наконец, чтобы расчитать Vв.потр, нужно ▲H` разделить на tрасп.</string>
+    <string name="descrtask12_5">Если же имеется ограничение скоротси ниже эшелона H1, то прежде всего надо сравнить H1 и Hзад. если Hзад больше или равна H1, то следующие 3 пункта делать не нужно и S`2 принимается равным 0. Если же Hзад меньше H1, то нужно высчитать новый ▲H`, обратив внимание на то, больше Hзад чем Hэш.пер или меньше.</string>
+    <string name="descrtask12_6">Затем, нужно расчитать время пролета t`2 участка ▲H` с известной вертикальной скоростью Vв2, разделив ▲H` на Vв2.</string>
+    <string name="descrtask12_7">Теперь можем расчитать значение S`2, умножив W2 на t`2, не забыв, что t`2 должно быть в часах.</string>
+    <string name="descrtask12_8">Далее, расчитываем значение Sрасп, вычив из ранее расчитанной S значения Sзад и S`2.</string>
+    <string name="descrtask12_9">Затем, находим значение tрасп, поделив Sрасп на W1.</string>
+    <string name="descrtask12_10">Наконец, чтобы найти Vв.потр., нужно разделить значение расчитанного в начале ▲H на значение tрасп.</string>
+    <string name="descrtask13_1">В этой задаче необходимо расчитать значение истинной скорости самолтеа Vи в км/ч, при известных высоте полета Hэш, приборной скорости самолета Vпр, поправки к указателю скорости ▲V или инструментальной и аэродинамической поправках ▲Vи и ▲Vа соответственно и значении температуры на эшелоне полета tн или температуры по термометру tпр. Сначала нужно расчитать значение приборной исправленной скорости полета Vпр.испр. Для этого нужно определить значение поправки сжатия, которая определяется приближенно из таблицы в зависимости от приборной скорости полета и эшелона. ▲Vсж всегда берется с отрицательным знаком.</string>
+    <string name="descrtask13_2">Теперь, можно вычислить значение Vпр.испр.. Она находится путем прибавления к значению Vпр поправок ▲V и ▲Vсж. Если в условии были указаны ▲Vи и ▲Vа, то просто прибавляются они обе, т.к. ▲V=▲Vи+▲Vа.</string>
+    <string name="descrtask13_3">Наконец, если в условии была дана tн, то на НЛ-10 на шкале 12 выставляем значение Hэш, а напротив, на шкале 11, выставляем значение tн. Тогда напротив значения Vпр.испр. на шкале 15, будет значение Vи на шкале 14.</string>
+    <string name="descrtask13_4">Если же в условии была дана tпр, то сначала нужно найти примерное значение V`и,для определения ▲t°, при помощи которой можно будет найти tн. Для этого выполняем те же действия, что и в прошлом пункте, только вместо tн используем tпр.</string>
+    <string name="descrtask13_5">Теперь, на НЛ-10 на шкале 16 выставляем значение V`и и навпротив него видим значение ▲t°.</string>
+    <string name="descrtask13_6">Затем, зная ▲t° можем найти значение tн, вычев из значения tпр значение ▲t°.</string>
+    <string name="descrtask13_7">Наконец, вычислив значение tн можем найти искомое значение Vи, как в предыдущем случае.</string>
+    <string name="descrtask14_1">В этой задаче необходимо расчитать значение приборной скорости самолтеа Vпр в км/ч, при известных высоте полета Hэш, истинной скорости самолета Vи, поправки к указателю скорости ▲V или инструментальной и аэродинамической поправках ▲Vи и ▲Vа соответственно и значении температуры на эшелоне полета tн или температуры по термометру tпр. Сначала нужно расчитать значение приборной исправленной скорости полета Vпр.испр. Если в условии была дана tн, то тогда на НЛ-10 находится на шкале 11 значение tн, напротив него на шкале 12 выставляется значение Hэш, тогда напротив значения Vи на шкале 14 будет значение Vпр.испр. на шкале 15.</string>
+    <string name="descrtask14_2">Если же в условии была дана tпр, то снчала нужно найти ▲t°, при помощи которой можно будет найти tн. Для этого на НЛ-10 на шкале 16 выставляем значение Vи и навпротив него видим значение ▲t°.</string>
+    <string name="descrtask14_3">Затем, зная ▲t° можем найти значение tн, вычев из значения tпр значение ▲t°.</string>
+    <string name="descrtask14_4">Наконец, вычислив значение tн можем найти искомое значение Vи, как в предыдущем случае.</string>
+    <string name="descrtask14_5">Теперь, для расчета Vпр нужно определить значение поправки сжатия ▲Vсж, которая определяется приближенно из таблицы в зависимости от приборной скорости полета и эшелона. Используем для её нахождения Vпр.испр. и Hэш. ▲Vсж всегда берется с отрицательным знаком.</string>
+    <string name="descrtask14_6">Наконец, Vпр можно расчитать вычев из Vпр.испр. значения ▲Vсж и ▲V. Если в условии были указаны ▲Vи и ▲Vа, то просто вычитаются они обе, т.к. ▲V=▲Vи+▲Vа</string>
+    <string name="descrtask15_1">В этой задаче необходимо расчитать значение истинной скорости самолтеа Vи в км/ч, при известных высоте полета Hэш, приборной скорости самолета по КУС Vпр.кус, поправки к указателю скорости ▲V или инструментальной и аэродинамической поправках ▲Vи и ▲Vа соответственно и значении температуры на эшелоне полета tн или температуры по термометру tпр. Сначала нужно расчитать значение приборной исправленной скорости полета по КУС Vпр.испр.кус. Она находится путем прибавления к значению Vпр.кус поправки ▲V. Если в условии были указаны ▲Vи и ▲Vа, то просто прибавляются они обе, т.к. ▲V=▲Vи+▲Vа.</string>
+    <string name="descrtask15_2">Теперь, если в условии была дана tн, то на НЛ-10 на шкале 13 выставляем значение Hэш, а напротив, на шкале 11, выставляем значение tн. Тогда напротив значения Vпр.испр.кус на шкале 15, будет значение Vи на шкале 14.</string>
+    <string name="descrtask15_3">Если же в условии была дана tпр, то сначала нужно найти ▲t°, при помощи которой можно будет найти tн. Для этого на НЛ-10 на шкале 16 выставляем значение Vпр.кус и навпротив него видим значение ▲t°.</string>
+    <string name="descrtask15_4">Затем, зная ▲t° можем найти значение tн, вычев из значения tпр значение ▲t°.</string>
+    <string name="descrtask15_5">Наконец, вычислив значение tн можем найти искомое значение Vи, как в предыдущем случае.</string>
+    <string name="descrtask16_1">В этой задаче рассматривается ситуация, когда ВС отклонился от ЛЗП и теперь нам нужно вернуть его обратно на путь истинный. Здесь мы можем видеть ситуацию, когда отклонение произошло при полете на РС. Даны в этой задаче ЗМПУ, МК, КУР, Sобщ, tпр, W и угол выхода, о котором поговорим позже.</string>
+    <string name="descrtask16_2">Для начала нужно определить, сторону уклонения (лево/право) и её величину, которая выражается как ДП. О том, как определить сторону уклонения прочитайте в последнем пункте инструкций, а ДП находится таким образом (ДП лежит в интервале [-180;180]):</string>
+    <string name="descrtask16_3">Зная угловую величину уклонения, найдем линейную, т.е. ЛБУ, предварительно вычислив Sост при помощи W, tпр и Sобщ:</string>
+    <string name="descrtask16_4">Теперь, зная ЛБУ мы можем понять, на сколько далеко мы отклонились от ЛЗП. Обычно, по обе стороны от ЛЗП есть допустимое расстояние - корридор. И если отклонение получилось в пределах корридора, то ВС просто направляют на точку и летят дальше, но если ВС вылетело за корридор, то необходимо провести расчеты для вывода ВС обратно на ЛЗП, для дальнейшего следования по маршруту. Разберем сначала первый вариант (ЛБУ меньше корридора). Тогда нам нужно найти БУ:</string>
+    <string name="descrtask16_5">Теперь можем найти ПК:</string>
+    <string name="descrtask16_6">И, наконец, МК выхода на ППМ (МК ППМ): (Это будет тот курс, с которым нам надо будет лететь, чтобы оказаться в конечном итоге над нашим ППМ)</string>
+    <string name="descrtask16_7">Если же ЛБУ больше чем корридор, то сначала нужно задаться углом выхода (УВвых), это тот угол, под которым мы хотим вернуться на ЛЗП, чем он больше, тем короче будет путь к ЛЗП. Важно помнить, что знак УВвых соответствует знаку БУ и ДП. Теперь мы находим МК выхода на ЛЗП и МК следования по ЛЗП:</string>
+    <string name="descrtask17_1">В этой задаче рассматривается ситуация, когда ВС отклонился от ЛЗП и теперь нам нужно вернуть его обратно на путь истинный. Здесь мы можем видеть ситуацию, когда отклонение произошло при полете от РС. Даны в этой задаче ЗМПУ, МК, КУР, Sобщ, tпр, W и угол выхода, о котором поговорим позже.</string>
+    <string name="descrtask17_2">Для начала нужно определить, сторону уклонения (лево/право) и её величину, которая выражается как БУ. О том, как определить сторону уклонения прочитайте в последнем пункте инструкций, а БУ находится таким образом (БУ лежит в интервале [-180;180]):</string>
+    <string name="descrtask17_3">Зная угловую величину уклонения, найдем линейную, т.е. ЛБУ, предварительно вычислив Sост при помощи W, tпр и Sобщ:</string>
+    <string name="descrtask17_4">Теперь, зная ЛБУ мы можем понять, на сколько далеко мы отклонились от ЛЗП. Обычно, по обе стороны от ЛЗП есть допустимое расстояние - корридор. И если отклонение получилось в пределах корридора, то ВС просто направляют на точку и летят дальше, но если ВС вылетело за корридор, то необходимо провести расчеты для вывода ВС обратно на ЛЗП, для дальнейшего следования по маршруту. Разберем сначала первый вариант (ЛБУ меньше корридора). Тогда нам нужно найти ДП:</string>
+    <string name="descrtask17_5">Теперь можем найти ПК:</string>
+    <string name="descrtask17_6">И, наконец, МК выхода на ППМ (МК ППМ): (Это будет тот курс, с которым нам надо будет лететь, чтобы оказаться в конечном итоге над нашим ППМ)</string>
+    <string name="descrtask17_7">Если же ЛБУ больше чем корридор, то сначала нужно задаться углом выхода (УВвых), это тот угол, под которым мы хотим вернуться на ЛЗП, чем он больше, тем короче будет путь к ЛЗП. Важно помнить, что знак УВвых соответствует знаку БУ и ДП. Теперь мы находим МК выхода на ЛЗП и МК следования по ЛЗП:</string>
+    <string name="descrtask18_1">В этой задаче необходимо расчитать поправку курса следования по ЛЗП, при известных Sобщ, tпр, скорости полета W и еще одного из параметров (ДП, БУ или ЛБУ). Для начала, нужно найти Sост и Sпр. Sпр можно найти произведением W на tпр, не забыв перевести время в часы, а Sост находится вычитанием Sпр из Sобщ.</string>
+    <string name="descrtask18_2">Теперь, в зависимости от того, что нам было дано в условии мы предпринимаем разные шаги, но суть в том, что нужно найти БУ и ДП. Для начала разберем вариант с известными или БУ или ДП. Тогда неизвестный параметр вычисляется так:</string>
+    <string name="descrtask18_3">Если же было известно ЛБУ, то БУ и ДП мы можем найти или по НЛ-1, поставив напротив треугольника на шкале 4, Sпр или Sост на шкале 5 и тогда напротив ЛБУ по шкале 5, мы получим БУ или ДП соответственно на шкале 4. Или же воспользовавшись формулами:</string>
+    <string name="descrtask18_4">Осталось только сложить БУ и ДП и мы получим ПК.</string>
+    <string name="descrtask19_1">Эта тренировка находится в отдельном пункте меню. Здесь вам нужно как можно быстрее определить, где находится ВС относительно ЛЗП, имея данные о ЗМПУ, МК и КУР. Для начала нужно определить, на РС летит ВС или от неё. Для этого смотрим на значение КУР. Если КУР от 270° до 360° или от 0° до 90°, то это полет на РС, если же КУР больше 90°, но меньше 270°, то это полет от РС.</string>
+    <string name="descrtask19_2">Теперь, чтобы определить положение ВС относительно ЛЗП сравниваем ЗМПУ и сумму МК+КУР. Ниже можно увидеть, где будет ВС в зависимости от результатов сравнения для полета на РС.</string>
+    <string name="descrtask19_3">И для полета от РС.</string>
+    <string name="descrtask20_1">Для начала, разберемся в управлении:\n1-индикация курса ВС, при вводе значений через клавиатуру курс будет автоматически устанавливаться по введенным данным;\n2-индикация курса посадки, он же курс линии пути приближения, при вводе значений через клавиатуру курс будет автоматически устанавливаться по введенным данным;\n3,4-кнопки переключения круга на левый и правый;\n5-кнопка перехода в режим тест, где вам предложено решать задачи по определению типа входа в ЗО;\n6-кнопка инструкций, которую вы нажали, чтобы попасть сюда;\n7-круговая индикация курса посадки и секторов входа в ЗО;\n8-круговая индикация курса ВС.</string>
+    <string name="descrtask20_2">Итак, наведение обеспечивается при полете по линии пути приближения (ЛПП) с использованием навигационных средств, которые расположены в контрольной точке (красный треугольник). Разворот выполняется с креном, обеспечивающим угловую скорость разворота 3°/сек с креном не превышающим 25°. Время полета по линии пути удаления (ЛПУ) на высотах до FL140 составляет 1 минуту, а выше - 1.5 минуты. Вход в зону ожидания возможен с любого направления, предусматривающего 3 сектора. Линия, проходящая через контрольную точку и делящая воздушное пространство на сектора проходит под углом 70° к ЛПП.\n__________________________________\nВХОД ИЗ СЕКТОРА I (параллельный вход)\n1)После пролета КТ выполняется полет параллельно ЛПУ в течении установленного времени\n2)Выполняется разворот внутрь схемы с обязательным пересечением ЛПП\n3) Осуществляется разворот с выходом на ЛПП и после повторного пролета КТ выполняется полет по схеме.</string>
+    <string name="descrtask20_3">ВХОД ИЗ СЕКТОРА II (вход капля)\n1)После пролета КТ выполняется полет внутрь схемы под углом 30° к ЛПУ в течении установленного времени\n2)Выполняется разворот с выходом на ЛПП\n3)После повторного пролета КТ выполняется полет по схеме.</string>
+    <string name="descrtask20_4">ВХОД ИЗ СЕКТОРА III (прямой вход)\n1)После пролета КТ выполняется полет полет по схеме.</string>
+
+    <string name="title_activity_nl">NLActivity</string>
+    <string name="title_activity_entry_test">EntryTestActivity</string>
+    <string name="recomenYV">Если у вас ошибка в этом пункте, то подучите арифметику. Из ßн нужно вычесть ЗМПУ. Обычно УВ высчитывают в пределах [-180;180]</string>
+
+    <string name="NL_dialog1">Линейка НЛ-10 имеет 17 шкал. Включить цифровую подпись каждой шкалы вы можете переключателем ниже. Далее все инструкции будут оперировать этой пронумеровкой.</string>
+    <string name="NL_dialog2">Умножение двух чисел (a∙b=c):</string>
+    <string name="NL_dialog3">Деление двух чисел (a:b=c):</string>
+    <string name="NL_dialog4">Квадрат числа или его квадратный корень (x):</string>
+    <string name="NL_dialog5">Синус угла (sin(a)):</string>
+    <string name="NL_dialog6">Косинус угла (cos(a)):</string>
+    <string name="NL_dialog7">Тангенс угла (tg(a)):</string>
+    <string name="NL_dialog8">Произведение числа и синуса угла (b*sin(a)=c):</string>
+    <string name="NL_dialog9">Перевод м/с в км/ч и обратно:</string>
+    <string name="NL_dialog10">Определение элементов полёта по двум другим (S,t,W):</string>
+
+    <string name="NL_dialog1eng">The NL-10 has 17 scales. You can enable the digital markers of each scale with the switch below. Further, all instructions will operate with this numbering.</string>
+    <string name="NL_dialog2eng">Multiplication of two numbers (a∙b=c):</string>
+    <string name="NL_dialog3eng">Division of two numbers (a:b=c):</string>
+    <string name="NL_dialog4eng">Square of a number or its square root (x):</string>
+    <string name="NL_dialog5eng">Sin of angle (sin(a)):</string>
+    <string name="NL_dialog6eng">Cos of angle (cos(a)):</string>
+    <string name="NL_dialog7eng">Tg of angle (tg(a)):</string>
+    <string name="NL_dialog8eng">Multiplication of number and sin of angle (b*sin(a)=c):</string>
+    <string name="NL_dialog9eng">Transfer mps to kmph and back:</string>
+    <string name="NL_dialog10eng">Determination of flight elements by the other two (S,t,W):</string>
+
+    <string name="ContDescr_ads">Рекламный баннер</string>
+    <string name="ContDescr_WindSlider">Ползунок скорости ветра</string>
+    <string name="ContDescr_TasksMenu">Меню задач</string>
+    <string name="ContDescr_Minus">Минус</string>
+    <string name="ContDescr_Plus">Плюс</string>
+    <string name="ContDescr_HoldDirection">Направление схемы зоны ожидания</string>
+</resources>

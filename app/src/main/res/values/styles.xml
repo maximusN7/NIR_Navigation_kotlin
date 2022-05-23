@@ -1,0 +1,109 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="spinnerStyle">@style/Widget.App.Spinner</item>
+        <item name="android:buttonStyle">@style/newbuttonstyle</item>
+        <item name="android:textViewStyle">@style/newtextviewstyle</item>
+        <item name="android:editTextColor">@color/textsimple</item>
+        <item name="android:editTextBackground">@color/backgroundview</item>
+        <item name="editTextStyle">@style/neweditviewstyle</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="radioButtonStyle">@style/newradiostyle</item>
+        <item name="android:buttonStyleToggle">@style/togglebuttonstyle</item>
+      </style>
+
+      <style name="AppThemeDark" parent="Theme.AppCompat.Light.NoActionBar">
+          <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary1</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark1</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/background1</item>
+        <item name="android:colorBackground">@color/background1</item>
+        <item name="spinnerStyle">@style/Widget.App.Spinner1</item>
+        <item name="android:buttonStyle">@style/newbuttonstyle1</item>
+        <item name="android:textViewStyle">@style/newtextviewstyle1</item>
+        <item name="android:editTextColor">@color/textsimple1</item>
+        <item name="android:editTextBackground">@color/backgroundbutton1</item>
+        <item name="editTextStyle">@style/neweditviewstyle1</item>
+        <item name="android:statusBarColor">@color/colorPrimary1</item>
+        <item name="radioButtonStyle">@style/newradiostyle1</item>
+        <item name="android:buttonStyleToggle">@style/togglebuttonstyle1</item>
+    </style>
+
+    <style name="newbuttonstyle" parent="Base.Widget.AppCompat.Button.Colored">
+           <item name="android:backgroundTint">@color/backgroundbutton</item>
+           <item name="android:textColor">@color/textsimple</item>
+           <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="newbuttonstyle1" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:backgroundTint">@color/backgroundbutton1</item>
+        <item name="android:textColor">@color/textsimple1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="togglebuttonstyle" parent="@android:style/Widget.Material.Light.Button.Toggle">
+        <item name="android:backgroundTint">@color/backgroundbutton</item>
+        <item name="android:textColor">@color/textsimple</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="togglebuttonstyle1" parent="@android:style/Widget.Material.Light.Button.Toggle">
+        <item name="android:backgroundTint">@color/background1</item>
+        <item name="android:textColor">@color/textsimple1</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="newradiostyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/textsimple</item>
+    </style>
+    <style name="newradiostyle1" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/textsimple1</item>
+    </style>
+
+    <style name="newtextviewstyle" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/textsimple</item>
+    </style>
+    <style name="newtextviewstyle1" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/textsimple1</item>
+    </style>
+
+    <style name="neweditviewstyle" parent="@android:style/Widget.EditText">
+        <item name="android:editTextColor">@color/textsimple</item>
+        <item name="android:editTextBackground">@color/backgroundview</item>
+        <item name="android:textColorHint">@color/edithint</item>
+    </style>
+    <style name="neweditviewstyle1" parent="@android:style/Widget.EditText">
+        <item name="android:editTextColor">@color/textsimple1</item>
+        <item name="android:editTextBackground">@color/background1</item>
+        <item name="android:textColorHint">@color/edithint1</item>
+    </style>
+
+       <style name="Widget.App.Spinner" parent="@style/Widget.AppCompat.Spinner">
+           <item name="overlapAnchor">true</item>
+           <item name="android:background">@drawable/spinner_background</item>
+           <item name="android:textColor">@color/textsimple</item>
+       </style>
+    <style name="Widget.App.Spinner1" parent="@style/Widget.AppCompat.Spinner">
+        <item name="overlapAnchor">true</item>
+        <item name="android:background">@drawable/spinner_background_dark</item>
+        <item name="android:textColor">@color/textsimple1</item>
+      </style>
+
+         <style name="AppTheme.NoActionBar">
+             <item name="windowActionBar">false</item>
+             <item name="windowNoTitle">true</item>
+         </style>
+
+         <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+         <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+     </resources>

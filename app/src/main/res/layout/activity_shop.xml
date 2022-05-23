@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.MaxEle.maximarius.nir_navigation.ShopActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75">
+
+        <TextView
+            android:id="@+id/textViewSecret"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/youarebest"
+            android:textSize="30sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerHorizontal="true"
+            android:textIsSelectable="true"
+            android:textStyle="bold"
+            android:shadowColor="#ff0000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="5"
+            android:padding="12dp"
+            android:textColor="#ffc0cb"/>
+
+        <Button
+            android:id="@+id/buttonInstructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/textViewAbout"
+            android:text="@string/shoplist"
+            android:layout_margin="3dp"
+            android:textSize="24sp"/>
+            <!--android:onClick="onSubscribeButtonClicked"-->
+
+        <TextView
+            android:id="@+id/textViewAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textIsSelectable="true"/>
+
+        <LinearLayout
+            android:id="@+id/LayButandEd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textViewAbout"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/textViewEnterPassword"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="30dp"
+                android:ems="10"
+                android:focusable="auto"
+                android:hint="@string/EntPas"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:importantForAutofill="no" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ok"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="17">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/banner_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            android:contentDescription="@string/ContDescr_ads"
+            ads:adUnitId="@string/banner_id">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="8">
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/back"
+                android:textSize="24sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="start"
+                />
+
+        </LinearLayout>
+
+
+</LinearLayout>

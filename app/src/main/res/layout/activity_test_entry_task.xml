@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestEntryActivityTask"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:id="@+id/testViewMain">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/testView"
+            android:layout_weight="75">
+
+            <TextView
+                android:id="@+id/textViewCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/condition"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                />
+
+            <Button
+                android:id="@+id/buttonAnsw1"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/buttonAnsw2"
+                android:layout_centerHorizontal="true"
+                android:text="@string/Ans1krug"
+                android:layout_margin="6dp"
+                android:onClick="onClickAnsw1"/>
+            <Button
+                android:id="@+id/buttonAnsw2"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/Ans2krug"
+                android:layout_margin="6dp"
+                android:onClick="onClickAnsw2"/>
+            <Button
+                android:id="@+id/buttonAnsw3"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonAnsw2"
+                android:layout_centerHorizontal="true"
+                android:text="@string/Ans3krug"
+                android:layout_margin="6dp"
+                android:onClick="onClickAnsw3"/>
+
+            <Button
+                android:id="@+id/buttonAnswOK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonAnsw3"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ok"
+                android:layout_margin="20dp"
+                android:onClick="onClickAnswOK"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="17">
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/banner_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ads:adSize="SMART_BANNER"
+                android:contentDescription="@string/ContDescr_ads"
+                ads:adUnitId="@string/banner_id">
+            </com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="8"
+        android:columnCount="3"
+        android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonBackT"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:onClick="onClickBack"
+                android:text="@string/back"
+                android:textSize="24sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="start"
+                android:layout_columnWeight="1"
+                />
+
+            <Button
+                android:id="@+id/buttonTasksT"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:onClick="onClickTask"
+                android:text="@string/Start"
+                android:textSize="24sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_columnWeight="1"
+                />
+
+            <Button
+                android:id="@+id/buttonInstrT"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:onClick="onClickInstr"
+                android:text="@string/Instkrug"
+                android:textSize="24sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="end"
+                android:layout_columnWeight="1"
+                />
+
+        </GridLayout>
+
+    </LinearLayout>

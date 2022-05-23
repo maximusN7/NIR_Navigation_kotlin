@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "824470404718",
+    "firebase_url": "https://nir-navigation-f50c6.firebaseio.com",
+    "project_id": "nir-navigation-f50c6",
+    "storage_bucket": "nir-navigation-f50c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824470404718:android:36cea9e1143353bb50f07f",
+        "android_client_info": {
+          "package_name": "com.MaxEle.maximarius.nir_navigation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824470404718-6goj3apo64l1olna8q6u3snb50v398vd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MaxEle.maximarius.nir_navigation",
+            "certificate_hash": "89d58a37cac2bfa7a70fdb79c984d0de29eea4c5"
+          }
+        },
+        {
+          "client_id": "824470404718-khlu1cl222btsn3b2blgfeqnkgnmi5ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpkeb0W6FU747nW8893wBXVSzvLP5ZekY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824470404718-khlu1cl222btsn3b2blgfeqnkgnmi5ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/baseViewMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".TestEntryActivity">
+
+    <RelativeLayout
+        android:id="@+id/baseView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="83">
+
+        <EditText
+            android:id="@+id/textViewkurs"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:focusable="true"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:text="@string/ZeroForStart"
+            android:textSize="30sp"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/centrflag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/textViewkurs"
+            android:layout_toStartOf="@+id/buttonR"
+            android:text="@string/typeizm_grad"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imageViewtriang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textViewkurs"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/triang"
+            tools:ignore="ContentDescription" />
+
+
+        <ImageView
+            android:id="@+id/imageViewkur"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/imageViewtriang"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            app:srcCompat="@drawable/kurs"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageViewrot"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_below="@+id/imageViewtriang"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="35dp"
+            app:srcCompat="@drawable/round_r_str"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imagePlane"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/imageViewkur"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/plane_for_rot"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/textViewposad"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewkur"
+            android:layout_marginTop="4dp"
+            android:layout_toStartOf="@+id/gradnapr"
+            android:ems="10"
+            android:focusable="true"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:text="@string/ZeroForStart"
+            android:textSize="30sp"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/gradnapr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewkur"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:text="@string/typeizm_grad"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imageDash"
+            android:layout_width="4dp"
+            android:layout_height="180dp"
+            android:layout_above="@+id/imagePlane"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/dash"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/buttonL"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onClickL"
+            android:text="@string/Lkrug"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonR"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:onClick="onClickR"
+            android:text="@string/Rkrug"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/banner_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ContDescr_ads"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_id">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="8"
+        android:columnCount="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onClickBack"
+            android:text="@string/back"
+            android:textSize="24sp"
+
+            />
+
+        <Button
+            android:id="@+id/buttonInstr"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:onClick="onClickInstr"
+            android:text="@string/Instkrug"
+            android:textSize="24sp"
+
+            />
+
+    </GridLayout>
+
+</LinearLayout>
