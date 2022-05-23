@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
     private var instructionLayoutText: RelativeLayout? = null
     private var instructionText: TextView? = null
     private var instructionImage: ImageView? = null
-    private var obNo = 0
+    private var obNo = -1
     private var isFirstEnterForInitialization = false
     private var isFirstEnterForInstructions = true
     private var switchLang: SwitchCompat? = null
@@ -73,17 +73,8 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
 
         instructionLayout = findViewById(R.id.ObychLayout)
         if (isFirstEnterForInstructions) {
-            instructionImage = findViewById(R.id.imageView1)
-            instructionLayout?.visibility = View.VISIBLE
-            instructionLayoutText = findViewById(R.id.ObychLayoutText)
-            instructionLayoutText?.background = ResourcesCompat.getDrawable(
-                resources,
-                R.drawable.obych,
-                null
-            )
-            instructionText = findViewById(R.id.ObychText)
-            instructionText?.text = resources.getString(R.string.Ob0)
-            obNo = 0
+            obNo = -1
+            instructionsProcessor()
         }
 
         //поставить переключатель темы в нужное положение
@@ -127,13 +118,7 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
 
         //-------------------------------------------------------------------------
         // ButtonListeners для данной активности
-        val buttonNL = findViewById<Button>(R.id.buttonNL)
-        buttonNL.setOnClickListener {
-            finish()
-            val intent = Intent(this@MainActivity, NLActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.act_out, R.anim.act_in)
-        }
+
         buttonTasksMenu = findViewById(R.id.buttonTasks)
         buttonTasksMenu?.setOnClickListener { view: View? ->
             animSubMenuOpen = AnimationUtils.loadAnimation(this, R.anim.undmenu_anim)
@@ -205,8 +190,8 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
             "buttonInstructions" to InstructActivity::class.java, "button_EH" to TestEntryActivity::class.java,
             "button_EH_task" to TestEntryActivityTask::class.java, "buttonLZPTest" to TestLZPActivity::class.java,
             "buttonWind" to WindActivity::class.java, "buttonTimeCalc" to TimeCalcActivity::class.java,
-            "buttonStat" to StatActivity::class.java, "buttonShop" to ShopActivity::class.java)
-
+            "buttonStat" to StatActivity::class.java, "buttonShop" to ShopActivity::class.java,
+            "buttonNL" to NLActivity::class.java)
         for ((buttonId, classToGo) in mapOfButtonToClassesKeys) {
             val buttonToListen = findViewById<Button>(resources.getIdentifier(buttonId, "id", packageName))
             buttonToListen.setOnClickListener {
@@ -216,6 +201,7 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
                 overridePendingTransition(R.anim.act_out, R.anim.act_in)
             }
         }
+
         val buttonExit = findViewById<Button>(R.id.buttonExit)
         buttonExit.setOnClickListener { finish() }
 
@@ -291,51 +277,29 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
             instructionLayout?.performClick()
         }
         instructionLayout?.setOnClickListener {
-            obNo++
-            if (obNo <= 8) {
-                if (obNo == 1) {
-                    instructionImage!!.visibility = View.VISIBLE
-                }
-                if (obNo == 2) {
-                    instructionImage!!.visibility = View.INVISIBLE
-                    instructionImage = findViewById(R.id.imageView2)
-                    instructionImage?.rotation = 180f
-                    instructionImage?.visibility = View.VISIBLE
-                }
-                if (obNo == 3) {
-                    instructionImage!!.visibility = View.INVISIBLE
-                    buttonTasksMenu?.performClick()
-                    instructionImage = findViewById(R.id.imageView3)
-                    instructionImage?.rotation = 180f
-                    instructionImage?.visibility = View.VISIBLE
-                }
-                if (obNo == 4) {
-                    instructionImage!!.visibility = View.INVISIBLE
-                    instructionImage = findViewById(R.id.imageView4)
-                    buttonEntryMenu?.performClick()
-                    instructionImage?.rotation = 180f
-                    instructionImage?.visibility = View.VISIBLE
-                }
-                if (obNo == 5) {
-                    instructionImage!!.visibility = View.INVISIBLE
-                    instructionImage = findViewById(R.id.imageView5)
-                    buttonEntryMenu?.performClick()
-                    instructionImage?.rotation = 180f
-                    instructionImage?.visibility = View.VISIBLE
-                    instructionLayout?.gravity = Gravity.CENTER or Gravity.TOP
-                }
-                if (obNo == 6) {
-                    instructionImage!!.visibility = View.INVISIBLE
-                    instructionImage = findViewById(R.id.imageView6)
-                    instructionImage?.rotation = 180f
-                    instructionImage?.visibility = View.VISIBLE
-                }
-                if (obNo == 7) {
-                    instructionImage!!.visibility = View.INVISIBLE
-                    instructionImage = findViewById(R.id.imageView7)
-                    instructionImage?.rotation = 90f
-                    instructionImage?.visibility = View.VISIBLE
-                }
+            instructionsProcessor()
+        }
+        //-----------------------------------------------------------------------
+    }
+
+    private fun instructionsProcessor() {
+        obNo++
+        when (obNo) {
+            0 -> {
+                instructionImage = findViewById(R.id.imageView1)
+                instructionLayout?.visibility = View.VISIBLE
+                instructionLayoutText = findViewById(R.id.ObychLayoutText)
+                instructionLayoutText?.background = ResourcesCompat.getDrawable(
+                    resources,
+                    R.drawable.obych,
+                    null
+                )
+                instructionText = findViewById(R.id.ObychText)
+                instructionText?.text = resources.getString(R.string.Ob0)
+            }
+            1 -> {
+                instructionImage!!.visibility = View.VISIBLE
+
                 instructionText!!.text = resources.getString(
                     resources.getIdentifier(
                         "@string/Ob$obNo",
@@ -343,23 +307,113 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
                         packageName
                     )
                 )
-                if (obNo == 8) {
-                    instructionImage!!.visibility = View.INVISIBLE
-                    isFirstEnterForInstructions = false
-                    mDataFiles.setBoolean(SharedPreferencesProcessor.DATA_FILE_FIRSTENTER3, false)
+            }
+            2 -> {
+                instructionImage!!.visibility = View.INVISIBLE
+                instructionImage = findViewById(R.id.imageView2)
+                instructionImage?.rotation = 180f
+                instructionImage?.visibility = View.VISIBLE
 
-                    if (isFirstEnterForInitialization) {
-                        mDataFiles.checkDataFiles()
-                        setupBillingClient()
-                        mDataFiles.setBoolean(SharedPreferencesProcessor.DATA_FILE_FIRSTENTER, false)
-                    }
-                    buttonSkip.visibility = View.INVISIBLE
+                instructionText!!.text = resources.getString(
+                    resources.getIdentifier(
+                        "@string/Ob$obNo",
+                        "id",
+                        packageName
+                    )
+                )
+            }
+            3 -> {
+                instructionImage!!.visibility = View.INVISIBLE
+                buttonTasksMenu?.performClick()
+                instructionImage = findViewById(R.id.imageView3)
+                instructionImage?.rotation = 180f
+                instructionImage?.visibility = View.VISIBLE
+
+                instructionText!!.text = resources.getString(
+                    resources.getIdentifier(
+                        "@string/Ob$obNo",
+                        "id",
+                        packageName
+                    )
+                )
+            }
+            4 -> {
+                instructionImage!!.visibility = View.INVISIBLE
+                instructionImage = findViewById(R.id.imageView4)
+                buttonEntryMenu?.performClick()
+                instructionImage?.rotation = 180f
+                instructionImage?.visibility = View.VISIBLE
+
+                instructionText!!.text = resources.getString(
+                    resources.getIdentifier(
+                        "@string/Ob$obNo",
+                        "id",
+                        packageName
+                    )
+                )
+            }
+            5 -> {
+                instructionImage!!.visibility = View.INVISIBLE
+                instructionImage = findViewById(R.id.imageView5)
+                buttonEntryMenu?.performClick()
+                instructionImage?.rotation = 180f
+                instructionImage?.visibility = View.VISIBLE
+                instructionLayout?.gravity = Gravity.CENTER or Gravity.TOP
+
+                instructionText!!.text = resources.getString(
+                    resources.getIdentifier(
+                        "@string/Ob$obNo",
+                        "id",
+                        packageName
+                    )
+                )
+            }
+            6 -> {
+                instructionImage!!.visibility = View.INVISIBLE
+                instructionImage = findViewById(R.id.imageView6)
+                instructionImage?.rotation = 180f
+                instructionImage?.visibility = View.VISIBLE
+
+                instructionText!!.text = resources.getString(
+                    resources.getIdentifier(
+                        "@string/Ob$obNo",
+                        "id",
+                        packageName
+                    )
+                )
+            }
+            7 -> {
+                instructionImage!!.visibility = View.INVISIBLE
+                instructionImage = findViewById(R.id.imageView7)
+                instructionImage?.rotation = 90f
+                instructionImage?.visibility = View.VISIBLE
+
+                instructionText!!.text = resources.getString(
+                    resources.getIdentifier(
+                        "@string/Ob$obNo",
+                        "id",
+                        packageName
+                    )
+                )
+            }
+            8 -> {
+                instructionImage!!.visibility = View.INVISIBLE
+                isFirstEnterForInstructions = false
+                val mDataFiles = SharedPreferencesProcessor(this)
+                mDataFiles.setBoolean(SharedPreferencesProcessor.DATA_FILE_FIRSTENTER3, false)
+
+                if (isFirstEnterForInitialization) {
+                    mDataFiles.checkDataFiles()
+                    setupBillingClient()
+                    mDataFiles.setBoolean(SharedPreferencesProcessor.DATA_FILE_FIRSTENTER, false)
                 }
-            } else {
+                val buttonSkip = findViewById<Button>(R.id.buttonskip)
+                buttonSkip.visibility = View.INVISIBLE
+            }
+            else -> {
                 instructionLayout?.visibility = View.INVISIBLE
             }
         }
-        //-----------------------------------------------------------------------
     }
 
     private fun updateTheme(emptyForLightOneForDarkTheme: String) {
