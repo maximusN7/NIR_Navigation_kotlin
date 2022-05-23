@@ -575,66 +575,77 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
         val switcher = findViewById<SwitchCompat>(R.id.switchTheme)
         switcher.setTextColor(getColor(R.color.textsimple1))
         switchLang!!.setTextColor(getColor(R.color.textsimple1))
+        
         var button1 = findViewById<Button>(R.id.buttonShop)
         button1.background.setColorFilter(
             getColor(R.color.backgroundbutton1),
             PorterDuff.Mode.MULTIPLY
         )
         button1.setTextColor(getColor(R.color.textsimple1))
+
         button1 = findViewById(R.id.buttonCalc)
         button1.background.setColorFilter(
             getColor(R.color.backgroundbutton1),
             PorterDuff.Mode.MULTIPLY
         )
         button1.setTextColor(getColor(R.color.textsimple1))
+
         button1 = findViewById(R.id.buttonConstruct)
         button1.background.setColorFilter(
             getColor(R.color.backgroundbutton1),
             PorterDuff.Mode.MULTIPLY
         )
         button1.setTextColor(getColor(R.color.textsimple1))
+
         button1 = findViewById(R.id.buttonTest)
         button1.background.setColorFilter(
             getColor(R.color.backgroundbutton1),
             PorterDuff.Mode.MULTIPLY
         )
         button1.setTextColor(getColor(R.color.textsimple1))
+
         button1 = findViewById(R.id.buttonTraining)
         button1.background.setColorFilter(
             getColor(R.color.backgroundbutton1),
             PorterDuff.Mode.MULTIPLY
         )
         button1.setTextColor(getColor(R.color.textsimple1))
+
         button1 = findViewById(R.id.buttonStat)
         button1.background.setColorFilter(
             getColor(R.color.backgroundbutton1),
             PorterDuff.Mode.MULTIPLY
         )
         button1.setTextColor(getColor(R.color.textsimple1))
+
         button1 = findViewById(R.id.buttonInstructions)
         button1.background.setColorFilter(
             getColor(R.color.backgroundbutton1),
             PorterDuff.Mode.MULTIPLY
         )
         button1.setTextColor(getColor(R.color.textsimple1))
+
         button1 = findViewById(R.id.buttonLZPTest)
         button1.background.setColorFilter(
             getColor(R.color.backgroundbutton1),
             PorterDuff.Mode.MULTIPLY
         )
         button1.setTextColor(getColor(R.color.textsimple1))
+
         button1 = findViewById(R.id.buttonTimeCalc)
         button1.background.setColorFilter(
             getColor(R.color.backgroundbutton1),
             PorterDuff.Mode.MULTIPLY
         )
         button1.setTextColor(getColor(R.color.textsimple1))
+
         button1 = findViewById(R.id.buttonEntryTest)
         button1.background.setColorFilter(
             getColor(R.color.backgroundbutton1),
             PorterDuff.Mode.MULTIPLY
         )
         button1.setTextColor(getColor(R.color.textsimple1))
+
         if (flagMenuEntryHoldingOpen) {
             button1.background.setColorFilter(
                 getColor(R.color.backgroundbuttonpressed1),
@@ -647,42 +658,42 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
             PorterDuff.Mode.MULTIPLY
         )
         button1.setTextColor(getColor(R.color.textsimple1))
+
         button1 = findViewById(R.id.buttonExit)
         button1.background.setColorFilter(
             getColor(R.color.backgroundbutton1),
             PorterDuff.Mode.MULTIPLY
         )
         button1.setTextColor(getColor(R.color.textsimple1))
-        button1 = findViewById(R.id.buttonskip)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
+
         button1 = findViewById(R.id.buttonTasks)
         button1.background.setColorFilter(
             getColor(R.color.backgroundbutton1),
             PorterDuff.Mode.MULTIPLY
         )
         button1.setTextColor(getColor(R.color.textsimple1))
+
         if (flagMenuTaskOpen) {
             button1.background.setColorFilter(
                 getColor(R.color.backgroundbuttonpressed1),
                 PorterDuff.Mode.MULTIPLY
             )
         }
+
         button1 = findViewById(R.id.buttonWind)
         button1.background.setColorFilter(
             getColor(R.color.backgroundbutton1),
             PorterDuff.Mode.MULTIPLY
         )
         button1.setTextColor(getColor(R.color.textsimple1))
+
         button1 = findViewById(R.id.button_EH)
         button1.background.setColorFilter(
             getColor(R.color.backgroundbutton1),
             PorterDuff.Mode.MULTIPLY
         )
         button1.setTextColor(getColor(R.color.textsimple1))
+
         button1 = findViewById(R.id.button_EH_task)
         button1.background.setColorFilter(
             getColor(R.color.backgroundbutton1),
@@ -727,6 +738,12 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
         }
     }
 
+    private val mapButtonsToTextKeys = mapOf("buttonShop" to "shop", "buttonCalc" to "calcul",
+        "buttonConstruct" to "constructor", "buttonTest" to "test", "buttonTraining" to "training",
+        "buttonStat" to "statistics", "buttonInstructions" to "instructions", "buttonLZPTest" to "testLZP",
+        "buttonEntryTest" to "EntryTest", "buttonNL" to "NL", "buttonExit" to "exit",
+        "buttonTasks" to "tasks", "buttonWind" to "wind", "button_EH" to "EH",
+        "buttonTimeCalc" to "TimeCalcMen", "button_EH_task" to "EH_task")
     private fun updateTexts() {
         var switcher = findViewById<SwitchCompat>(R.id.switchLang)
         switcher.setText(R.string.switchLang)
@@ -736,7 +753,11 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
         } else {
             switcher.setText(R.string.switchThemeLight)
         }
-        var buttonForUpdateText = findViewById<Button>(R.id.buttonShop)
+        for ((buttonId, stringId) in mapButtonsToTextKeys) {
+            val buttonForUpdateText = findViewById<Button>(resources.getIdentifier(buttonId, "id", packageName))
+            buttonForUpdateText.setText(resources.getIdentifier(stringId, "string", packageName))
+        }
+        /*var buttonForUpdateText = findViewById<Button>(R.id.buttonShop)
         buttonForUpdateText.setText(R.string.shop)
         buttonForUpdateText = findViewById(R.id.buttonCalc)
         buttonForUpdateText.setText(R.string.calcul)
@@ -754,8 +775,10 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
         buttonForUpdateText.setText(R.string.testLZP)
         buttonForUpdateText = findViewById(R.id.buttonEntryTest)
         buttonForUpdateText.setText(R.string.EntryTest)
-        buttonForUpdateText = findViewById(R.id.buttonNL)
-        buttonForUpdateText.setText(R.string.NL)
+        val str = resources.getIdentifier("buttonNL", "id", packageName)
+        buttonForUpdateText = findViewById(str)
+        val str1 = resources.getIdentifier("NL", "string", packageName)
+        buttonForUpdateText.setText(str1)
         buttonForUpdateText = findViewById(R.id.buttonExit)
         buttonForUpdateText.setText(R.string.exit)
         buttonForUpdateText = findViewById(R.id.buttonTasks)
@@ -767,7 +790,7 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
         buttonForUpdateText = findViewById(R.id.button_EH_task)
         buttonForUpdateText.setText(R.string.EH_task)
         buttonForUpdateText = findViewById(R.id.buttonTimeCalc)
-        buttonForUpdateText.setText(R.string.TimeCalcMen)
+        buttonForUpdateText.setText(R.string.TimeCalcMen)*/
     }
 
     public override fun onDestroy() {
