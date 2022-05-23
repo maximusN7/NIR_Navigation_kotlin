@@ -115,12 +115,12 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
                 switchTheme!!.setText(R.string.switchThemeDark)
                 isThemeLight = false
                 mDataFiles.setBoolean(SharedPreferencesProcessor.DATA_FILE_THEME_LIGHT, false)
-                makeAllDark()
+                updateTheme("1")
             } else {
                 switchTheme!!.setText(R.string.switchThemeLight)
                 isThemeLight = true
                 mDataFiles.setBoolean(SharedPreferencesProcessor.DATA_FILE_THEME_LIGHT, true)
-                makeAllLight()
+                updateTheme("")
             }
         }
 
@@ -427,279 +427,38 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
         //-----------------------------------------------------------------------
     }
 
-    private fun makeAllLight() {
+    private fun updateTheme(emptyForLightOneForDarkTheme: String) {
         val window = this.window
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-        window.statusBarColor = getColor(R.color.colorPrimary)
+        window.statusBarColor = getColor(resources.getIdentifier("colorPrimary$emptyForLightOneForDarkTheme", "color", packageName))
         val actionBar = supportActionBar
-        actionBar?.setBackgroundDrawable(ColorDrawable(getColor(R.color.colorPrimary)))
-        val backgroundMenu = findViewById<RelativeLayout>(R.id.BackAll)
-        backgroundMenu.setBackgroundColor(getColor(R.color.background))
-        var backgroundSubMenu = findViewById<LinearLayout>(R.id.undermenu_EH)
-        backgroundSubMenu.setBackgroundColor(getColor(R.color.backgroundbuttonpressed))
-        backgroundSubMenu = findViewById(R.id.undermenu_task)
-        backgroundSubMenu.setBackgroundColor(getColor(R.color.backgroundbuttonpressed))
-        val switcher = findViewById<SwitchCompat>(R.id.switchTheme)
-        switcher.setTextColor(getColor(R.color.textsimple))
-        switchLang!!.setTextColor(getColor(R.color.textsimple))
-        var buttonToMakeAllLight = findViewById<Button>(R.id.buttonShop)
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        buttonToMakeAllLight = findViewById(R.id.buttonCalc)
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        buttonToMakeAllLight = findViewById(R.id.buttonConstruct)
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        buttonToMakeAllLight = findViewById(R.id.buttonTest)
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        buttonToMakeAllLight = findViewById(R.id.buttonTraining)
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        buttonToMakeAllLight = findViewById(R.id.buttonStat)
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        buttonToMakeAllLight = findViewById(R.id.buttonInstructions)
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        buttonToMakeAllLight = findViewById(R.id.buttonLZPTest)
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        buttonToMakeAllLight = findViewById(R.id.buttonTimeCalc)
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        buttonToMakeAllLight = findViewById(R.id.buttonEntryTest)
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        if (flagMenuEntryHoldingOpen) {
-            buttonToMakeAllLight.background.setColorFilter(
-                getColor(R.color.backgroundbuttonpressed),
-                PorterDuff.Mode.MULTIPLY
-            )
-        }
-        buttonToMakeAllLight = findViewById(R.id.buttonNL)
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        buttonToMakeAllLight = findViewById(R.id.buttonExit)
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        buttonToMakeAllLight = findViewById(R.id.buttonskip)
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        buttonToMakeAllLight = findViewById(R.id.buttonTasks)
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        if (flagMenuTaskOpen) {
-            buttonToMakeAllLight.background.setColorFilter(
-                getColor(R.color.backgroundbuttonpressed),
-                PorterDuff.Mode.MULTIPLY
-            )
-        }
-        buttonToMakeAllLight = findViewById(R.id.buttonWind)
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        buttonToMakeAllLight = findViewById(R.id.button_EH)
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        buttonToMakeAllLight = findViewById(R.id.button_EH_task)
-        buttonToMakeAllLight.background.setColorFilter(
-            getColor(R.color.backgroundbutton),
-            PorterDuff.Mode.MULTIPLY
-        )
-        buttonToMakeAllLight.setTextColor(getColor(R.color.textsimple))
-    }
-
-    private fun makeAllDark() {
-        val window = this.window
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-        window.statusBarColor = getColor(R.color.colorPrimary1)
-        val actionBar = supportActionBar
-        actionBar?.setBackgroundDrawable(ColorDrawable(getColor(R.color.colorPrimary1)))
+        actionBar?.setBackgroundDrawable(ColorDrawable(getColor(resources.getIdentifier("colorPrimary$emptyForLightOneForDarkTheme", "color", packageName))))
         val background = findViewById<RelativeLayout>(R.id.BackAll)
-        background.setBackgroundColor(getColor(R.color.background1))
+        background.setBackgroundColor(getColor(resources.getIdentifier("background$emptyForLightOneForDarkTheme", "color", packageName)))
         var backgroundSubMenu = findViewById<LinearLayout>(R.id.undermenu_EH)
-        backgroundSubMenu.setBackgroundColor(getColor(R.color.backgroundbuttonpressed1))
+        backgroundSubMenu.setBackgroundColor(getColor(resources.getIdentifier("backgroundbuttonpressed$emptyForLightOneForDarkTheme", "color", packageName)))
         backgroundSubMenu = findViewById(R.id.undermenu_task)
-        backgroundSubMenu.setBackgroundColor(getColor(R.color.backgroundbuttonpressed1))
-        val switcher = findViewById<SwitchCompat>(R.id.switchTheme)
-        switcher.setTextColor(getColor(R.color.textsimple1))
-        switchLang!!.setTextColor(getColor(R.color.textsimple1))
-        
-        var button1 = findViewById<Button>(R.id.buttonShop)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
+        backgroundSubMenu.setBackgroundColor(getColor(resources.getIdentifier("backgroundbuttonpressed$emptyForLightOneForDarkTheme", "color", packageName)))
+        switchTheme!!.setTextColor(getColor(resources.getIdentifier("textsimple$emptyForLightOneForDarkTheme", "color", packageName)))
+        switchLang!!.setTextColor(getColor(resources.getIdentifier("textsimple$emptyForLightOneForDarkTheme", "color", packageName)))
 
-        button1 = findViewById(R.id.buttonCalc)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
 
-        button1 = findViewById(R.id.buttonConstruct)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
-
-        button1 = findViewById(R.id.buttonTest)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
-
-        button1 = findViewById(R.id.buttonTraining)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
-
-        button1 = findViewById(R.id.buttonStat)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
-
-        button1 = findViewById(R.id.buttonInstructions)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
-
-        button1 = findViewById(R.id.buttonLZPTest)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
-
-        button1 = findViewById(R.id.buttonTimeCalc)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
-
-        button1 = findViewById(R.id.buttonEntryTest)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
-
-        if (flagMenuEntryHoldingOpen) {
-            button1.background.setColorFilter(
-                getColor(R.color.backgroundbuttonpressed1),
+        for ((buttonId) in mapButtonsToTextKeys) {
+            val buttonForThemeUpdate = findViewById<Button>(resources.getIdentifier(buttonId, "id", packageName))
+            buttonForThemeUpdate.background.setColorFilter(
+                getColor(resources.getIdentifier("backgroundbutton$emptyForLightOneForDarkTheme", "color", packageName)),
                 PorterDuff.Mode.MULTIPLY
             )
+            buttonForThemeUpdate.setTextColor(getColor(resources.getIdentifier("textsimple$emptyForLightOneForDarkTheme", "color", packageName)))
+
+            if (buttonId == "buttonTasks" && flagMenuTaskOpen || buttonId == "buttonEntryTest" && flagMenuEntryHoldingOpen) {
+                buttonForThemeUpdate.background.setColorFilter(
+                    getColor(resources.getIdentifier("backgroundbuttonpressed$emptyForLightOneForDarkTheme", "color", packageName)),
+                    PorterDuff.Mode.MULTIPLY
+                )
+            }
         }
-        button1 = findViewById(R.id.buttonNL)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
-
-        button1 = findViewById(R.id.buttonExit)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
-
-        button1 = findViewById(R.id.buttonTasks)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
-
-        if (flagMenuTaskOpen) {
-            button1.background.setColorFilter(
-                getColor(R.color.backgroundbuttonpressed1),
-                PorterDuff.Mode.MULTIPLY
-            )
-        }
-
-        button1 = findViewById(R.id.buttonWind)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
-
-        button1 = findViewById(R.id.button_EH)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
-
-        button1 = findViewById(R.id.button_EH_task)
-        button1.background.setColorFilter(
-            getColor(R.color.backgroundbutton1),
-            PorterDuff.Mode.MULTIPLY
-        )
-        button1.setTextColor(getColor(R.color.textsimple1))
     }
 
     private fun changeLang(lang: String) {
@@ -757,40 +516,6 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
             val buttonForUpdateText = findViewById<Button>(resources.getIdentifier(buttonId, "id", packageName))
             buttonForUpdateText.setText(resources.getIdentifier(stringId, "string", packageName))
         }
-        /*var buttonForUpdateText = findViewById<Button>(R.id.buttonShop)
-        buttonForUpdateText.setText(R.string.shop)
-        buttonForUpdateText = findViewById(R.id.buttonCalc)
-        buttonForUpdateText.setText(R.string.calcul)
-        buttonForUpdateText = findViewById(R.id.buttonConstruct)
-        buttonForUpdateText.setText(R.string.constructor)
-        buttonForUpdateText = findViewById(R.id.buttonTest)
-        buttonForUpdateText.setText(R.string.test)
-        buttonForUpdateText = findViewById(R.id.buttonTraining)
-        buttonForUpdateText.setText(R.string.training)
-        buttonForUpdateText = findViewById(R.id.buttonStat)
-        buttonForUpdateText.setText(R.string.statistics)
-        buttonForUpdateText = findViewById(R.id.buttonInstructions)
-        buttonForUpdateText.setText(R.string.instructions)
-        buttonForUpdateText = findViewById(R.id.buttonLZPTest)
-        buttonForUpdateText.setText(R.string.testLZP)
-        buttonForUpdateText = findViewById(R.id.buttonEntryTest)
-        buttonForUpdateText.setText(R.string.EntryTest)
-        val str = resources.getIdentifier("buttonNL", "id", packageName)
-        buttonForUpdateText = findViewById(str)
-        val str1 = resources.getIdentifier("NL", "string", packageName)
-        buttonForUpdateText.setText(str1)
-        buttonForUpdateText = findViewById(R.id.buttonExit)
-        buttonForUpdateText.setText(R.string.exit)
-        buttonForUpdateText = findViewById(R.id.buttonTasks)
-        buttonForUpdateText.setText(R.string.tasks)
-        buttonForUpdateText = findViewById(R.id.buttonWind)
-        buttonForUpdateText.setText(R.string.wind)
-        buttonForUpdateText = findViewById(R.id.button_EH)
-        buttonForUpdateText.setText(R.string.EH)
-        buttonForUpdateText = findViewById(R.id.button_EH_task)
-        buttonForUpdateText.setText(R.string.EH_task)
-        buttonForUpdateText = findViewById(R.id.buttonTimeCalc)
-        buttonForUpdateText.setText(R.string.TimeCalcMen)*/
     }
 
     public override fun onDestroy() {
