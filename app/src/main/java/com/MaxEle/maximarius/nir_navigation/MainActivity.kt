@@ -199,41 +199,26 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
                 flagMenuTaskOpen = true
             }
         }
-        val buttonTaskCalc = findViewById<Button>(R.id.buttonCalc)
-        buttonTaskCalc.setOnClickListener {
-            finish()
-            val intent = Intent(this@MainActivity, CalculActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.act_out, R.anim.act_in)
+
+        val mapOfButtonToClassesKeys = mapOf("buttonCalc" to CalculActivity::class.java, "buttonConstruct" to ConstructActivity::class.java,
+            "buttonTest" to TestActivity::class.java, "buttonTraining" to TrainingActivity::class.java,
+            "buttonInstructions" to InstructActivity::class.java, "button_EH" to TestEntryActivity::class.java,
+            "button_EH_task" to TestEntryActivityTask::class.java, "buttonLZPTest" to TestLZPActivity::class.java,
+            "buttonWind" to WindActivity::class.java, "buttonTimeCalc" to TimeCalcActivity::class.java,
+            "buttonStat" to StatActivity::class.java, "buttonShop" to ShopActivity::class.java)
+
+        for ((buttonId, classToGo) in mapOfButtonToClassesKeys) {
+            val buttonToListen = findViewById<Button>(resources.getIdentifier(buttonId, "id", packageName))
+            buttonToListen.setOnClickListener {
+                finish()
+                val intent = Intent(this@MainActivity, classToGo)
+                startActivity(intent)
+                overridePendingTransition(R.anim.act_out, R.anim.act_in)
+            }
         }
-        val buttonTaskConstruct = findViewById<Button>(R.id.buttonConstruct)
-        buttonTaskConstruct.setOnClickListener {
-            finish()
-            val intent = Intent(this@MainActivity, ConstructActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.act_out, R.anim.act_in)
-        }
-        val buttonTaskTest = findViewById<Button>(R.id.buttonTest)
-        buttonTaskTest.setOnClickListener {
-            finish()
-            val intent = Intent(this@MainActivity, TestActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.act_out, R.anim.act_in)
-        }
-        val buttonTaskTraining = findViewById<Button>(R.id.buttonTraining)
-        buttonTaskTraining.setOnClickListener {
-            finish()
-            val intent = Intent(this@MainActivity, TrainingActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.act_out, R.anim.act_in)
-        }
-        val buttonTaskInstructions = findViewById<Button>(R.id.buttonInstructions)
-        buttonTaskInstructions.setOnClickListener {
-            finish()
-            val intent = Intent(this@MainActivity, InstructActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.act_out, R.anim.act_in)
-        }
+        val buttonExit = findViewById<Button>(R.id.buttonExit)
+        buttonExit.setOnClickListener { finish() }
+
         buttonEntryMenu = findViewById(R.id.buttonEntryTest)
         buttonEntryMenu?.setOnClickListener { view: View? ->
             animSubMenuOpen = AnimationUtils.loadAnimation(this, R.anim.undmenu_anim)
@@ -299,57 +284,7 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
                 flagMenuEntryHoldingOpen = true
             }
         }
-        val buttonEntryVis = findViewById<Button>(R.id.button_EH)
-        buttonEntryVis.setOnClickListener {
-            finish()
-            val intent = Intent(this@MainActivity, TestEntryActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.act_out, R.anim.act_in)
-        }
-        val buttonEntryTest = findViewById<Button>(R.id.button_EH_task)
-        buttonEntryTest.setOnClickListener {
-            finish()
-            val intent = Intent(this@MainActivity, TestEntryActivityTask::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.act_out, R.anim.act_in)
-        }
-        val buttonLZPTest = findViewById<Button>(R.id.buttonLZPTest)
-        buttonLZPTest.setOnClickListener {
-            finish()
-            val intent = Intent(this@MainActivity, TestLZPActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.act_out, R.anim.act_in)
-        }
-        val buttonWindCalc = findViewById<Button>(R.id.buttonWind)
-        buttonWindCalc.setOnClickListener {
-            finish()
-            val intent = Intent(this@MainActivity, WindActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.act_out, R.anim.act_in)
-        }
-        val buttonTimeCalc = findViewById<Button>(R.id.buttonTimeCalc)
-        buttonTimeCalc.setOnClickListener {
-            finish()
-            val intent = Intent(this@MainActivity, TimeCalcActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.act_out, R.anim.act_in)
-        }
-        val buttonStat = findViewById<Button>(R.id.buttonStat)
-        buttonStat.setOnClickListener {
-            finish()
-            val intent = Intent(this@MainActivity, StatActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.act_out, R.anim.act_in)
-        }
-        val buttonExit = findViewById<Button>(R.id.buttonExit)
-        buttonExit.setOnClickListener { finish() }
-        val buttonShop = findViewById<Button>(R.id.buttonShop)
-        buttonShop.setOnClickListener {
-            finish()
-            val intent = Intent(this@MainActivity, ShopActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.act_out, R.anim.act_in)
-        }
+
         val buttonSkip = findViewById<Button>(R.id.buttonskip)
         buttonSkip.setOnClickListener {
             obNo = 7
