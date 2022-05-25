@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
         val mDataFiles = SharedPreferencesProcessor(this)
 
         isThemeLight = mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_THEME_LIGHT, true)
-        if (isThemeLight) setTheme(R.style.AppTheme) else setTheme(R.style.AppThemeDark)
+        setTheme(if (isThemeLight) R.style.AppTheme else R.style.AppThemeDark)
 
         setContentView(R.layout.activity_main)
 
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
         purchaseAdsOff =
             mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_ADS_DISABLE, false)
 
-        if (mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_FIRSTENTER3, true)) {
+        if (mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_FIRSTENTER_FOR_INSTRUCTIONS, true)) {
             obNo = -1
             instructionsProcessor()
         }
@@ -363,7 +363,7 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
             }
             8 -> {
                 val mDataFiles = SharedPreferencesProcessor(this)
-                mDataFiles.setBoolean(SharedPreferencesProcessor.DATA_FILE_FIRSTENTER3, false)
+                mDataFiles.setBoolean(SharedPreferencesProcessor.DATA_FILE_FIRSTENTER_FOR_INSTRUCTIONS, false)
 
                 for (i in 1..7) {
                     val instructionImage = findViewById<ImageView>(

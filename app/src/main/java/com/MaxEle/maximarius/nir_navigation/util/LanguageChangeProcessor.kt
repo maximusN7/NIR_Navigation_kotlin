@@ -10,7 +10,7 @@ import androidx.core.content.contentValuesOf
 import com.MaxEle.maximarius.nir_navigation.R
 import java.util.*
 
-class LanguageChangeProcessor(val activity: Activity, val context: Context, val packName: String) {
+class LanguageChangeProcessor(private val activity: Activity, val context: Context, private val packName: String) {
     private fun saveLocale(lang: String?) {
         val langPref = "Language"
         val prefs = context.getSharedPreferences("CommonPrefs", AppCompatActivity.MODE_PRIVATE)

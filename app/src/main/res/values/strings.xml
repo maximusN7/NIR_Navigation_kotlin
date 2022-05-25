@@ -755,6 +755,7 @@
     <string name="descrtask8_3"> If in the condition of the task the specified path angle of the ZPU, the linear lateral deviation of the LCU and the traversed path Spr are indicated instead of the UC, then to find the FPU it was necessary to find the US. To do this, first, on NL-10, we find the lateral deviation of the BU. Opposite the black triangle on the scale 3, the value Spr in km on the scale 4 is set. Then, opposite to the value of the LBU on the scale 4, will be the value of the BU on the scale 3. </string>
         
     <string name="descrtask8_4"> Finally, knowing the BU, you can find the value of the US, first calculated (USp), and then the actual (UF). And then find the FPU by a known formula. </string>
+    <string name="descrtask8_5"> </string>
         
     <string name="descrtask9_1"> In this task it is necessary to calculate the magnetic course of the calculated MCP in °, with the known true path angle of the SATA, the meteorological direction of the wind ßm, the airspeed of the aircraft V, the wind speed U, and the magnetic declination of the ▲ M. To do this, you first need to calculate the value of the direction of the navigational wind ßn, excerpt from ßm the value of ▲ M and add or subtract 180 °, taking into account the fact that the angle ßn lies in the side-hole [0; 360]. </string>
         
@@ -771,22 +772,28 @@
     <string name="descrtask10_2"> Now, we can calculate ▲ H. As it was said, for this purpose from Hfl it is necessary to subtract Hcr and Hbar. </string>
     <string name="descrtask10_3"> Then find the time for which this height will be pre-radiated by the airplane ▲ H, for a known speed vb. For this, one can either divide ▲ H by Vv, without forgetting to translate all into one values ​​or set NL-10 to Vb in m / s on the scale 1 opposite to 10 in the rectangle on the scale 2, then opposite to the value of H divided by 10 in m on the scale 1, will be the value of t in minutes or seconds. </string>
         
-    <string name="descrtask10_4">Finally, you can find S in two ways: either by multiplying W by t, not howling to translate t into hours, or by putting on the NL-10 the value of W in km / h on the scale 1 opposite the red triangle on the scale 2, then the opposite of the value of t in minutes on the scale 2 is the value of S in km on the scale 1. </string>
+    <string name="descrtask10_4"> </string>
+    <string name="descrtask10_5">Finally, you can find S in two ways: either by multiplying W by t, not howling to translate t into hours, or by putting on the NL-10 the value of W in km / h on the scale 1 opposite the red triangle on the scale 2, then the opposite of the value of t in minutes on the scale 2 is the value of S in km on the scale 1. </string>
+    <string name="descrtask10_6"> </string>
         
     <string name="descrtask11_1"> In this task, it is necessary to calculate the line of occupation of a given echelon S in km or miles if it has a region below the flight level H1 with a flight speed limit. The calculation should be carried out at a known height of this echelon Nash, the altitude of the flight around the circle Hcr, the pressure at the aerodrome P, the average vertical velocity Vv1 above the train H1, the ground speed W1 above the train H1, the height of the level of the restriction H1, the average vertical velocity Vv2 below the train H1 and the track the speed of W2 is below the level of H1. First, calculate the H1 height of the section above H1, which is the subtraction from the Hfl H1. </string>
         
     <string name="descrtask11_2"> Then we find the time t1, for which this height will be preempted by the aircraft ▲ H1, with the known speed VB1. To do this, you can either divide ▲ H1 by Vv1, do not forget to translate all into one values ​​or set NL-10 to Vv1 in m / s on scale 1 versus 10 in the rectangle on scale 2, then opposite to the value of ▲ H divided by 10 in m on the scale 1, will be the value of t1 in minutes or seconds. </string>
+    <string name="descrtask11_3"> </string>
         
-    <string name="descrtask11_3"> Now, you can find S1 in two ways: either multiplying W1 by t1, not howling to translate t1 into hours, or to place W1 in km / h on scale 1 on the NL-10 opposite the red triangle on the scale 2, then the value of t1 in minutes on the scale 2 is opposite to the value of t1 in km on scale 1. </string>
+    <string name="descrtask11_4"> Now, you can find S1 in two ways: either multiplying W1 by t1, not howling to translate t1 into hours, or to place W1 in km / h on scale 1 on the NL-10 opposite the red triangle on the scale 2, then the value of t1 in minutes on the scale 2 is opposite to the value of t1 in km on scale 1. </string>
+    <string name="descrtask11_5"> </string>
         
-    <string name="descrtask11_4"> Next, you need to calculate the value of H2 H2 of the height below H1, which is the subtraction from H1 of the values ​​of Hcr and Hbar, where Hbar is the height of the aerodrome above the normal pressure level. So you need to find the unknown Hbar. It is calculated according to the formulas below, depending on what sorting systems you will be more convenient to read and in what number system was given P. </string>
-    <string name="descrtask11_5"> Now, we can calculate ▲ H2. As it was said, for this purpose it is necessary to subtract Hcr and Hbar from H1. </string>
+    <string name="descrtask11_6"> Next, you need to calculate the value of H2 H2 of the height below H1, which is the subtraction from H1 of the values ​​of Hcr and Hbar, where Hbar is the height of the aerodrome above the normal pressure level. So you need to find the unknown Hbar. It is calculated according to the formulas below, depending on what sorting systems you will be more convenient to read and in what number system was given P. </string>
+    <string name="descrtask11_7"> Now, we can calculate ▲ H2. As it was said, for this purpose it is necessary to subtract Hcr and Hbar from H1. </string>
         
-    <string name="descrtask11_6"> Then we find the time t2, for which this height ▲ H2 will be pre-radiated by the airplane, given the known speed vv2. For this, one can either divide ▲ H2 into Vv2, without forgetting to translate all into one quantities or to put NL-10 in V / 2 in m / s on the scale 1 opposite to 10 in the rectangle on the scale 2, then opposite to the value of ▲ H2 divided by 10 V m on the scale 1, will be the value of t2 in minutes or seconds. </string>
+    <string name="descrtask11_8"> Then we find the time t2, for which this height ▲ H2 will be pre-radiated by the airplane, given the known speed vv2. For this, one can either divide ▲ H2 into Vv2, without forgetting to translate all into one quantities or to put NL-10 in V / 2 in m / s on the scale 1 opposite to 10 in the rectangle on the scale 2, then opposite to the value of ▲ H2 divided by 10 V m on the scale 1, will be the value of t2 in minutes or seconds. </string>
+    <string name="descrtask11_9">  </string>
         
-    <string name="descrtask11_7">Now, you can find S2 in two ways: either multiplying W2 by t2, not howling to translate t2 into hours, or to place the W2 value in km / h on scale 1 on the NL-10 opposite the red triangle on the scale 2, then the opposite of t2 in minutes on scale 2 is S2 in km on scale 1. </string>
+    <string name="descrtask11_10">Now, you can find S2 in two ways: either multiplying W2 by t2, not howling to translate t2 into hours, or to place the W2 value in km / h on scale 1 on the NL-10 opposite the red triangle on the scale 2, then the opposite of t2 in minutes on scale 2 is S2 in km on scale 1. </string>
+    <string name="descrtask11_11"> </string>
         
-    <string name="descrtask11_8"> Finally, to find the total value of S, you need to add the found S1 and S2. </string>
+    <string name="descrtask11_12"> Finally, to find the total value of S, you need to add the found S1 and S2. </string>
         
     <string name="descrtask12_1"> In this task, you need to calculate the required vertical flight speed of the aircraft Vv.need. in m / s or ft / min, at which the aircraft should occupy a given train with a specified boundary. Depending on the complexity, the airport can be with a speed limit below the level of H1 or not. Depending on this, the relevant data will be known, and the specified Szap limit, the specified Haz echelon and the Hfl.per transition level will be added to them. First, in both cases (complex simple) the problem is solved as described in the 2 previous paragraphs. Let`s take first the variant without restriction below H1. To start, you need to calculate a new ▲ H`, paying attention to that, more Hz than Hfl.per or less. </string>
         
@@ -857,7 +864,8 @@
     <string name="descrtask18_1">In this task, you need to calculate the amendment of course of the flight path of the ITL, with known Ssum, tpas, flight speed W and one of the other parameters (AA, LD or LLD). First you need to find Ssum and Spas. Spas can be found as a multiplication of W for tpas, not forgetting to translate time into hours, and Srem is found by subtracting Spas from Ssum.</string>
     <string name="descrtask18_2">Now, depending on what was given to us in the condition, we are taking different steps, but the bottom line is that we need to find the AA and LD. To begin with we will sort option with known AA or LD. Then the unknown parameter is calculated as follows:</string>
     <string name="descrtask18_3">If the LLD was known, we can either find the AA and the LD by NL-1, putting a triangle on the scale 4, Spas or Srem on the scale 5 and then LLD on the scale 5, we get AA or LD, respectively, on a scale of 4. Or using the formulas:</string>
-    <string name="descrtask18_4">It remains only to fold the AA and the LD and we will get a AC.</string>
+    <string name="descrtask18_4"> </string>
+    <string name="descrtask18_5">It remains only to fold the AA and the LD and we will get a AC.</string>
 
     <string name="descrtask19_1">This task is located in a separate menu item. Here you need to determine as soon as possible where the aircraft is located relative to the ITL, having data of the SMTA, MC and CAR. First you need to determine the aircraft is flying on or off to RS. To do this, look at the value of the CAR. If the CAR is from 270° to 360° or from 0° to 90°, then this is a flight on the RS, if the CAR is more than 90°, but less than 270°, then this is a flight from the RS.</string>
     <string name="descrtask19_2">Now, in order to determine the position of the AC relative to the LZP, we compare the SMTA and the sum of MC+CAR. Below you can see where the aircraft will be depending on the comparison results for the flight on the RS.</string>

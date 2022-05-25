@@ -1,4 +1,7 @@
 package com.MaxEle.maximarius.nir_navigation.util
 
-class ThemeChangeProcessor {
+import android.content.Context
+
+class ThemeChangeProcessor(val context: Context) {
+
 }

@@ -18,8 +18,8 @@ class SharedPreferencesProcessor(val context: Context) {
         editor.apply()
     }
 
-    fun getInt(key: String): Int {
-        return preferences.getInt(key, 0)
+    fun getInt(key: String, defaultValue: Int = 0): Int {
+        return preferences.getInt(key, defaultValue)
     }
 
     fun setBoolean(key: String, value: Boolean) {
@@ -29,7 +29,7 @@ class SharedPreferencesProcessor(val context: Context) {
     }
 
     fun getBoolean(key: String, defaultValue: Boolean = true): Boolean {
-        return preferences.getBoolean(key, true)
+        return preferences.getBoolean(key, defaultValue)
     }
 
     fun setStr(key: String, value: String) {
@@ -38,8 +38,8 @@ class SharedPreferencesProcessor(val context: Context) {
         editor.apply()
     }
 
-    fun getStr(key: String): String? {
-        return preferences.getString(key, "")
+    fun getStr(key: String, defaultValue: String = ""): String? {
+        return preferences.getString(key, defaultValue)
     }
 
     fun checkDataFiles() {
@@ -81,7 +81,7 @@ class SharedPreferencesProcessor(val context: Context) {
         const val DATA_FILE_PREMIUM = "premakk"
         const val DATA_FILE_THEME_LIGHT = "theme_light"
         const val DATA_FILE_FIRSTENTER = "firstent"
-        const val DATA_FILE_FIRSTENTER3 = "firstent3"
+        const val DATA_FILE_FIRSTENTER_FOR_INSTRUCTIONS = "firstent3"
         const val DATA_FILE_CORRECT = "correct"
         const val DATA_FILE_WRONG = "wrong"
         const val DATA_FILE_CORRECT_NOW = "correctnow"
