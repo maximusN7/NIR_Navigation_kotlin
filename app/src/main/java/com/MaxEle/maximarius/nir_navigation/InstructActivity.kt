@@ -6,7 +6,7 @@ import com.google.android.gms.ads.AdView
 import android.content.Intent
 import android.view.View
 import android.widget.*
-import com.MaxEle.maximarius.nir_navigation.instruction_activity_utils.ViewProcessor
+import com.MaxEle.maximarius.nir_navigation.util.instruction_activity_utils.ViewProcessor
 import com.MaxEle.maximarius.nir_navigation.util.SharedPreferencesProcessor
 import com.google.android.gms.ads.AdRequest
 
@@ -26,7 +26,7 @@ class InstructActivity : AppCompatActivity() {
 
         mAdView = findViewById(R.id.banner_ad)
         if (mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_ADS_DISABLE, false)) {
-            mAdView?.visibility = View.INVISIBLE
+            mAdView?.visibility = View.GONE
         } else {
             val adRequest = AdRequest.Builder().build()
             mAdView?.loadAd(adRequest)

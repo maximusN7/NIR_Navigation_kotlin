@@ -1,4 +1,4 @@
-package com.MaxEle.maximarius.nir_navigation.instruction_activity_utils
+package com.MaxEle.maximarius.nir_navigation.util.instruction_activity_utils
 
 import android.app.Activity
 import android.content.Context

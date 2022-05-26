@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="100"
     tools:context=".TimeCalcActivity">
 
 
@@ -13,37 +11,41 @@
         android:id="@+id/AllTime"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_weight="23"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        ads:layout_constraintBottom_toTopOf="@+id/CurrTime"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/CurrTime"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:layout_weight="10"
         android:text="@string/TimeCalc00_00"
-        android:textSize="35sp" />
+        android:textSize="35sp"
+        ads:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent" />
 
     <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_columnWeight="1"
-        android:layout_gravity="center"
-        android:layout_weight="50"
         android:columnCount="4"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        ads:layout_constraintBottom_toTopOf="@+id/banner_ad"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/button7"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:text="@string/TimeCalc7"
             android:textSize="36sp" />
 
@@ -52,8 +54,8 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:text="@string/TimeCalc8"
             android:textSize="36sp" />
 
@@ -62,8 +64,8 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:text="@string/TimeCalc9"
             android:textSize="36sp" />
 
@@ -72,8 +74,8 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:text="@string/TimeCalcclear"
             android:textSize="36sp" />
 
@@ -82,9 +84,9 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/TimeCalc4"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/TimeCalc4"
             android:textSize="36sp" />
 
         <Button
@@ -92,9 +94,9 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/TimeCalc5"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/TimeCalc5"
             android:textSize="36sp" />
 
         <Button
@@ -102,9 +104,9 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/TimeCalc6"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/TimeCalc6"
             android:textSize="36sp" />
 
         <Button
@@ -112,10 +114,10 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:contentDescription="@string/ContDescr_Minus"
             android:text="@string/TimeCalcminus"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
             android:textSize="36sp" />
 
         <Button
@@ -123,9 +125,9 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/TimeCalc1"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/TimeCalc1"
             android:textSize="36sp" />
 
         <Button
@@ -133,9 +135,9 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/TimeCalc2"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/TimeCalc2"
             android:textSize="36sp" />
 
         <Button
@@ -143,9 +145,9 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/TimeCalc3"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/TimeCalc3"
             android:textSize="36sp" />
 
         <Button
@@ -153,244 +155,59 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/ContDescr_Plus"
-            android:text="@string/TimeCalcplus"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="36sp" />
-
-        <Button
-            android:id="@+id/button0"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_columnSpan="2"
-            android:text="@string/TimeCalc0"
-            android:layout_columnWeight="2"
-            android:layout_rowWeight="1"
-            android:textSize="36sp" />
-
-        <Button
-            android:id="@+id/buttonequ"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_columnSpan="2"
-            android:text="@string/TimeCalcequal"
-            android:layout_columnWeight="2"
-            android:layout_rowWeight="1"
-            android:textSize="36sp" />
-
-    </GridLayout>
-
-    <!--
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="14"
-        android:weightSum="4">
-        <Button
-            style="?android:attr/buttonBarButtonStyle"
-            android:id="@+id/button7"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/TimeCalc7"
-            android:textSize="40sp"
-            android:layout_gravity="start"/>
-
-        <Button
-            style="?android:attr/buttonBarButtonStyle"
-            android:id="@+id/button8"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/TimeCalc8"
-            android:textSize="40sp"
-            android:layout_gravity="start"/>
-        <Button
-            style="?android:attr/buttonBarButtonStyle"
-            android:id="@+id/button9"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/TimeCalc9"
-            android:textSize="40sp"
-            android:layout_gravity="start"/>
-
-        <Button
-            style="?android:attr/buttonBarButtonStyle"
-            android:id="@+id/buttonClear"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/TimeCalcclear"
-            android:textSize="40sp"
-            android:layout_gravity="start"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="14"
-        android:weightSum="4">
-
-        <Button
-            style="?android:attr/buttonBarButtonStyle"
-            android:id="@+id/button4"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/TimeCalc4"
-            android:textSize="40sp"
-            android:layout_gravity="start"/>
-
-        <Button
-            style="?android:attr/buttonBarButtonStyle"
-            android:id="@+id/button5"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/TimeCalc5"
-            android:textSize="40sp"
-            android:layout_gravity="start"/>
-        <Button
-            style="?android:attr/buttonBarButtonStyle"
-            android:id="@+id/button6"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/TimeCalc6"
-            android:textSize="40sp"
-            android:layout_gravity="start"/>
-        <Button
-            style="?android:attr/buttonBarButtonStyle"
-            android:id="@+id/buttonminus"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/TimeCalcminus"
-            android:textSize="40sp"
-            android:contentDescription="@string/ContDescr_Minus"
-            android:layout_gravity="start"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="14"
-        android:weightSum="4">
-
-        <Button
-            style="?android:attr/buttonBarButtonStyle"
-            android:id="@+id/button1"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/TimeCalc1"
-            android:textSize="40sp"
-            android:layout_gravity="start"/>
-
-        <Button
-            style="?android:attr/buttonBarButtonStyle"
-            android:id="@+id/button2"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/TimeCalc2"
-            android:textSize="40sp"
-            android:layout_gravity="start"/>
-        <Button
-            style="?android:attr/buttonBarButtonStyle"
-            android:id="@+id/button3"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/TimeCalc3"
-            android:textSize="40sp"
-            android:layout_gravity="start"/>
-
-        <Button
-            style="?android:attr/buttonBarButtonStyle"
-            android:id="@+id/buttonplus"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/TimeCalcplus"
-            android:textSize="40sp"
             android:contentDescription="@string/ContDescr_Plus"
-            android:layout_gravity="start"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="14"
-        android:weightSum="2"
-        style="?android:attr/buttonBarStyle">
+            android:text="@string/TimeCalcplus"
+            android:textSize="36sp" />
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
             android:id="@+id/button0"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/TimeCalc0"
-            android:textSize="40sp"
-            android:layout_gravity="start"/>
-
-        <Button
             style="?android:attr/buttonBarButtonStyle"
-            android:id="@+id/buttonequ"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/TimeCalcequal"
-            android:textSize="40sp"
-            android:layout_gravity="start"/>
-
-    </LinearLayout>
--->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="9"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/banner_ad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            ads:adSize="BANNER"
-            android:contentDescription="@string/ContDescr_ads"
-            ads:adUnitId="@string/banner_id">
-        </com.google.android.gms.ads.AdView>
-
-    </LinearLayout>
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="center"
-        android:layout_weight="8"
-        android:columnCount="2"
-        android:orientation="horizontal">
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="2"
+            android:text="@string/TimeCalc0"
+            android:textSize="36sp" />
 
         <Button
-            android:id="@+id/buttonBack"
+            android:id="@+id/buttonequ"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_gravity="start"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:text="@string/back"
-            android:textSize="24sp" />
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="2"
+            android:text="@string/TimeCalcequal"
+            android:textSize="36sp" />
 
     </GridLayout>
 
-</LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/banner_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/ContDescr_ads"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_id"
+        ads:layout_constraintBottom_toTopOf="@+id/buttonBack"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:text="@string/back"
+        android:textSize="24sp"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

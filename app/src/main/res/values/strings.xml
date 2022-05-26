@@ -174,11 +174,11 @@
     <string name="WindLimH">Headwind limitation</string>
 
 
-    <string name="testLZP_ZMPY">SMTA=</string>
-    <string name="testLZP_MK">MC=</string>
-    <string name="testLZP_KYR">CAR=</string>
-    <string name="testLZP_corr">Correct</string>
-    <string name="testLZP_wron">Incorrect\n</string>
+    <string name="testLZP_ZMPY">SMTA =</string>
+    <string name="testLZP_MK">MC =</string>
+    <string name="testLZP_KYR">CAR =</string>
+    <string name="testLZP_corr">\nCorrect</string>
+    <string name="testLZP_wron">\nIncorrect\n</string>
     <string name="testLZP_answL">\nyour answer: left\n</string>
     <string name="testLZP_answR">\nyour answer: right\n</string>
     <string name="testLZP_answO">\nyour answer: on CL\n</string>

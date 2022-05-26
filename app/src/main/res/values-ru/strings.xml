@@ -173,9 +173,9 @@
     <string name="WindLimT">Ограничение по попутному</string>
     <string name="WindLimH">Ограничение по встречному</string>
 
-    <string name="testLZP_ZMPY">ЗМПУ=</string>
-    <string name="testLZP_MK">МК=</string>
-    <string name="testLZP_KYR">КУР=</string>
+    <string name="testLZP_ZMPY">ЗМПУ =</string>
+    <string name="testLZP_MK">МК =</string>
+    <string name="testLZP_KYR">КУР =</string>
     <string name="testLZP_corr">Верно</string>
     <string name="testLZP_wron">Неверно</string>
     <string name="testLZP_answL">\nваш ответ: слева\n</string>

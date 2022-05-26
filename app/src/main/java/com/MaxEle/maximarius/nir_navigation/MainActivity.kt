@@ -12,17 +12,15 @@ import android.graphics.PorterDuff
 import android.view.Gravity
 import android.view.WindowManager
 import android.graphics.drawable.ColorDrawable
-import android.content.res.Configuration
-import android.util.Log
 import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.*
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.MaxEle.maximarius.nir_navigation.util.BillingClientSetup
 import com.MaxEle.maximarius.nir_navigation.util.LanguageChangeProcessor
 import com.MaxEle.maximarius.nir_navigation.util.SharedPreferencesProcessor
 import com.android.billingclient.api.*
 import com.google.android.gms.ads.AdRequest
-import java.util.*
 
 class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
     private var obNo = -1
@@ -415,7 +413,7 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
                 )
             )
         )
-        val background = findViewById<RelativeLayout>(R.id.BackAll)
+        val background = findViewById<ConstraintLayout>(R.id.BackAll)
         background.setBackgroundColor(
             getColor(
                 resources.getIdentifier(

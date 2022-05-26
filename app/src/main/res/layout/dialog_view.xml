@@ -7,16 +7,17 @@
 
     <LinearLayout
         android:id="@+id/viewMain"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         android:orientation="vertical"
+        android:layout_margin="5dp"
         >
     <ScrollView
         android:id="@+id/scrolldia"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_margin="0dp"
+        android:layout_margin="5dp"
+        android:elevation="2dp"
         >
 
         <LinearLayout
@@ -97,8 +98,7 @@
             android:onClick="onClickBackDial"
             android:text="@string/back"
             android:textSize="24sp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
             />
     </LinearLayout>
 </RelativeLayout>
