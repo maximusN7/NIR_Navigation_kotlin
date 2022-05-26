@@ -15,7 +15,6 @@ import com.google.android.gms.ads.AdRequest
 
 class TestLZPActivity : AppCompatActivity() {
     private var isThemeLight = false
-    private var instract: Dialog? = null
 
     private var taskProcessor: TaskProcessor = TaskProcessor(this, this, packageName)
     private var dialogProcessor: DialogProcessor = DialogProcessor(this, packageName)
@@ -77,7 +76,7 @@ class TestLZPActivity : AppCompatActivity() {
         mAdView!!.destroy()
         super.onDestroy()
     }
-    
+
     fun onClickStart_Next(view: View?) {
         taskProcessor.createNextTask()
     }

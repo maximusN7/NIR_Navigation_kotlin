@@ -7,6 +7,7 @@ import com.MaxEle.maximarius.nir_navigation.util.BillingClientSetup
 
 object BillingClientSetup {
     private val instance: BillingClient? = null
+    @JvmStatic
     fun getInstance(context: Context, listener: PurchasesUpdatedListener): BillingClient {
         return instance ?: setupBillingClient(context, listener)
     }

@@ -73,8 +73,8 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
         switchTheme?.isChecked = !isThemeLight
         val langChangeProc = LanguageChangeProcessor(this, this,  packageName)
         langChangeProc.loadLocale()
-        mAdView = findViewById(R.id.banner_ad)
 
+        mAdView = findViewById(R.id.banner_ad)
         if (mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_ADS_DISABLE, false)) {
             mAdView?.visibility = View.INVISIBLE
         } else {
