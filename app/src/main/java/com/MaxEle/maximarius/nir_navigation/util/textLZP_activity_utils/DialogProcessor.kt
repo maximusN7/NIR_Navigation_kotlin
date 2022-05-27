@@ -1,6 +1,5 @@
 package com.MaxEle.maximarius.nir_navigation.util.textLZP_activity_utils
 
-import android.app.Application
 import android.app.Dialog
 import android.content.Context
 import android.view.View
@@ -8,33 +7,38 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
-import androidx.core.content.res.ResourcesCompat.getColor
 import com.MaxEle.maximarius.nir_navigation.R
 import com.MaxEle.maximarius.nir_navigation.util.SharedPreferencesProcessor
 
-class DialogProcessor(val context: Context, val packName: String) {
+class DialogProcessor(val context: Context, private val packName: String, private val numberOfUsedViews: Int, private val numberInArrayOfIDs: Int) {
 
-    private var instract: Dialog? = null
+    private var instracton: Dialog? = null
 
-    fun loadInstructionDialog() {
-        instract = Dialog(context)
-        instract!!.setTitle(context.resources.getString(R.string.instructions))
-        instract!!.setContentView(R.layout.dialog_view)
+    private fun loadInstructionDialog() {
+        instracton = Dialog(context)
+        instracton!!.setTitle(context.resources.getString(R.string.instructions))
+        instracton!!.setContentView(R.layout.dialog_view)
 
-        val viewmain = instract!!.findViewById<LinearLayout>(R.id.viewMain)
-        val scrolldialog = instract!!.findViewById<ScrollView>(R.id.scrolldia)
+        val arrayOfIDs = arrayOf(arrayOf("descrtask19_", "imgdiscr19"),
+                                arrayOf("descrtask20_", "instr_krug"))
+
+        val viewMain = instracton!!.findViewById<LinearLayout>(R.id.viewMain)
+        val scrollDialog = instracton!!.findViewById<ScrollView>(R.id.scrolldia)
         val mDataFiles = SharedPreferencesProcessor(context)
         val isThemeLight = mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_THEME_LIGHT, true)
         if (isThemeLight) {
-            viewmain.setBackgroundColor(context.resources.getColor(context.resources.getIdentifier("background", "color", packName)))
-            scrolldialog.setBackgroundColor(context.resources.getColor(context.resources.getIdentifier("backgroundview", "color", packName)))
+            viewMain.setBackgroundColor(context.resources.getColor(context.resources.getIdentifier("background", "color", packName)))
+            scrollDialog.setBackgroundColor(context.resources.getColor(context.resources.getIdentifier("backgroundview", "color", packName)))
         } else {
-            viewmain.setBackgroundColor(context.resources.getColor(context.resources.getIdentifier("background1", "color", packName)))
-            scrolldialog.setBackgroundColor(context.resources.getColor(context.resources.getIdentifier("backgroundview1", "color", packName)))
+            viewMain.setBackgroundColor(context.resources.getColor(context.resources.getIdentifier("background1", "color", packName)))
+            scrollDialog.setBackgroundColor(context.resources.getColor(context.resources.getIdentifier("backgroundview1", "color", packName)))
         }
-        for (i in 1..3) {
+
+        hideExcessive()
+
+        for (i in 1..numberOfUsedViews) {
             val textViewForLoadInstructions =
-                instract!!.findViewById<TextView>(
+                instracton!!.findViewById<TextView>(
                     context.resources.getIdentifier(
                         "textViewDescr$i",
                         "id",
@@ -43,12 +47,13 @@ class DialogProcessor(val context: Context, val packName: String) {
                 )
             textViewForLoadInstructions.setText(
                 context.resources.getIdentifier(
-                    "descrtask19_$i",
+                    "${arrayOfIDs[numberInArrayOfIDs][0]}$i",
                     "string",
                     packName
                 )
             )
-            val imageViewForLoadInstructions = instract!!.findViewById<ImageView>(
+            textViewForLoadInstructions.visibility = View.VISIBLE
+            val imageViewForLoadInstructions = instracton!!.findViewById<ImageView>(
                 context.resources.getIdentifier(
                     "imageViewIm$i",
                     "id",
@@ -57,22 +62,27 @@ class DialogProcessor(val context: Context, val packName: String) {
             )
             imageViewForLoadInstructions.setImageResource(
                 context.resources.getIdentifier(
-                    "imgdiscr19$i",
+                    "${arrayOfIDs[numberInArrayOfIDs][1]}$i",
                     "drawable",
                     packName
                 )
             )
+            imageViewForLoadInstructions.visibility = View.VISIBLE
         }
-        val textViewForLoadInstructions = instract!!.findViewById<TextView>(R.id.textViewDescr4)
+    }
+
+    private fun hideExcessive() {
+        val textViewForLoadInstructions = instracton!!.findViewById<TextView>(R.id.textViewDescr4)
         textViewForLoadInstructions.visibility = View.GONE
-        val imageViewForLoadInstructions = instract!!.findViewById<ImageView>(R.id.imageViewIm4)
+        val imageViewForLoadInstructions = instracton!!.findViewById<ImageView>(R.id.imageViewIm4)
         imageViewForLoadInstructions.visibility = View.GONE
     }
 
     fun closeDialog() {
-        instract!!.dismiss()
+        instracton!!.dismiss()
     }
     fun showDialog() {
-        instract!!.show()
+        loadInstructionDialog()
+        instracton!!.show()
     }
 }

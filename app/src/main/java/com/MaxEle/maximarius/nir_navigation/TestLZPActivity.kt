@@ -17,7 +17,7 @@ class TestLZPActivity : AppCompatActivity() {
     private var isThemeLight = false
 
     private var taskProcessor: TaskProcessor = TaskProcessor(this, this, packageName)
-    private var dialogProcessor: DialogProcessor = DialogProcessor(this, packageName)
+    private var dialogProcessor: DialogProcessor = DialogProcessor(this, packageName, 3, 0)
 
     private var mAdView: AdView? = null
 
@@ -43,7 +43,7 @@ class TestLZPActivity : AppCompatActivity() {
         }
 
         taskProcessor = TaskProcessor(this, this, packageName)
-        dialogProcessor = DialogProcessor(this, packageName)
+        dialogProcessor = DialogProcessor(this, packageName, 3, 0)
         //-------------------------------------------------------------------------
         // ButtonListeners для данной активности
         val buttonBack = findViewById<Button>(R.id.buttonBack)
@@ -55,7 +55,6 @@ class TestLZPActivity : AppCompatActivity() {
         }
         val buttonSettings = findViewById<Button>(R.id.buttonInstr)
         buttonSettings.setOnClickListener {
-            dialogProcessor.loadInstructionDialog()
             dialogProcessor.showDialog()
         }
         //-------------------------------------------------------------------------

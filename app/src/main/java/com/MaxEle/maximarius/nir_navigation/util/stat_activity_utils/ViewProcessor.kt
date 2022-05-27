@@ -32,7 +32,7 @@ class ViewProcessor(private val activity: Activity, val context: Context, privat
         }
     }
 
-    private val listOfDataNames = listOf(
+    private val listOfDataNames = arrayOf(
         SharedPreferencesProcessor.DATA_FILE_ST1, SharedPreferencesProcessor.DATA_FILE_ST2, SharedPreferencesProcessor.DATA_FILE_ST3,
         SharedPreferencesProcessor.DATA_FILE_ST4, SharedPreferencesProcessor.DATA_FILE_ST5, SharedPreferencesProcessor.DATA_FILE_ST6,
         SharedPreferencesProcessor.DATA_FILE_ST7, SharedPreferencesProcessor.DATA_FILE_ST8, SharedPreferencesProcessor.DATA_FILE_ST9,
@@ -91,25 +91,25 @@ class ViewProcessor(private val activity: Activity, val context: Context, privat
         }
     }
 
-    private val listOfStringIdForTasks = listOf(
-        emptyList(),
-        emptyList(),
-        emptyList(),
-        listOf(listOf("statdoprasBen", "statdoprasYV", "statdoprasYS"), listOf("recomenBen1", "recomenYV", "recomenYS")),
-        listOf(listOf("statdoprasUekv", "statdoprasYV"), listOf("recomenUekv", "recomenYV2")),
-        listOf(listOf("statdoprasUekv", "statdoprasYV", "statdoprasBen"), listOf("recomenUekv", "recomenYV2", "recomenBen")),
-        emptyList(),
-        emptyList(),
-        listOf(listOf("statdoprasYV", "statdoprasYS"), listOf("recomenYV3", "recomenYS")),
-        listOf(listOf("statdoprasHbar", "statdoprasdH", "statdoprastpr"), listOf("recomenHbar", "recomendH", "recomentpr")),
-        listOf(listOf("statdoprasdH1", "statdoprasHbar", "statdoprasdH2"), listOf("recomendH1", "recomenHbar", "recomendH2")),
-        listOf(listOf("statdoprasSnach", "statdoprasdHsht", "statdoprasSrasp"), listOf("recomenSnach", "recomendHsht", "recomenSrasp")),
-        listOf(listOf("statdoprasdVsh", "statdoprasVprisp"), listOf("recomendVsh", "recomenVprisp")),
-        listOf(listOf("statdoprasVprisp", "statdoprasdVsh"), listOf("recomenVprisp2", "recomendVsh")),
-        listOf(listOf("statdoprasVprispKYS"), listOf("recomenVprispKYS")),
-        listOf(listOf("statdoprasDP", "statdoprasLBY", "statdoprasBY"), listOf("recomenDP", "recomenLBY", "recomenBY")),
-        listOf(listOf("statdoprasDP", "statdoprasLBY", "statdoprasBY"), listOf("recomenDP", "recomenLBY", "recomenBY")),
-        listOf(listOf("statdoprasDP", "statdoprasLBY", "statdoprasBY"), listOf("recomenDP", "recomenLBY", "recomenBY")))
+    private val listOfStringIdForTasks = arrayOf(
+        emptyArray(),
+        emptyArray(),
+        emptyArray(),
+        arrayOf(arrayOf("statdoprasBen", "statdoprasYV", "statdoprasYS"), arrayOf("recomenBen1", "recomenYV", "recomenYS")),
+        arrayOf(arrayOf("statdoprasUekv", "statdoprasYV"), arrayOf("recomenUekv", "recomenYV2")),
+        arrayOf(arrayOf("statdoprasUekv", "statdoprasYV", "statdoprasBen"), arrayOf("recomenUekv", "recomenYV2", "recomenBen")),
+        emptyArray(),
+        emptyArray(),
+        arrayOf(arrayOf("statdoprasYV", "statdoprasYS"), arrayOf("recomenYV3", "recomenYS")),
+        arrayOf(arrayOf("statdoprasHbar", "statdoprasdH", "statdoprastpr"), arrayOf("recomenHbar", "recomendH", "recomentpr")),
+        arrayOf(arrayOf("statdoprasdH1", "statdoprasHbar", "statdoprasdH2"), arrayOf("recomendH1", "recomenHbar", "recomendH2")),
+        arrayOf(arrayOf("statdoprasSnach", "statdoprasdHsht", "statdoprasSrasp"), arrayOf("recomenSnach", "recomendHsht", "recomenSrasp")),
+        arrayOf(arrayOf("statdoprasdVsh", "statdoprasVprisp"), arrayOf("recomendVsh", "recomenVprisp")),
+        arrayOf(arrayOf("statdoprasVprisp", "statdoprasdVsh"), arrayOf("recomenVprisp2", "recomendVsh")),
+        arrayOf(arrayOf("statdoprasVprispKYS"), arrayOf("recomenVprispKYS")),
+        arrayOf(arrayOf("statdoprasDP", "statdoprasLBY", "statdoprasBY"), arrayOf("recomenDP", "recomenLBY", "recomenBY")),
+        arrayOf(arrayOf("statdoprasDP", "statdoprasLBY", "statdoprasBY"), arrayOf("recomenDP", "recomenLBY", "recomenBY")),
+        arrayOf(arrayOf("statdoprasDP", "statdoprasLBY", "statdoprasBY"), arrayOf("recomenDP", "recomenLBY", "recomenBY")))
 
 
     fun setInfoOnStatOfAll() {
