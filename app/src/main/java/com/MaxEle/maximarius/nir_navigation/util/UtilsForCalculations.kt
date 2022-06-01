@@ -1,5 +1,7 @@
 package com.MaxEle.maximarius.nir_navigation.util
 
+import java.lang.NumberFormatException
+
 class UtilsForCalculations {
 
     companion object {
@@ -20,6 +22,24 @@ class UtilsForCalculations {
             }
             return mX
         }
-    }
 
+        fun makeAngle0To360(x: Int): Int {
+            var mX = x
+            when {
+                mX >= 360 -> while (mX >= 360) mX -= 360
+                mX < 0 -> while (mX < 0) mX += 360
+            }
+            return mX
+        }
+
+        @Throws(NumberFormatException::class)
+        fun isNumeric(s: String): Boolean {
+            return try {
+                s.toDouble()
+                true
+            } catch (e: NumberFormatException) {
+                false
+            }
+        }
+    }
 }

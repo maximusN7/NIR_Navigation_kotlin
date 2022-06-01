@@ -16,8 +16,8 @@ import com.google.android.gms.ads.AdRequest
 class TestLZPActivity : AppCompatActivity() {
     private var isThemeLight = false
 
-    private var taskProcessor: TaskProcessor = TaskProcessor(this, this, packageName)
-    private var dialogProcessor: DialogProcessor = DialogProcessor(this, packageName, 3, 0)
+    lateinit var taskProcessor: TaskProcessor
+    lateinit  var dialogProcessor: DialogProcessor
 
     private var mAdView: AdView? = null
 

@@ -27,11 +27,11 @@ class DialogProcessor(val context: Context, private val packName: String, privat
         val mDataFiles = SharedPreferencesProcessor(context)
         val isThemeLight = mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_THEME_LIGHT, true)
         if (isThemeLight) {
-            viewMain.setBackgroundColor(context.resources.getColor(context.resources.getIdentifier("background", "color", packName)))
-            scrollDialog.setBackgroundColor(context.resources.getColor(context.resources.getIdentifier("backgroundview", "color", packName)))
+            viewMain.setBackgroundColor(context.getColor(context.resources.getIdentifier("background", "color", packName)))
+            scrollDialog.setBackgroundColor(context.getColor(context.resources.getIdentifier("backgroundview", "color", packName)))
         } else {
-            viewMain.setBackgroundColor(context.resources.getColor(context.resources.getIdentifier("background1", "color", packName)))
-            scrollDialog.setBackgroundColor(context.resources.getColor(context.resources.getIdentifier("backgroundview1", "color", packName)))
+            viewMain.setBackgroundColor(context.getColor(context.resources.getIdentifier("background1", "color", packName)))
+            scrollDialog.setBackgroundColor(context.getColor(context.resources.getIdentifier("backgroundview1", "color", packName)))
         }
 
         hideExcessive()

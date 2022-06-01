@@ -12,7 +12,7 @@
         <item name="android:buttonStyle">@style/newbuttonstyle</item>
         <item name="android:textViewStyle">@style/newtextviewstyle</item>
         <item name="android:editTextColor">@color/textsimple</item>
-        <item name="android:editTextBackground">@color/backgroundview</item>
+        <item name="android:editTextBackground">@color/background</item>
         <item name="editTextStyle">@style/neweditviewstyle</item>
         <item name="android:statusBarColor">@color/colorPrimary</item>
         <item name="radioButtonStyle">@style/newradiostyle</item>
@@ -30,7 +30,7 @@
         <item name="android:buttonStyle">@style/newbuttonstyle1</item>
         <item name="android:textViewStyle">@style/newtextviewstyle1</item>
         <item name="android:editTextColor">@color/textsimple1</item>
-        <item name="android:editTextBackground">@color/backgroundbutton1</item>
+        <item name="android:editTextBackground">@color/background1</item>
         <item name="editTextStyle">@style/neweditviewstyle1</item>
         <item name="android:statusBarColor">@color/colorPrimary1</item>
         <item name="radioButtonStyle">@style/newradiostyle1</item>

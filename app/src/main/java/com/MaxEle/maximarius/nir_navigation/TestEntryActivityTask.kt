@@ -7,6 +7,7 @@ import android.content.Intent
 import android.view.View
 import android.widget.*
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.MaxEle.maximarius.nir_navigation.util.GoToAnotherActivity
 import com.MaxEle.maximarius.nir_navigation.util.SharedPreferencesProcessor
 import com.MaxEle.maximarius.nir_navigation.util.testEH_activity_utils.TaskProcessor
 import com.MaxEle.maximarius.nir_navigation.util.textLZP_activity_utils.DialogProcessor
@@ -16,7 +17,7 @@ class TestEntryActivityTask : AppCompatActivity() {
     private var isThemeLight = false
 
     private var mAdView: AdView? = null
-    private var dialogProcessor: DialogProcessor = DialogProcessor(this, packageName, 4, 1)
+    lateinit var dialogProcessor: DialogProcessor
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -76,17 +77,11 @@ class TestEntryActivityTask : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        finish()
-        val intent = Intent(this@TestEntryActivityTask, MainActivity::class.java)
-        startActivity(intent)
-        overridePendingTransition(R.anim.act_out_back, R.anim.act_in_back)
+        GoToAnotherActivity(this, this, MainActivity::class.java).start()
     }
 
     fun onClickBack(view: View?) {
-        finish()
-        val intent = Intent(this@TestEntryActivityTask, MainActivity::class.java)
-        startActivity(intent)
-        overridePendingTransition(R.anim.act_out_back, R.anim.act_in_back)
+        GoToAnotherActivity(this, this, MainActivity::class.java).start()
     }
 
     fun onClickBackDial(view: View?) {
