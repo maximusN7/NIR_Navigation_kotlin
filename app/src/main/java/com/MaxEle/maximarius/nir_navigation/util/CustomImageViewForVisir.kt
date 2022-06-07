@@ -6,14 +6,13 @@ import androidx.appcompat.widget.AppCompatImageView
 import android.view.MotionEvent
 
 class CustomImageViewForVisir : AppCompatImageView {
-    var dX = 0f
+    private var dX = 0f
     var dY = 0f
 
-    constructor(context: Context?) : super(context!!) {}
+    constructor(context: Context?) : super(context!!)
     constructor(context: Context?, attrs: AttributeSet?) : super(
         context!!, attrs
-    ) {
-    }
+    )
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
         when (event.action) {

@@ -154,7 +154,6 @@
         android:id="@+id/buttonR"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:onClick="onClickR"
         android:layout_margin="10dp"
         android:text="@string/Rkrug"
         android:textSize="24sp"

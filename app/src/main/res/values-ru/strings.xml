@@ -810,17 +810,6 @@
     <string name="NL_dialog9">Перевод м/с в км/ч и обратно:</string>
     <string name="NL_dialog10">Определение элементов полёта по двум другим (S,t,W):</string>
 
-    <string name="NL_dialog1eng">The NL-10 has 17 scales. You can enable the digital markers of each scale with the switch below. Further, all instructions will operate with this numbering.</string>
-    <string name="NL_dialog2eng">Multiplication of two numbers (a∙b=c):</string>
-    <string name="NL_dialog3eng">Division of two numbers (a:b=c):</string>
-    <string name="NL_dialog4eng">Square of a number or its square root (x):</string>
-    <string name="NL_dialog5eng">Sin of angle (sin(a)):</string>
-    <string name="NL_dialog6eng">Cos of angle (cos(a)):</string>
-    <string name="NL_dialog7eng">Tg of angle (tg(a)):</string>
-    <string name="NL_dialog8eng">Multiplication of number and sin of angle (b*sin(a)=c):</string>
-    <string name="NL_dialog9eng">Transfer mps to kmph and back:</string>
-    <string name="NL_dialog10eng">Determination of flight elements by the other two (S,t,W):</string>
-
     <string name="ContDescr_ads">Рекламный баннер</string>
     <string name="ContDescr_WindSlider">Ползунок скорости ветра</string>
     <string name="ContDescr_TasksMenu">Меню задач</string>

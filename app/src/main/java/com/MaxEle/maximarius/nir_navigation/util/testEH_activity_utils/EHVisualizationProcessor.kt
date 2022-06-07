@@ -18,6 +18,7 @@ class EHVisualizationProcessor(val context: Context, val activity: Activity) {
         val isThemeLight = mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_THEME_LIGHT, true)
         val buttonR: Button = this.activity.findViewById(R.id.buttonR)
         buttonR.isEnabled = false
+        activeR = true
         if (isThemeLight) {
             buttonR.background.setColorFilter(
                 context.resources.getColor(R.color.backgroundbuttonpressed),
@@ -50,23 +51,23 @@ class EHVisualizationProcessor(val context: Context, val activity: Activity) {
         val mDataFiles = SharedPreferencesProcessor(context)
         val isThemeLight = mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_THEME_LIGHT, true)
 
-        button1.isEnabled = false
-        button2.isEnabled = true
+        button1.isEnabled = true
+        button2.isEnabled = false
         if (isThemeLight) {
-            button1.background.setColorFilter(
+            button2.background.setColorFilter(
                 context.resources.getColor(R.color.backgroundbuttonpressed),
                 PorterDuff.Mode.MULTIPLY
             )
-            button2.background.setColorFilter(
+            button1.background.setColorFilter(
                 context.resources.getColor(R.color.backgroundbutton),
                 PorterDuff.Mode.MULTIPLY
             )
         } else {
-            button1.background.setColorFilter(
+            button2.background.setColorFilter(
                 context.resources.getColor(R.color.backgroundbuttonpressed1),
                 PorterDuff.Mode.MULTIPLY
             )
-            button2.background.setColorFilter(
+            button1.background.setColorFilter(
                 context.resources.getColor(R.color.backgroundbutton1),
                 PorterDuff.Mode.MULTIPLY
             )

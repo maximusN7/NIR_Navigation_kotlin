@@ -3,7 +3,7 @@
     android:id="@+id/viewMain"
     android:layout_width="wrap_content"
     android:layout_height="360dp"
-    android:layout_margin="10dp"
+    android:layout_margin="5dp"
     android:orientation="horizontal">
 
     <LinearLayout
@@ -19,7 +19,8 @@
             android:layout_marginTop="25dp"
             android:rotation="90"
             android:text="@string/back"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:onClick="onClickBackDial"/>
 
         <TextView
             android:id="@+id/textViewSwitch"
@@ -48,6 +49,7 @@
         android:layout_height="300dp"
         android:layout_marginTop="30dp"
         android:layout_marginStart="-65dp"
+        android:elevation="2dp"
         android:padding="5dp"
         android:rotation="90">
 

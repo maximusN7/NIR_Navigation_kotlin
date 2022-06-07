@@ -40,8 +40,8 @@ class TestEntryActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_test_entry)
 
-        val viewAnswer = findViewById<ConstraintLayout>(R.id.viewCond)
-        viewAnswer.setBackgroundColor(getColor(if (isThemeLight) R.color.backgroundview else R.color.backgroundview1))
+        val viewCondition = findViewById<ConstraintLayout>(R.id.viewCond)
+        viewCondition.setBackgroundColor(getColor(if (isThemeLight) R.color.backgroundview else R.color.backgroundview1))
 
         mAdView = findViewById(R.id.banner_ad)
         if (mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_ADS_DISABLE, false)) {

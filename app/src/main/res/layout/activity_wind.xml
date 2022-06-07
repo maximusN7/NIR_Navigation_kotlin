@@ -82,17 +82,17 @@
             android:layout_below="@id/imageViewkur"
             android:layout_centerHorizontal="true"
             android:autofillHints="@string/ZeroForStart"
+            android:contentDescription="@null"
             android:ems="10"
             android:focusable="true"
             android:gravity="center"
             android:hint="@string/ZeroForStart"
             android:imeOptions="actionDone"
             android:inputType="number"
-            android:text="@string/ZeroForStart"
             android:maxLength="5"
+            android:text="@string/ZeroForStart"
             android:textSize="23sp"
-            tools:ignore="ContentDescription"
-            android:contentDescription="@null"/>
+            tools:ignore="ContentDescription" />
 
         <Spinner
             android:id="@+id/measurlist"

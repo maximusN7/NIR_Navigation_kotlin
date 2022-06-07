@@ -92,6 +92,7 @@ class SharedPreferencesProcessor(val context: Context) {
         const val DATA_FILE_LEVEL = "level"
         const val DATA_FILE_ADS_DISABLE = "ads_disable"
         const val DATA_FILE_LANGUAGE_RUS = "language"
+        const val DATA_FILE_NLINSTRACTIONS = "nl_marked"
         const val DATA_FILE_KOLRESH1_1 = "kr1_1"
         const val DATA_FILE_KOLRESH1_2 = "kr1_2"
         const val DATA_FILE_KOLRESH1_3 = "kr1_3"

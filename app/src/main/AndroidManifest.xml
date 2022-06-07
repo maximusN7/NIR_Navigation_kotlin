@@ -75,7 +75,7 @@
         <activity
             android:name=".TestLZPActivity"
             android:screenOrientation="unspecified"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
+            android:configChanges="screenSize"/>
         <activity
             android:name=".NLActivity"
             android:screenOrientation="unspecified"/>

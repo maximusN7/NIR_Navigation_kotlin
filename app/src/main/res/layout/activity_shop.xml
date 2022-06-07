@@ -6,78 +6,91 @@
     android:layout_height="match_parent"
     tools:context="com.MaxEle.maximarius.nir_navigation.ShopActivity">
 
-    <TextView
-        android:id="@+id/textViewSecret"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewCond"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:padding="12dp"
-        android:shadowColor="#ff0000"
-        android:shadowDx="3"
-        android:shadowDy="3"
-        android:shadowRadius="5"
-        android:text="@string/youarebest"
-        android:textColor="#ffc0cb"
-        android:textIsSelectable="true"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:visibility="invisible"
-        ads:layout_constraintBottom_toTopOf="@+id/buttonShopList"
-        ads:layout_constraintEnd_toEndOf="parent"
-        ads:layout_constraintStart_toStartOf="parent"
-        ads:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/buttonShopList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_margin="10dp"
-        android:text="@string/shoplist"
-        android:textSize="24sp"
-        ads:layout_constraintBottom_toTopOf="@+id/textViewAbout"
-        ads:layout_constraintEnd_toEndOf="parent"
-        ads:layout_constraintStart_toStartOf="parent" />
-    <!--android:onClick="onSubscribeButtonClicked"-->
-
-    <TextView
-        android:id="@+id/textViewAbout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text=""
-        android:textIsSelectable="true"
-        android:textSize="18sp"
+        android:elevation="2dp"
         ads:layout_constraintBottom_toTopOf="@+id/banner_ad"
         ads:layout_constraintEnd_toEndOf="parent"
         ads:layout_constraintStart_toStartOf="parent"
-        ads:layout_constraintTop_toTopOf="parent" />
+        ads:layout_constraintTop_toTopOf="parent">
 
-    <EditText
-        android:id="@+id/textViewEnterPassword"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_margin="10dp"
-        android:ems="10"
-        android:focusable="auto"
-        android:hint="@string/EntPas"
-        android:importantForAutofill="no"
-        android:inputType="textPassword"
-        android:textSize="20sp"
-        ads:layout_constraintBottom_toBottomOf="@+id/button"
-        ads:layout_constraintStart_toStartOf="parent"
-        ads:layout_constraintTop_toTopOf="@+id/button" />
+        <TextView
+            android:id="@+id/textViewSecret"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="12dp"
+            android:shadowColor="#ff0000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="5"
+            android:text="@string/youarebest"
+            android:textColor="#ffc0cb"
+            android:textIsSelectable="true"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            ads:layout_constraintBottom_toTopOf="@+id/buttonShopList"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:textSize="24sp"
-        android:text="@string/ok"
-        ads:layout_constraintEnd_toEndOf="parent"
-        ads:layout_constraintStart_toEndOf="@+id/textViewEnterPassword"
-        ads:layout_constraintTop_toBottomOf="@+id/textViewAbout" />
+        <Button
+            android:id="@+id/buttonShopList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/shoplist"
+            android:textSize="24sp"
+            ads:layout_constraintBottom_toTopOf="@+id/textViewAbout"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintStart_toStartOf="parent" />
+        <!--android:onClick="onSubscribeButtonClicked"-->
 
+        <TextView
+            android:id="@+id/textViewAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text=""
+            android:textIsSelectable="true"
+            android:textSize="18sp"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/textViewEnterPassword"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:focusable="auto"
+            android:hint="@string/EntPas"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textSize="20sp"
+            ads:layout_constraintBottom_toBottomOf="@+id/button"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintTop_toTopOf="@+id/button" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/ok"
+            android:textSize="24sp"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintStart_toEndOf="@+id/textViewEnterPassword"
+            ads:layout_constraintTop_toBottomOf="@+id/textViewAbout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/banner_ad"

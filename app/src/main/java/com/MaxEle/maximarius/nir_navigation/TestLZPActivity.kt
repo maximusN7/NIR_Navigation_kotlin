@@ -6,12 +6,14 @@ import android.os.Bundle
 import com.google.android.gms.ads.AdView
 import androidx.constraintlayout.widget.ConstraintLayout
 import android.content.Intent
+import android.content.res.Configuration
 import android.view.View
 import android.widget.*
 import com.MaxEle.maximarius.nir_navigation.util.SharedPreferencesProcessor
 import com.MaxEle.maximarius.nir_navigation.util.textLZP_activity_utils.DialogProcessor
 import com.MaxEle.maximarius.nir_navigation.util.textLZP_activity_utils.TaskProcessor
 import com.google.android.gms.ads.AdRequest
+import java.util.*
 
 class TestLZPActivity : AppCompatActivity() {
     private var isThemeLight = false
@@ -28,6 +30,15 @@ class TestLZPActivity : AppCompatActivity() {
 
         isThemeLight = mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_THEME_LIGHT, true)
         setTheme(if (isThemeLight) R.style.AppTheme else R.style.AppThemeDark)
+
+        val isRussian = mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_LANGUAGE_RUS, true)
+        val userLocale = if (isRussian) "ru" else "en"
+
+        val locale = Locale(userLocale)
+        Locale.setDefault(locale)
+        val config = Configuration()
+        config.locale = locale
+        baseContext.resources.updateConfiguration(config, baseContext.resources.displayMetrics)
 
         setContentView(R.layout.activity_test_lzp)
 

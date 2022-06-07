@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.content.Intent
 import android.view.View
 import android.widget.*
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.MaxEle.maximarius.nir_navigation.util.SharedPreferencesProcessor
 import com.MaxEle.maximarius.nir_navigation.util.shop_activity_utils.BillingFunctions
 import com.MaxEle.maximarius.nir_navigation.util.shop_activity_utils.ShopDialogProcessor
@@ -31,6 +32,9 @@ class ShopActivity : AppCompatActivity(), PurchasesUpdatedListener {
 
         setContentView(R.layout.activity_shop)
 
+        val viewCondition = findViewById<ConstraintLayout>(R.id.viewCond)
+        viewCondition.setBackgroundColor(getColor(if (isThemeLight) R.color.backgroundview else R.color.backgroundview1))
+
         billingFunctions = BillingFunctions(this, this, this)
         dialogProcessor = ShopDialogProcessor(this, this, this,billingFunctions)
 
@@ -48,7 +52,7 @@ class ShopActivity : AppCompatActivity(), PurchasesUpdatedListener {
 
         mAdView = findViewById(R.id.banner_ad)
         if (mDataFiles.getBoolean(SharedPreferencesProcessor.DATA_FILE_ADS_DISABLE, false)) {
-            mAdView?.visibility = View.INVISIBLE
+            mAdView?.visibility = View.GONE
         } else {
             val adRequest = AdRequest.Builder().build()
             mAdView?.loadAd(adRequest)
